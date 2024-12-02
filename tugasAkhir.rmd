@@ -27,7 +27,7 @@ library(caret)
 library(dplyr)
 
 # Memuat dataset yang telah dibersihkan
-data <- read.csv("data_rumah_cleaned.csv", sep = ";")
+data <- read.csv("data_rumah_cleaned.csv", sep = ",")
 
 # Melihat 6 baris pertama dari dataset
 head(data)

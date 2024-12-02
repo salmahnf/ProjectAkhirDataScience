@@ -1,982 +1,985 @@
-type;price;kamar_tidur;luas_tanah;luas_bangunan;sertifikasi;area;region
-Rumah Second;380.0;2.0;77.0;42.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;11.0;3.0;132.0;90.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;960.0;3.0;85.0;80.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;480.0;2.0;97.0;52.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;35.0;3.0;392.0;150.0;SHM;Panjatan; Kab. Kulon Progo
-Rumah Second;11.0;3.0;865.0;225.0;SHM;Pengasih; Kab. Kulon Progo
-Rumah Second;12.0;4.0;207.0;160.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;579.0;2.0;84.0;46.0;SHM;Berbah; Kab. Sleman
-Rumah Second;424.0;2.0;73.0;40.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;510.0;3.0;105.0;60.0;SHM;Pleret; Kab. Bantul
-Rumah Second;535.0;2.0;80.0;36.0;SHM;Sleman; Kab. Sleman
-Rumah Second;14.0;3.0;108.0;130.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;330.0;2.0;78.0;50.0;SHM;Piyungan; Kab. Bantul
-Rumah Second;17.0;3.0;140.0;125.0;SHM;Depok; Kab. Sleman
-Rumah Second;330.0;2.0;151.0;62.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;22.0;5.0;188.0;300.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;850.0;3.0;120.0;80.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;16.0;3.0;147.0;110.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;14.0;3.0;150.0;160.0;HGB;Ngemplak; Kab. Sleman
-Rumah Second;850.0;3.0;80.0;70.0;SHM;Depok; Kab. Sleman
-Rumah Second;22.0;5.0;182.0;177.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;975.0;4.0;107.0;105.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;920.0;3.0;86.0;160.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;18.0;4.0;121.0;136.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;585.0;3.0;112.0;50.0;SHM;Sleman; Kab. Sleman
-Rumah Second;14.0;3.0;91.0;93.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;250.0;2.0;60.0;30.0;SHM;Pleret; Kab. Bantul
-Rumah Second;13.0;3.0;120.0;218.0;SHM;Gamping; Kab. Sleman
-Rumah Second;815.0;3.0;72.0;90.0;SHM;Wates; Kab. Kulon Progo
-Rumah Second;525.0;2.0;106.0;53.0;SHM;Tempel; Kab. Sleman
-Rumah Second;22.0;3.0;182.0;231.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;32.0;5.0;159.0;180.0;SHM;Sleman; Kab. Sleman
-Rumah Second;413.0;2.0;81.0;40.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;680.0;3.0;97.0;65.0;SHM;Depok; Kab. Sleman
-Rumah Second;633.0;2.0;105.0;59.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;850.0;3.0;103.0;75.0;SHM;Godean; Kab. Sleman
-Rumah Second;574.0;2.0;131.0;40.0;SHM;Mlati; Kab. Sleman
-Rumah Second;592.0;2.0;90.0;36.0;SHM;Gondomanan; Kota Yogyakarta
-Rumah Second;592.0;2.0;104.0;50.0;SHM;Mlati; Kab. Sleman
-Rumah Second;680.0;2.0;97.0;65.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;16.0;3.0;111.0;90.0;SHM;Depok; Kab. Sleman
-Rumah Second;22.0;2.0;182.0;177.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;350.0;2.0;80.0;30.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;17.0;5.0;131.0;150.0;HGB;Tegalrejo; Kota Yogyakarta
-Rumah Second;495.0;2.0;84.0;45.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;11.0;2.0;115.0;50.0;SHM;Gamping; Kab. Sleman
-Rumah Second;11.0;2.0;142.0;60.0;SHM;Gamping; Kab. Sleman
-Rumah Second;15.0;3.0;168.0;130.0;SHM;Depok; Kab. Sleman
-Rumah Second;900.0;3.0;98.0;100.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;999.0;4.0;103.0;105.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;16.0;4.0;146.0;134.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;13.0;2.0;208.0;90.0;SHM;Gamping; Kab. Sleman
-Rumah Second;13.0;5.0;227.0;220.0;SHM;Gamping; Kab. Sleman
-Rumah Second;32.0;4.0;159.0;180.0;HGB;Sleman; Kab. Sleman
-Rumah Second;999.0;3.0;101.0;75.0;HGB;Banguntapan; Kab. Bantul
-Rumah Second;26.0;3.0;306.0;145.0;SHM;Berbah; Kab. Sleman
-Rumah Second;28.0;7.0;500.0;350.0;SHM;Umbulharjo; Kota Yogyakarta
-Rumah Second;390.0;2.0;82.0;50.0;SHM;Berbah; Kab. Sleman
-Rumah Second;399.0;2.0;75.0;55.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;14.0;5.0;141.0;170.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;1.0;2.0;85.0;50.0;SHM;Depok; Kab. Sleman
-Rumah Second;37.0;4.0;176.0;146.0;HGB;Mlati; Kab. Sleman
-Rumah Second;495.0;2.0;112.0;36.0;SHM;Sleman; Kab. Sleman
-Rumah Second;598.0;2.0;102.0;50.0;SHM;Depok; Kab. Sleman
-Rumah Second;11.0;3.0;134.0;90.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;490.0;2.0;92.0;36.0;SHM;Sleman; Kab. Sleman
-Rumah Second;28.0;3.0;192.0;111.0;HGB;Tegalrejo; Kota Yogyakarta
-Rumah Second;22.0;5.0;150.0;336.0;HGB;Gamping; Kab. Sleman
-Rumah Second;775.0;3.0;106.0;78.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;357.0;2.0;103.0;36.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;757.0;2.0;120.0;50.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;175.0;2.0;67.0;58.0;SHM;Mergangsan; Kota Yogyakarta
-Rumah Second;15.0;3.0;86.0;120.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;5607.0;3.0;112.0;55.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;16.0;4.0;137.0;125.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;3.0;5.0;145.0;225.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;999.0;3.0;103.0;100.0;SHM;Depok; Kab. Sleman
-Rumah Second;635.0;3.0;113.0;56.0;SHM;Berbah; Kab. Sleman
-Rumah Second;13.0;3.0;88.0;120.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;12.0;3.0;146.0;100.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;18.0;4.0;150.0;157.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;22.0;5.0;150.0;226.0;HGB;Gamping; Kab. Sleman
-Rumah Second;1.0;3.0;114.0;95.0;HGB;Ngaglik; Kab. Sleman
-Rumah Second;22.0;6.0;288.0;243.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;1.0;3.0;132.0;90.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;27.0;5.0;765.0;200.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;690.0;3.0;99.0;70.0;SHM;Depok; Kab. Sleman
-Rumah Second;525.0;3.0;111.0;140.0;SHM;Tempel; Kab. Sleman
-Rumah Second;485.0;2.0;108.0;42.0;SHM;Gamping; Kab. Sleman
-Rumah Second;550.0;2.0;84.0;70.0;SHM;Depok; Kab. Sleman
-Rumah Second;33.0;7.0;1000.0;744.0;SHM;Gondokusuman; Kota Yogyakarta
-Rumah Second;799.0;3.0;126.0;90.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;16.0;3.0;100.0;108.0;HGB;Godean; Kab. Sleman
-Rumah Second;499.0;2.0;120.0;36.0;SHM;Sleman; Kab. Sleman
-Rumah Second;12.0;4.0;571.0;220.0;SHM;Seyegan; Kab. Sleman
-Rumah Second;18.0;3.0;150.0;108.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;550.0;3.0;124.0;58.0;SHM;Godean; Kab. Sleman
-Rumah Second;48.0;6.0;843.0;340.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;553.0;3.0;103.0;70.0;SHM;Godean; Kab. Sleman
-Rumah Second;45.0;5.0;220.0;230.0;SHM;Mlati; Kab. Sleman
-Rumah Second;725.0;3.0;100.0;75.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;17.0;3.0;100.0;108.0;SHM;Godean; Kab. Sleman
-Rumah Second;38.0;3.0;204.0;142.0;HGB;Mlati; Kab. Sleman
-Rumah Second;775.0;3.0;116.0;85.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;2002.0;2.0;60.0;30.0;HGB;Moyudan; Kab. Sleman
-Rumah Second;538.0;2.0;84.0;46.0;SHM;Berbah; Kab. Sleman
-Rumah Second;465.0;3.0;80.0;45.0;SHM;Berbah; Kab. Sleman
-Rumah Second;592.0;2.0;104.0;50.0;SHM;Sleman; Kab. Sleman
-Rumah Second;625.0;2.0;95.0;70.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;1.0;2.0;86.0;65.0;HGB;Tegalrejo; Kota Yogyakarta
-Rumah Second;49.0;4.0;262.0;300.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;375.0;2.0;72.0;72.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;395.0;2.0;80.0;45.0;SHM;Godean; Kab. Sleman
-Rumah Second;5.0;12.0;650.0;900.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;14.0;3.0;105.0;90.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;720.0;3.0;100.0;63.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;299.0;2.0;60.0;30.0;HGB;Seyegan; Kab. Sleman
-Rumah Second;575.0;3.0;97.0;56.0;SHM;Berbah; Kab. Sleman
-Rumah Second;17.0;3.0;188.0;355.0;SHM;Tegalrejo; Kota Yogyakarta
-Rumah Second;14.0;3.0;109.0;115.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;14.0;3.0;110.0;90.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;785.0;3.0;110.0;75.0;SHM;Godean; Kab. Sleman
-Rumah Second;13.0;3.0;121.0;100.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;17.0;4.0;169.0;150.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;11.0;4.0;130.0;120.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;233.0;2.0;60.0;30.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;13.0;3.0;85.0;122.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;21.0;4.0;177.0;135.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;585.0;3.0;111.0;55.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;650.0;2.0;79.0;60.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;22.0;5.0;182.0;177.0;SHM;Sleman; Kab. Sleman
-Rumah Second;575.0;2.0;96.0;50.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;850.0;3.0;92.0;105.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;476.0;2.0;112.0;36.0;SHM;Mlati; Kab. Sleman
-Rumah Second;425.0;2.0;107.0;55.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;15.0;3.0;94.0;119.0;SHM;Depok; Kab. Sleman
-Rumah Second;198.0;2.0;72.0;36.0;SHM;Playen; Kab. Gunung Kidul
-Rumah Second;200.0;2.0;72.0;36.0;SHM;Playen; Kab. Gunung Kidul
-Rumah Second;535.0;2.0;97.0;45.0;SHM;Berbah; Kab. Sleman
-Rumah Second;785.0;3.0;112.0;75.0;SHM;Godean; Kab. Sleman
-Rumah Second;495.0;2.0;112.0;36.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;13.0;3.0;100.0;100.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;785.0;3.0;110.0;75.0;SHM;Mlati; Kab. Sleman
-Rumah Second;433.0;2.0;82.0;55.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;915.0;3.0;65.0;160.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;14.0;5.0;120.0;200.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;13.0;4.0;116.0;140.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;200.0;2.0;60.0;30.0;SHM;Moyudan; Kab. Sleman
-Rumah Second;799.0;3.0;119.0;95.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;11.0;3.0;240.0;90.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;395.0;2.0;106.0;50.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;985.0;3.0;96.0;52.0;SHM;Gamping; Kab. Sleman
-Rumah Second;715.0;2.0;100.0;65.0;SHM;Gamping; Kab. Sleman
-Rumah Second;15.0;4.0;119.0;165.0;SHM;Depok; Kab. Sleman
-Rumah Second;12.0;4.0;99.0;105.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;845.0;3.0;123.0;75.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;1.0;2.0;103.0;103.0;SHM;Gamping; Kab. Sleman
-Rumah Second;550.0;2.0;125.0;80.0;SHM;Mlati; Kab. Sleman
-Rumah Second;160.0;1.0;20.0;18.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;799.0;4.0;126.0;90.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;775.0;3.0;105.0;70.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;380.0;2.0;84.0;50.0;SHM;Pajangan; Kab. Bantul
-Rumah Second;5.0;7.0;1000.0;300.0;HGB;Gamping; Kab. Sleman
-Rumah Second;550.0;2.0;88.0;45.0;SHM;Depok; Kab. Sleman
-Rumah Second;380.0;2.0;84.0;58.0;SHM;Pajangan; Kab. Bantul
-Rumah Second;585.0;2.0;112.0;50.0;SHM;Sleman; Kab. Sleman
-Rumah Second;18.0;4.0;800.0;600.0;HGB;Ngaglik; Kab. Sleman
-Rumah Second;12.0;3.0;130.0;100.0;SHM;Depok; Kab. Sleman
-Rumah Second;45.0;3.0;700.0;700.0;SHM;Lendah; Kab. Kulon Progo
-Rumah Second;3.0;24.0;250.0;300.0;SHM;Depok; Kab. Sleman
-Rumah Second;585.0;3.0;100.0;56.0;SHM;Depok; Kab. Sleman
-Rumah Second;58.0;5.0;717.0;500.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;385.0;2.0;90.0;50.0;SHM;Pajangan; Kab. Bantul
-Rumah Second;14.0;3.0;77.0;100.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;925.0;4.0;120.0;130.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;699.0;11.0;135.0;150.0;SHM;Depok; Kab. Sleman
-Rumah Second;245.0;2.0;75.0;36.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;799.0;3.0;126.0;90.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;15.0;3.0;110.0;80.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;799.0;3.0;120.0;85.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;22.0;5.0;150.0;336.0;SHM;Gamping; Kab. Sleman
-Rumah Second;760.0;3.0;109.0;100.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;430.0;2.0;81.0;36.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;600.0;2.0;112.0;40.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;19.0;3.0;240.0;100.0;SHM;Pakem; Kab. Sleman
-Rumah Second;14.0;3.0;201.0;201.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;14.0;3.0;77.0;100.0;SHM;Sleman; Kab. Sleman
-Rumah Second;367.0;2.0;60.0;36.0;SHM;Godean; Kab. Sleman
-Rumah Second;14.0;18.0;450.0;300.0;SHM;Umbulharjo; Kota Yogyakarta
-Rumah Baru;200.0;2.0;64.0;39.0;HGB;Patuk; Kab. Gunung Kidul
-Rumah Second;25.0;4.0;190.0;190.0;SHM;Ngaglik; Kab. Sleman
-Rumah Baru;130.0;2.0;60.0;30.0;HGB;Playen; Kab. Gunung Kidul
-Rumah Second;220.0;1.0;60.0;21.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;425.0;2.0;100.0;70.0;SHM;Seyegan; Kab. Sleman
-Rumah Second;515.0;2.0;107.0;43.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;18.0;5.0;240.0;240.0;SHM;Godean; Kab. Sleman
-Rumah Second;550.0;2.0;100.0;45.0;SHM;Gamping; Kab. Sleman
-Rumah Second;695.0;3.0;91.0;64.0;SHM;Kotagede; Kota Yogyakarta
-Rumah Second;38.0;6.0;1038.0;600.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;500.0;2.0;103.0;90.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;16.0;4.0;184.0;240.0;SHM;Depok; Kab. Sleman
-Rumah Second;425.0;2.0;100.0;36.0;SHM;Patuk; Kab. Gunung Kidul
-Rumah Second;655.0;3.0;158.0;90.0;SHM;Berbah; Kab. Sleman
-Rumah Second;68.0;6.0;843.0;340.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;685.0;3.0;107.0;46.0;SHM;Depok; Kab. Sleman
-Rumah Second;19.0;3.0;126.0;120.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;17.0;3.0;232.0;255.0;SHM;Mantrijeron; Kota Yogyakarta
-Rumah Second;385.0;2.0;64.0;40.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;39.0;9.0;330.0;400.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;650.0;8.0;111.0;111.0;SHM;Gamping; Kab. Sleman
-Rumah Second;950.0;2.0;65.0;106.0;SHM;Mlati; Kab. Sleman
-Rumah Second;550.0;3.0;111.0;222.0;SHM;Pundong; Kab. Bantul
-Rumah Second;900.0;4.0;190.0;170.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;12.0;5.0;170.0;260.0;SHM;Umbulharjo; Kota Yogyakarta
-Rumah Second;11.0;2.0;109.0;109.0;SHM;Depok; Kab. Sleman
-Rumah Second;500.0;2.0;103.0;95.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;900.0;3.0;130.0;80.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;630.0;4.0;150.0;130.0;SHM;Gamping; Kab. Sleman
-Rumah Second;23.0;3.0;249.0;117.0;SHM;Godean; Kab. Sleman
-Rumah Second;490.0;2.0;84.0;45.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;29.0;4.0;134.0;154.0;SHM;Gamping; Kab. Sleman
-Rumah Second;582.0;2.0;85.0;46.0;SHM;Berbah; Kab. Sleman
-Rumah Second;15.0;3.0;104.0;120.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;48.0;4.0;252.0;250.0;HGB;Mlati; Kab. Sleman
-Rumah Second;2.0;2.0;174.0;100.0;SHM;Mlati; Kab. Sleman
-Rumah Second;15.0;4.0;131.0;175.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;495.0;2.0;97.0;50.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;410.0;3.0;105.0;105.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;12.0;4.0;170.0;102.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;399.0;2.0;82.0;45.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;22.0;3.0;133.0;95.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;725.0;3.0;72.0;130.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;535.0;2.0;80.0;36.0;SHM;Depok; Kab. Sleman
-Rumah Second;710.0;2.0;88.0;47.0;HGB;Godean; Kab. Sleman
-Rumah Second;12.0;3.0;110.0;125.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;825.0;3.0;99.0;66.0;SHM;Depok; Kab. Sleman
-Rumah Second;875.0;3.0;131.0;70.0;SHM;Mlati; Kab. Sleman
-Rumah Second;18.0;3.0;150.0;104.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;23.0;4.0;150.0;250.0;SHM;Godean; Kab. Sleman
-Rumah Second;11.0;3.0;107.0;110.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;815.0;3.0;110.0;75.0;SHM;Sleman; Kab. Sleman
-Rumah Second;815.0;3.0;112.0;75.0;SHM;Mlati; Kab. Sleman
-Rumah Second;15.0;4.0;128.0;250.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;11.0;3.0;160.0;110.0;SHM;Depok; Kab. Sleman
-Rumah Second;430.0;2.0;36.0;81.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;13.0;3.0;80.0;120.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;655.0;2.0;107.0;36.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;465.0;2.0;92.0;36.0;SHM;Sleman; Kab. Sleman
-Rumah Second;800.0;3.0;131.0;150.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;489.0;2.0;92.0;36.0;SHM;Mlati; Kab. Sleman
-Rumah Second;46.0;5.0;202.0;250.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;25.0;3.0;176.0;170.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;250.0;2.0;25.0;88.0;SHM;Depok; Kab. Sleman
-Rumah Second;785.0;3.0;112.0;75.0;SHM;Tegalrejo; Kota Yogyakarta
-Rumah Second;45.0;6.0;319.0;405.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;785.0;3.0;112.0;75.0;SHM;Gamping; Kab. Sleman
-Rumah Second;16.0;3.0;88.0;120.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;839.0;2.0;91.0;45.0;SHM;Gamping; Kab. Sleman
-Rumah Second;14.0;3.0;104.0;120.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;585.0;3.0;126.0;75.0;SHM;Bantul; Kab. Bantul
-Rumah Second;785.0;3.0;108.0;60.0;SHM;Seyegan; Kab. Sleman
-Rumah Second;45.0;6.0;319.0;405.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;650.0;3.0;121.0;85.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;495.0;2.0;112.0;36.0;SHM;Jetis; Kota Yogyakarta
-Rumah Second;23.0;5.0;120.0;150.0;SHM;Sewon; Kab. Bantul
-Rumah Second;12.0;4.0;105.0;95.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;5415.0;2.0;120.0;36.0;SHM;Mlati; Kab. Sleman
-Rumah Second;16.0;4.0;110.0;90.0;SHM;Gamping; Kab. Sleman
-Rumah Second;585.0;2.0;83.0;50.0;HGB;Ngaglik; Kab. Sleman
-Rumah Second;765.0;2.0;108.0;50.0;SHM;Seyegan; Kab. Sleman
-Rumah Second;33.0;3.0;166.0;135.0;HGB;Gedongtengen (Gedong Tengen); Kota Yogyakarta
-Rumah Second;44.0;3.0;260.0;142.0;HGB;Gedongtengen (Gedong Tengen); Kota Yogyakarta
-Rumah Second;21.0;3.0;111.0;107.0;HGB;Gondokusuman; Kota Yogyakarta
-Rumah Second;450.0;4.0;91.0;91.0;SHM;Mergangsan; Kota Yogyakarta
-Rumah Second;520.0;3.0;107.0;75.0;SHM;Bantul; Kab. Bantul
-Rumah Second;570.0;2.0;70.0;40.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;395.0;2.0;94.0;50.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;650.0;2.0;100.0;45.0;SHM;Sleman; Kab. Sleman
-Rumah Second;14.0;4.0;104.0;136.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;800.0;3.0;123.0;73.0;SHM;Jetis; Kota Yogyakarta
-Rumah Second;14.0;3.0;138.0;83.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;623.0;3.0;91.0;60.0;SHM;Depok; Kab. Sleman
-Rumah Second;350.0;2.0;106.0;50.0;SHM;Moyudan; Kab. Sleman
-Rumah Second;199.0;2.0;64.0;26.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;895.0;2.0;84.0;48.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;25.0;6.0;210.0;240.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;395.0;2.0;80.0;45.0;SHM;Gamping; Kab. Sleman
-Rumah Second;199.0;2.0;64.0;26.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;750.0;3.0;130.0;60.0;SHM;Mlati; Kab. Sleman
-Rumah Second;750.0;3.0;109.0;70.0;HGB;Mlati; Kab. Sleman
-Rumah Second;23.0;4.0;123.0;145.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;7989.0;3.0;126.0;90.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;175.0;2.0;60.0;36.0;HGB;Wonosari; Kab. Gunung Kidul
-Rumah Second;550.0;2.0;88.0;45.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;18.0;3.0;121.0;100.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;598.0;2.0;102.0;50.0;SHM;Mlati; Kab. Sleman
-Rumah Second;750.0;3.0;120.0;60.0;SHM;Sleman; Kab. Sleman
-Rumah Second;625.0;2.0;101.0;45.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;480.0;2.0;140.0;50.0;SHM;Berbah; Kab. Sleman
-Rumah Second;25.0;8.0;256.0;350.0;SHM;Kretek; Kab. Bantul
-Rumah Second;3.0;7.0;225.0;400.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;625.0;3.0;91.0;60.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;16.0;3.0;113.0;125.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;550.0;3.0;101.0;80.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;350.0;2.0;88.0;45.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;535.0;2.0;80.0;50.0;SHM;Depok; Kab. Sleman
-Rumah Second;16.0;5.0;154.0;320.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;750.0;2.0;119.0;100.0;SHM;Mantrijeron; Kota Yogyakarta
-Rumah Second;19.0;5.0;142.0;190.0;SHM;Godean; Kab. Sleman
-Rumah Second;12.0;3.0;148.0;90.0;SHM;Godean; Kab. Sleman
-Rumah Second;15.0;4.0;131.0;120.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;460.0;3.0;98.0;60.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;11.0;3.0;108.0;80.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;13.0;4.0;207.0;160.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;650.0;3.0;104.0;70.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;550.0;2.0;89.0;51.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;27.0;4.0;100.0;80.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;775.0;3.0;106.0;70.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;800.0;3.0;123.0;73.0;SHM;Gamping; Kab. Sleman
-Rumah Second;398.0;2.0;107.0;36.0;SHM;Seyegan; Kab. Sleman
-Rumah Second;485.0;2.0;80.0;45.0;SHM;Sewon; Kab. Bantul
-Rumah Second;800.0;3.0;123.0;73.0;SHM;Godean; Kab. Sleman
-Rumah Second;470.0;2.0;80.0;40.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;26.0;2.0;354.0;234.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;750.0;2.0;100.0;50.0;SHM;Sleman; Kab. Sleman
-Rumah Second;597.0;2.0;78.0;45.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;220.0;1.0;60.0;21.0;SHM;Berbah; Kab. Sleman
-Rumah Second;453.0;2.0;80.0;40.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;400.0;2.0;45.0;36.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;563.0;2.0;78.0;45.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;580.0;2.0;78.0;45.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;775.0;2.0;110.0;54.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;490.0;2.0;77.0;45.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;550.0;2.0;125.0;80.0;SHM;Seyegan; Kab. Sleman
-Rumah Second;625.0;2.0;124.0;70.0;SHM;Berbah; Kab. Sleman
-Rumah Second;850.0;3.0;300.0;200.0;SHM;Semanu; Kab. Gunung Kidul
-Rumah Second;495.0;2.0;112.0;36.0;SHM;Mlati; Kab. Sleman
-Rumah Second;475.0;2.0;77.0;45.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;5501.0;2.0;125.0;80.0;SHM;Mlati; Kab. Sleman
-Rumah Second;875.0;3.0;107.0;70.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;750.0;3.0;210.0;170.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;660.0;3.0;78.0;104.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;375.0;2.0;80.0;45.0;SHM;Mantrijeron; Kota Yogyakarta
-Rumah Second;625.0;3.0;100.0;70.0;SHM;Godean; Kab. Sleman
-Rumah Second;290.0;2.0;60.0;30.0;HGB;Bantul; Kab. Bantul
-Rumah Second;583.0;2.0;86.0;46.0;SHM;Berbah; Kab. Sleman
-Rumah Second;650.0;3.0;126.0;108.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;525.0;2.0;129.0;75.0;SHM;Gamping; Kab. Sleman
-Rumah Second;79.0;6.0;305.0;280.0;HGB;Umbulharjo; Kota Yogyakarta
-Rumah Second;21.0;4.0;150.0;160.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;535.0;3.0;90.0;60.0;SHM;Sleman; Kab. Sleman
-Rumah Second;275.0;2.0;60.0;40.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;750.0;3.0;95.0;80.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;680.0;3.0;97.0;65.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;54.0;5.0;482.0;700.0;SHM;Depok; Kab. Sleman
-Rumah Second;477.0;2.0;93.0;60.0;SHM;Jetis; Kab. Bantul
-Rumah Second;520.0;3.0;107.0;70.0;SHM;Bantul; Kab. Bantul
-Rumah Second;453.0;3.0;88.0;50.0;SHM;Sleman; Kab. Sleman
-Rumah Second;18.0;4.0;630.0;400.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;18.0;2.0;683.0;300.0;SHM;Pakem; Kab. Sleman
-Rumah Second;65.0;5.0;451.0;650.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;68.0;4.0;450.0;350.0;SHM;Gondokusuman; Kota Yogyakarta
-Rumah Second;350.0;2.0;60.0;36.0;SHM;Moyudan; Kab. Sleman
-Rumah Second;25.0;3.0;446.0;161.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;16.0;3.0;120.0;218.0;SHM;Gamping; Kab. Sleman
-Rumah Second;450.0;2.0;100.0;55.0;SHM;Wirobrajan; Kota Yogyakarta
-Rumah Second;720.0;2.0;92.0;51.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;350.0;2.0;84.0;36.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;3.0;4.0;262.0;250.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;535.0;3.0;90.0;55.0;SHM;Sleman; Kab. Sleman
-Rumah Second;299.0;2.0;60.0;30.0;HGB;Godean; Kab. Sleman
-Rumah Second;925.0;3.0;90.0;45.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;11.0;3.0;90.0;72.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;3.0;2.0;280.0;150.0;SHM;Mantrijeron; Kota Yogyakarta
-Rumah Second;585.0;3.0;112.0;55.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;70.0;2.0;65.0;30.0;SHM;Wates; Kab. Kulon Progo
-Rumah Second;810.0;3.0;124.0;90.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;5.0;6.0;470.0;320.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;13.0;5.0;125.0;150.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;45.0;3.0;551.0;250.0;SHM;Depok; Kab. Sleman
-Rumah Second;475.0;2.0;66.0;40.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;390.0;2.0;78.0;71.0;SHM;Mantrijeron; Kota Yogyakarta
-Rumah Second;650.0;3.0;180.0;110.0;SHM;Sewon; Kab. Bantul
-Rumah Second;769.0;3.0;130.0;60.0;SHM;Mlati; Kab. Sleman
-Rumah Second;690.0;2.0;121.0;50.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;16.0;3.0;110.0;128.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;2.0;4.0;104.0;120.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;520.0;2.0;81.0;50.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;19.0;6.0;125.0;140.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;11.0;4.0;120.0;130.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;675.0;3.0;90.0;59.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;258.0;2.0;70.0;30.0;SHM;Berbah; Kab. Sleman
-Rumah Second;16.0;4.0;201.0;150.0;SHM;Sewon; Kab. Bantul
-Rumah Second;725.0;3.0;99.0;75.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;11.0;4.0;100.0;108.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;730.0;3.0;121.0;85.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;210.0;2.0;60.0;30.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;950.0;3.0;90.0;66.0;SHM;Gondokusuman; Kota Yogyakarta
-Rumah Second;455.0;2.0;75.0;55.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;950.0;3.0;118.0;138.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;38.0;5.0;472.0;220.0;SHM;Pakem; Kab. Sleman
-Rumah Second;735.0;3.0;108.0;82.0;SHM;Berbah; Kab. Sleman
-Rumah Second;530.0;2.0;90.0;50.0;SHM;Seyegan; Kab. Sleman
-Rumah Second;14.0;4.0;116.0;140.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;5607.0;3.0;103.0;55.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;450.0;2.0;75.0;40.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;535.0;2.0;80.0;36.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;23.0;4.0;130.0;155.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;585.0;3.0;103.0;55.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;593.0;2.0;90.0;36.0;SHM;Depok; Kab. Sleman
-Rumah Second;555.0;3.0;105.0;65.0;SHM;Godean; Kab. Sleman
-Rumah Second;995.0;3.0;103.0;100.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;592.0;2.0;90.0;36.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;16.0;3.0;130.0;130.0;SHM;Depok; Kab. Sleman
-Rumah Second;995.0;3.0;103.0;100.0;SHM;Gondokusuman; Kota Yogyakarta
-Rumah Second;640.0;2.0;95.0;50.0;SHM;Mlati; Kab. Sleman
-Rumah Second;899.0;4.0;126.0;176.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;14.0;3.0;161.0;100.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;27.0;4.0;765.0;200.0;SHM;Depok; Kab. Sleman
-Rumah Second;968.0;3.0;105.0;60.0;SHM;Godean; Kab. Sleman
-Rumah Second;11.0;3.0;118.0;120.0;SHM;Depok; Kab. Sleman
-Rumah Baru;260.0;2.0;102.0;52.5;HGB;Wonosari; Kab. Gunung Kidul
-Rumah Second;680.0;2.0;91.0;50.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;13.0;3.0;1120.0;218.0;SHM;Gamping; Kab. Sleman
-Rumah Second;898.0;3.0;90.0;65.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;592.0;2.0;90.0;36.0;SHM;Kotagede; Kota Yogyakarta
-Rumah Second;14.0;2.0;683.0;500.0;SHM;Pakem; Kab. Sleman
-Rumah Second;27.0;5.0;768.0;700.0;SHM;Mantrijeron; Kota Yogyakarta
-Rumah Second;17.0;3.0;134.0;200.0;SHM;Depok; Kab. Sleman
-Rumah Second;16.0;3.0;100.0;108.0;SHM;Godean; Kab. Sleman
-Rumah Second;550.0;3.0;91.0;60.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;45.0;5.0;600.0;500.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;1.0;3.0;114.0;95.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;4.0;7.0;180.0;240.0;SHM;Kraton; Kota Yogyakarta
-Rumah Second;13.0;4.0;136.0;136.0;SHM;Sewon; Kab. Bantul
-Rumah Second;11.0;4.0;251.0;80.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;2.0;3.0;161.0;200.0;SHM;Sewon; Kab. Bantul
-Rumah Second;775.0;3.0;120.0;70.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;1.0;4.0;112.0;160.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;850.0;3.0;149.0;65.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;33.0;4.0;711.0;255.0;SHM;Sleman; Kab. Sleman
-Rumah Second;593.0;2.0;102.0;50.0;SHM;Mlati; Kab. Sleman
-Rumah Second;4955.0;2.0;112.0;36.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;690.0;3.0;100.0;60.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;2.0;4.0;155.0;138.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;650.0;4.0;107.0;150.0;SHM;Sewon; Kab. Bantul
-Rumah Second;594.0;2.0;104.0;50.0;SHM;Depok; Kab. Sleman
-Rumah Second;833.0;2.0;108.0;76.0;SHM;Gamping; Kab. Sleman
-Rumah Second;498.0;2.0;112.0;36.0;SHM;Sleman; Kab. Sleman
-Rumah Second;1.0;3.0;230.0;165.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;750.0;2.0;100.0;50.0;SHM;Depok; Kab. Sleman
-Rumah Second;390.0;2.0;78.0;40.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;11.0;2.0;98.0;70.0;SHM;Mlati; Kab. Sleman
-Rumah Second;11.0;3.0;173.0;173.0;SHM;Imogiri; Kab. Bantul
-Rumah Second;37.0;4.0;305.0;195.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;2.0;4.0;271.0;250.0;SHM;Depok; Kab. Sleman
-Rumah Second;975.0;2.0;207.0;90.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;14.0;6.0;160.0;262.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;13.0;3.0;113.0;120.0;SHM;Umbulharjo; Kota Yogyakarta
-Rumah Second;22.0;14.0;193.0;103.0;SHM;Depok; Kab. Sleman
-Rumah Second;350.0;2.0;36.0;60.0;HGB;Moyudan; Kab. Sleman
-Rumah Second;17.0;4.0;121.0;250.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;11.0;5.0;144.0;200.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;6.0;13.0;355.0;500.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;500.0;2.0;120.0;45.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;22.0;3.0;245.0;200.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;985.0;3.0;96.0;82.0;SHM;Gamping; Kab. Sleman
-Rumah Second;350.0;2.0;36.0;60.0;HGB;Pleret; Kab. Bantul
-Rumah Second;399.0;2.0;81.0;45.0;SHM;Godean; Kab. Sleman
-Rumah Second;398.0;2.0;80.0;45.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;495.0;1.0;80.0;36.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;21.0;4.0;219.0;185.0;SHM;Sewon; Kab. Bantul
-Rumah Second;14.0;3.0;121.0;100.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;500.0;3.0;147.0;65.0;SHM;Sewon; Kab. Bantul
-Rumah Second;498.0;2.0;112.0;36.0;SHM;Mlati; Kab. Sleman
-Rumah Second;26.0;3.0;163.0;142.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;385.0;2.0;137.0;75.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;485.0;2.0;83.0;45.0;SHM;Bantul; Kab. Bantul
-Rumah Second;750.0;4.0;100.0;95.0;SHM;Sewon; Kab. Bantul
-Rumah Second;17.0;3.0;119.0;119.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;770.0;3.0;141.0;150.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;985.0;3.0;145.0;85.0;SHM;Berbah; Kab. Sleman
-Rumah Second;545.0;3.0;100.0;45.0;SHM;Berbah; Kab. Sleman
-Rumah Second;825.0;3.0;99.0;66.0;SHM;Gondokusuman; Kota Yogyakarta
-Rumah Second;375.0;2.0;76.0;36.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;35.0;13.0;232.0;260.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;32.0;4.0;190.0;200.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;49.0;5.0;262.0;300.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;785.0;3.0;110.0;75.0;SHM;Jetis; Kota Yogyakarta
-Rumah Second;840.0;3.0;91.0;90.0;SHM;Depok; Kab. Sleman
-Rumah Second;395.0;2.0;80.0;45.0;SHM;Bantul; Kab. Bantul
-Rumah Second;32.0;5.0;158.0;180.0;SHM;Sleman; Kab. Sleman
-Rumah Second;600.0;2.0;120.0;55.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;550.0;3.0;124.0;58.0;SHM;Mlati; Kab. Sleman
-Rumah Second;35.0;6.0;1038.0;600.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;2.0;3.0;240.0;150.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;28.0;3.0;192.0;111.0;SHM;Tegalrejo; Kota Yogyakarta
-Rumah Second;32.0;5.0;158.0;180.0;SHM;Mlati; Kab. Sleman
-Rumah Second;698.0;2.0;106.0;55.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;485.0;2.0;90.0;45.0;SHM;Gamping; Kab. Sleman
-Rumah Second;265.0;2.0;60.0;36.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;68.0;6.0;843.0;450.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;350.0;2.0;105.0;50.0;SHM;Moyudan; Kab. Sleman
-Rumah Second;99.0;4.0;682.0;150.0;SHM;Depok; Kab. Sleman
-Rumah Second;463.0;2.0;92.0;36.0;SHM;Mlati; Kab. Sleman
-Rumah Second;17.0;20.0;1250.0;871.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;968.0;3.0;105.0;60.0;HGB;Godean; Kab. Sleman
-Rumah Second;39.0;6.0;296.0;288.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;15.0;3.0;110.0;80.0;SHM;Depok; Kab. Sleman
-Rumah Second;575.0;3.0;101.0;80.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;27.0;4.0;150.0;190.0;SHM;Depok; Kab. Sleman
-Rumah Second;850.0;3.0;120.0;60.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;815.0;3.0;112.0;75.0;SHM;Gondokusuman; Kota Yogyakarta
-Rumah Second;850.0;3.0;92.0;80.0;SHM;Depok; Kab. Sleman
-Rumah Second;17.0;4.0;160.0;119.0;SHM;Depok; Kab. Sleman
-Rumah Second;859.0;3.0;126.0;69.0;HGB;Kasihan; Kab. Bantul
-Rumah Second;12.0;4.0;90.0;170.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;485.0;2.0;80.0;36.0;SHM;Depok; Kab. Sleman
-Rumah Second;6665.0;2.0;102.0;50.0;SHM;Sleman; Kab. Sleman
-Rumah Second;15.0;3.0;110.0;90.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;875.0;3.0;121.0;138.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;35.0;5.0;334.0;135.0;SHM;Mlati; Kab. Sleman
-Rumah Second;748.0;2.0;103.0;65.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;23.0;4.0;149.0;175.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;695.0;2.0;80.0;45.0;SHM;Depok; Kab. Sleman
-Rumah Second;11.0;3.0;111.0;90.0;SHM;Depok; Kab. Sleman
-Rumah Second;620.0;2.0;85.0;45.0;SHM;Gamping; Kab. Sleman
-Rumah Second;800.0;11.0;79.0;148.0;SHM;Umbulharjo; Kota Yogyakarta
-Rumah Second;57.0;19.0;976.0;786.0;SHM;Depok; Kab. Sleman
-Rumah Second;19.0;5.0;144.0;120.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;46.0;5.0;307.0;300.0;HGB;Gamping; Kab. Sleman
-Rumah Second;13.0;3.0;88.0;125.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;455.0;2.0;81.0;36.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;13.0;3.0;116.0;130.0;SHM;Depok; Kab. Sleman
-Rumah Second;380.0;3.0;100.0;60.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;65.0;9.0;2360.0;1000.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;497.0;2.0;84.0;47.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;250.0;2.0;71.0;30.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;785.0;3.0;123.0;73.0;SHM;Godean; Kab. Sleman
-Rumah Second;785.0;3.0;123.0;73.0;SHM;Gamping; Kab. Sleman
-Rumah Second;725.0;3.0;114.0;71.0;SHM;Depok; Kab. Sleman
-Rumah Second;7255.0;3.0;114.0;70.0;SHM;Godean; Kab. Sleman
-Rumah Second;375.0;2.0;80.0;30.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;375.0;2.0;80.0;30.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;825.0;3.0;126.0;70.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;552.0;3.0;124.0;58.0;SHM;Seyegan; Kab. Sleman
-Rumah Second;99.0;5.0;478.0;300.0;SHM;Sleman; Kab. Sleman
-Rumah Second;463.0;2.0;92.0;36.0;SHM;Sleman; Kab. Sleman
-Rumah Second;395.0;2.0;78.0;36.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;629.0;3.0;102.0;53.0;SHM;Mlati; Kab. Sleman
-Rumah Second;12.0;6.0;140.0;130.0;SHM;Bantul; Kab. Bantul
-Rumah Second;16.0;3.0;130.0;130.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;398.0;2.0;84.0;36.0;SHM;Sleman; Kab. Sleman
-Rumah Second;460.0;2.0;85.0;50.0;SHM;Godean; Kab. Sleman
-Rumah Second;720.0;2.0;90.0;50.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;18.0;3.0;120.0;92.0;SHM;Gamping; Kab. Sleman
-Rumah Second;460.0;2.0;83.0;50.0;SHM;Godean; Kab. Sleman
-Rumah Second;4152.0;2.0;83.0;45.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;799.0;3.0;124.0;80.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;13.0;5.0;251.0;200.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;450.0;2.0;77.0;45.0;SHM;Umbulharjo; Kota Yogyakarta
-Rumah Second;875.0;3.0;137.0;90.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;18.0;3.0;135.0;110.0;SHM;Depok; Kab. Sleman
-Rumah Second;600.0;3.0;117.0;70.0;SHM;Gamping; Kab. Sleman
-Rumah Second;14.0;3.0;108.0;135.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;14.0;9.0;970.0;725.0;SHM;Depok; Kab. Sleman
-Rumah Second;775.0;3.0;124.0;80.0;SHM;Godean; Kab. Sleman
-Rumah Second;550.0;3.0;126.0;60.0;SHM;Seyegan; Kab. Sleman
-Rumah Second;795.0;3.0;128.0;70.0;SHM;Mlati; Kab. Sleman
-Rumah Second;375.0;2.0;60.0;36.0;SHM;Moyudan; Kab. Sleman
-Rumah Second;8255.0;3.0;126.0;70.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;23.0;4.0;169.0;200.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;4.0;4.0;700.0;245.0;SHM;Godean; Kab. Sleman
-Rumah Second;825.0;3.0;126.0;75.0;SHM;Mlati; Kab. Sleman
-Rumah Second;258.0;2.0;70.0;30.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;357.0;2.0;103.0;36.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;12.0;3.0;90.0;130.0;SHM;Depok; Kab. Sleman
-Rumah Second;420.0;2.0;90.0;36.0;SHM;Turi; Kab. Sleman
-Rumah Second;535.0;2.0;80.0;36.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;517.0;2.0;81.0;50.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;900.0;3.0;165.0;65.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;15.0;4.0;104.0;144.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;535.0;2.0;80.0;36.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;12.0;3.0;85.0;85.0;SHM;Sewon; Kab. Bantul
-Rumah Second;32.0;4.0;153.0;180.0;SHM;Mlati; Kab. Sleman
-Rumah Second;399.0;2.0;83.0;45.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;580.0;3.0;126.0;75.0;SHM;Sewon; Kab. Bantul
-Rumah Second;545.0;2.0;86.0;45.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;11.0;3.0;154.0;90.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;25.0;3.0;163.0;130.0;SHM;Sewon; Kab. Bantul
-Rumah Second;675.0;3.0;90.0;50.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;32.0;5.0;158.0;180.0;SHM;Gondokusuman; Kota Yogyakarta
-Rumah Second;750.0;2.0;80.0;40.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;33.0;6.0;120.0;213.0;SHM;Tegalrejo; Kota Yogyakarta
-Rumah Second;625.0;3.0;128.0;64.0;SHM;Gamping; Kab. Sleman
-Rumah Second;515.0;2.0;107.0;41.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;545.0;2.0;85.0;455.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;549.0;2.0;90.0;50.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;536.0;2.0;97.0;45.0;SHM;Depok; Kab. Sleman
-Rumah Second;875.0;2.0;120.0;90.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;14.0;3.0;90.0;88.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;410.0;2.0;80.0;42.0;SHM;Bantul; Kab. Bantul
-Rumah Second;875.0;3.0;99.0;99.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;380.0;2.0;135.0;50.0;SHM;Godean; Kab. Sleman
-Rumah Second;18.0;2.0;683.0;500.0;SHM;Pakem; Kab. Sleman
-Rumah Second;75.0;15.0;534.0;50.0;SHM;Sewon; Kab. Bantul
-Rumah Second;985.0;3.0;104.0;72.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;33.0;6.0;213.0;120.0;SHM;Tegalrejo; Kota Yogyakarta
-Rumah Second;900.0;3.0;135.0;80.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;450.0;2.0;81.0;40.0;SHM;Pajangan; Kab. Bantul
-Rumah Second;4927.0;2.0;70.0;45.0;SHM;Gamping; Kab. Sleman
-Rumah Second;395.0;2.0;80.0;45.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;2475.0;2.0;72.0;36.0;SHM;Playen; Kab. Gunung Kidul
-Rumah Second;400.0;2.0;80.0;45.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;815.0;3.0;110.0;75.0;SHM;Depok; Kab. Sleman
-Rumah Second;575.0;3.0;97.0;56.0;SHM;Depok; Kab. Sleman
-Rumah Second;375.0;2.0;60.0;36.0;HGB;Moyudan; Kab. Sleman
-Rumah Second;342.0;2.0;103.0;36.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;35.0;5.0;135.0;335.0;SHM;Mlati; Kab. Sleman
-Rumah Second;325.0;2.0;95.0;36.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;499.0;2.0;72.0;50.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;5.0;5.0;295.0;400.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;476.0;2.0;112.0;30.0;SHM;Sleman; Kab. Sleman
-Rumah Second;25.0;4.0;250.0;180.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;49.0;5.0;193.0;300.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;4.0;5.0;415.0;300.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;49.0;5.0;262.0;290.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;476.0;2.0;112.0;30.0;SHM;Mlati; Kab. Sleman
-Rumah Second;45.0;6.0;319.0;405.0;SHM;Depok; Kab. Sleman
-Rumah Second;477.0;2.0;112.0;30.0;SHM;Sleman; Kab. Sleman
-Rumah Second;745.0;3.0;98.0;90.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;45.0;21.0;728.0;595.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;480.0;3.0;60.0;52.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;4932.0;2.0;72.0;36.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;22.0;3.0;150.0;336.0;SHM;Gamping; Kab. Sleman
-Rumah Second;475.0;3.0;102.0;60.0;SHM;Mlati; Kab. Sleman
-Rumah Second;810.0;3.0;110.0;75.0;SHM;Mlati; Kab. Sleman
-Rumah Second;815.0;3.0;110.0;75.0;SHM;Godean; Kab. Sleman
-Rumah Second;2.0;4.0;150.0;190.0;SHM;Depok; Kab. Sleman
-Rumah Second;775.0;3.0;120.0;75.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;525.0;3.0;111.0;140.0;SHM;Sleman; Kab. Sleman
-Rumah Second;772.0;3.0;129.0;60.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;665.0;3.0;68.0;85.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;425.0;2.0;70.0;36.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;440.0;2.0;75.0;45.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;900.0;3.0;107.0;121.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;669.0;3.0;153.0;60.0;SHM;Jetis; Kab. Bantul
-Rumah Second;495.0;2.0;87.0;45.0;SHM;Sewon; Kab. Bantul
-Rumah Second;725.0;3.0;96.0;65.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;23.0;5.0;169.0;205.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;335.0;3.0;78.0;78.0;SHM;Sewon; Kab. Bantul
-Rumah Second;999.0;3.0;103.0;100.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;12.0;3.0;347.0;152.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;335.0;2.0;80.0;30.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;150.0;3.0;140.0;89.0;SHM;Lendah; Kab. Kulon Progo
-Rumah Second;28.0;4.0;190.0;200.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;197.0;2.0;28.0;65.0;SHM;Depok; Kab. Sleman
-Rumah Second;885.0;3.0;102.0;75.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;850.0;3.0;80.0;80.0;SHM;Depok; Kab. Sleman
-Rumah Second;900.0;3.0;165.0;64.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;920.0;2.0;107.0;121.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;45.0;6.0;320.0;350.0;SHM;Umbulharjo; Kota Yogyakarta
-Rumah Second;233.0;2.0;60.0;30.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;25.0;5.0;123.0;200.0;SHM;Depok; Kab. Sleman
-Rumah Second;405.0;2.0;95.0;45.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;65.0;6.0;478.0;300.0;HGB;Depok; Kab. Sleman
-Rumah Second;575.0;3.0;104.0;80.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;4384.0;2.0;77.0;40.0;SHM;Gamping; Kab. Sleman
-Rumah Second;625.0;4.0;128.0;250.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;625.0;3.0;90.0;45.0;SHM;Moyudan; Kab. Sleman
-Rumah Second;898.0;3.0;65.0;90.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;500.0;2.0;102.0;45.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;695.0;2.0;89.0;89.0;SHM;Umbulharjo; Kota Yogyakarta
-Rumah Second;785.0;3.0;116.0;75.0;SHM;Godean; Kab. Sleman
-Rumah Second;28.0;3.0;185.0;160.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;950.0;3.0;115.0;95.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;18.0;18.0;138.0;138.0;SHM;Umbulharjo; Kota Yogyakarta
-Rumah Second;368.0;2.0;96.0;38.0;SHM;Gamping; Kab. Sleman
-Rumah Second;500.0;2.0;108.0;42.0;HGB;Gamping; Kab. Sleman
-Rumah Second;35.0;5.0;304.0;258.0;SHM;Mlati; Kab. Sleman
-Rumah Second;810.0;3.0;124.0;85.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;650.0;2.0;100.0;45.0;SHM;Depok; Kab. Sleman
-Rumah Second;760.0;2.0;91.0;50.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;593.0;2.0;103.0;50.0;SHM;Sleman; Kab. Sleman
-Rumah Second;800.0;3.0;112.0;75.0;SHM;Godean; Kab. Sleman
-Rumah Second;279.0;2.0;70.0;36.0;SHM;Berbah; Kab. Sleman
-Rumah Second;279.0;2.0;70.0;36.0;SHM;Depok; Kab. Sleman
-Rumah Second;16.0;3.0;108.0;100.0;SHM;Godean; Kab. Sleman
-Rumah Second;585.0;3.0;112.0;50.0;SHM;Gondokusuman; Kota Yogyakarta
-Rumah Second;595.0;3.0;112.0;50.0;SHM;Mlati; Kab. Sleman
-Rumah Second;240.0;2.0;60.0;40.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;530.0;2.0;60.0;60.0;SHM;Pakem; Kab. Sleman
-Rumah Second;950.0;3.0;145.0;85.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;12.0;3.0;110.0;75.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;925.0;3.0;137.0;100.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;875.0;3.0;121.0;138.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;431.0;2.0;87.0;36.0;SHM;Mlati; Kab. Sleman
-Rumah Second;475.0;3.0;86.0;45.0;SHM;Berbah; Kab. Sleman
-Rumah Second;12.0;3.0;181.0;120.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;16.0;4.0;146.0;135.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;680.0;3.0;97.0;65.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;425.0;2.0;100.0;50.0;SHM;Seyegan; Kab. Sleman
-Rumah Second;395.0;2.0;81.0;36.0;SHM;Sleman; Kab. Sleman
-Rumah Second;18.0;3.0;155.0;212.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;720.0;2.0;92.0;51.0;SHM;Sleman; Kab. Sleman
-Rumah Second;579.0;2.0;105.0;60.0;SHM;Sleman; Kab. Sleman
-Rumah Second;450.0;2.0;82.0;50.0;SHM;Sleman; Kab. Sleman
-Rumah Second;14.0;4.0;428.0;140.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;265.0;2.0;76.0;40.0;SHM;Sleman; Kab. Sleman
-Rumah Second;210.0;1.0;60.0;21.0;SHM;Piyungan; Kab. Bantul
-Rumah Second;385.0;2.0;64.0;40.0;SHM;Bantul; Kab. Bantul
-Rumah Second;378.0;2.0;75.0;50.0;SHM;Bantul; Kab. Bantul
-Rumah Second;4999.0;2.0;96.0;55.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;335.0;2.0;75.0;45.0;SHM;Bantul; Kab. Bantul
-Rumah Second;635.0;3.0;123.0;70.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;280.0;2.0;60.0;30.0;SHM;Bantul; Kab. Bantul
-Rumah Second;11.0;4.0;144.0;200.0;SHM;Umbulharjo; Kota Yogyakarta
-Rumah Second;35.0;12.0;223.0;260.0;SHM;Sleman; Kab. Sleman
-Rumah Second;17.0;3.0;123.0;119.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;295.0;2.0;66.0;36.0;SHM;Jetis; Kab. Bantul
-Rumah Second;19.0;3.0;128.0;188.0;SHM;Depok; Kab. Sleman
-Rumah Second;337.0;2.0;60.0;30.0;SHM;Seyegan; Kab. Sleman
-Rumah Second;600.0;2.0;114.0;40.0;HGB;Kasihan; Kab. Bantul
-Rumah Second;875.0;3.0;145.0;85.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;170.0;2.0;60.0;30.0;HGB;Sedayu; Kab. Bantul
-Rumah Second;750.0;2.0;95.0;80.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;998.0;3.0;103.0;100.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;995.0;3.0;103.0;100.0;SHM;Depok; Kab. Sleman
-Rumah Second;845.0;3.0;116.0;90.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;5425.0;2.0;95.0;50.0;SHM;Godean; Kab. Sleman
-Rumah Second;28.0;28.0;335.0;335.0;SHM;Wirobrajan; Kota Yogyakarta
-Rumah Second;583.0;2.0;85.0;46.0;SHM;Berbah; Kab. Sleman
-Rumah Second;650.0;3.0;211.0;100.0;SHM;Godean; Kab. Sleman
-Rumah Second;490.0;2.0;92.0;36.0;SHM;Mlati; Kab. Sleman
-Rumah Second;584.0;2.0;86.0;46.0;SHM;Mlati; Kab. Sleman
-Rumah Second;299.0;2.0;72.0;36.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;17.0;3.0;232.0;255.0;HGB;Mantrijeron; Kota Yogyakarta
-Rumah Second;18.0;4.0;120.0;200.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;700.0;3.0;125.0;75.0;SHM;Gamping; Kab. Sleman
-Rumah Second;34.0;3.0;402.0;170.0;SHM;Wirobrajan; Kota Yogyakarta
-Rumah Second;551.0;3.0;124.0;58.0;SHM;Sleman; Kab. Sleman
-Rumah Second;815.0;3.0;110.0;75.0;SHM;Mlati; Kab. Sleman
-Rumah Second;561.0;2.0;98.0;36.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;360.0;2.0;105.0;36.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;11.0;4.0;104.0;150.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;18.0;4.0;164.0;190.0;HGB;Mlati; Kab. Sleman
-Rumah Second;550.0;3.0;126.0;58.0;SHM;Mlati; Kab. Sleman
-Rumah Second;510.0;3.0;107.0;65.0;SHM;Jetis; Kab. Bantul
-Rumah Second;635.0;2.0;103.0;57.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;500.0;3.0;107.0;70.0;SHM;Jetis; Kab. Bantul
-Rumah Second;46.0;3.0;180.0;145.0;SHM;Depok; Kab. Sleman
-Rumah Second;44.0;3.0;170.0;145.0;SHM;Depok; Kab. Sleman
-Rumah Second;41.0;3.0;160.0;125.0;SHM;Depok; Kab. Sleman
-Rumah Second;38.0;3.0;142.0;125.0;SHM;Depok; Kab. Sleman
-Rumah Second;33.0;3.0;166.0;135.0;HGB;Mlati; Kab. Sleman
-Rumah Second;21.0;3.0;110.0;107.0;HGB;Mlati; Kab. Sleman
-Rumah Second;23.0;3.0;129.0;126.0;SHM;Depok; Kab. Sleman
-Rumah Second;44.0;3.0;260.0;142.0;HGB;Mlati; Kab. Sleman
-Rumah Second;18.0;3.0;120.0;93.0;SHM;Gamping; Kab. Sleman
-Rumah Second;11.0;3.0;235.0;90.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;275.0;2.0;72.0;50.0;HGB;Sedayu; Kab. Bantul
-Rumah Second;12.0;3.0;185.0;100.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;21.0;3.0;163.0;142.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;29.0;4.0;110.0;146.0;SHM;Mlati; Kab. Sleman
-Rumah Second;299.0;2.0;106.0;36.0;SHM;Seyegan; Kab. Sleman
-Rumah Second;690.0;2.0;80.0;43.0;HGB;Godean; Kab. Sleman
-Rumah Second;800.0;2.0;191.0;191.0;SHM;Pakem; Kab. Sleman
-Rumah Second;105.0;8.0;1289.0;607.0;SHM;Sleman; Kab. Sleman
-Rumah Second;17.0;5.0;131.0;150.0;HGB;Gamping; Kab. Sleman
-Rumah Second;14.0;3.0;865.0;200.0;SHM;Pengasih; Kab. Kulon Progo
-Rumah Second;520.0;3.0;107.0;65.0;SHM;Jetis; Kab. Bantul
-Rumah Second;700.0;2.0;89.0;60.0;SHM;Gamping; Kab. Sleman
-Rumah Second;17.0;6.0;198.0;250.0;SHM;Godean; Kab. Sleman
-Rumah Second;315.0;2.0;72.0;45.0;SHM;Bantul; Kab. Bantul
-Rumah Second;590.0;3.0;97.0;70.0;SHM;Sleman; Kab. Sleman
-Rumah Second;454.0;2.0;73.0;40.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;576.0;3.0;105.0;50.0;SHM;Tegalrejo; Kota Yogyakarta
-Rumah Second;210.0;2.0;60.0;30.0;SHM;Pajangan; Kab. Bantul
-Rumah Second;570.0;3.0;111.0;55.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;5005.0;2.0;100.0;45.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;185.0;2.0;267.0;120.0;SHM;Karangmojo; Kab. Gunung Kidul
-Rumah Second;44.0;6.0;318.0;405.0;SHM;Depok; Kab. Sleman
-Rumah Second;550.0;2.0;124.0;60.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;890.0;3.0;102.0;70.0;HGB;Ngaglik; Kab. Sleman
-Rumah Second;270.0;2.0;80.0;40.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;665.0;3.0;97.0;60.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;499.0;2.0;107.0;43.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;575.0;3.0;97.0;56.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;45.0;6.0;319.0;405.0;SHM;Kraton; Kota Yogyakarta
-Rumah Second;550.0;3.0;124.0;56.0;SHM;Godean; Kab. Sleman
-Rumah Second;550.0;3.0;124.0;58.0;SHM;Seyegan; Kab. Sleman
-Rumah Second;825.0;3.0;99.0;66.0;SHM;Gondomanan; Kota Yogyakarta
-Rumah Second;650.0;3.0;90.0;65.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;17.0;3.0;117.0;119.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;550.0;3.0;126.0;58.0;SHM;Gamping; Kab. Sleman
-Rumah Second;826.0;3.0;126.0;70.0;SHM;Mlati; Kab. Sleman
-Rumah Second;497.0;2.0;50.0;81.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;32.0;4.0;158.0;180.0;HGB;Sleman; Kab. Sleman
-Rumah Second;850.0;4.0;114.0;100.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;27.0;5.0;765.0;200.0;SHM;Depok; Kab. Sleman
-Rumah Second;12.0;4.0;135.0;88.0;HGB;Gamping; Kab. Sleman
-Rumah Second;240.0;2.0;63.0;36.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;23.0;3.0;129.0;126.0;HGB;Depok; Kab. Sleman
-Rumah Second;535.0;1.0;90.0;60.0;SHM;Sleman; Kab. Sleman
-Rumah Second;15.0;7.0;228.0;300.0;SHM;Sewon; Kab. Bantul
-Rumah Second;355.0;1.0;70.0;36.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;350.0;2.0;139.0;50.0;SHM;Sewon; Kab. Bantul
-Rumah Second;300.0;2.0;72.0;36.0;SHM;Playen; Kab. Gunung Kidul
-Rumah Second;950.0;3.0;145.0;85.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;917.0;2.0;100.0;45.0;SHM;Sewon; Kab. Bantul
-Rumah Second;799.0;3.0;126.0;90.0;SHM;Depok; Kab. Sleman
-Rumah Second;775.0;3.0;130.0;80.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;18.0;3.0;102.0;138.0;SHM;Mlati; Kab. Sleman
-Rumah Second;650.0;2.0;95.0;95.0;SHM;Gamping; Kab. Sleman
-Rumah Second;185.0;2.0;60.0;27.0;SHM;Bantul; Kab. Bantul
-Rumah Second;580.0;3.0;100.0;85.0;SHM;Mlati; Kab. Sleman
-Rumah Second;18.0;4.0;122.0;130.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;552.0;3.0;107.0;48.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;490.0;2.0;137.0;45.0;SHM;Seyegan; Kab. Sleman
-Rumah Second;14.0;3.0;141.0;100.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;475.0;2.0;88.0;75.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;5415.0;2.0;120.0;36.0;SHM;Sleman; Kab. Sleman
-Rumah Second;9999.0;3.0;154.0;120.0;SHM;Gamping; Kab. Sleman
-Rumah Second;15.0;3.0;189.0;200.0;SHM;Sewon; Kab. Bantul
-Rumah Second;2.0;3.0;163.0;120.0;SHM;Mlati; Kab. Sleman
-Rumah Second;39.0;6.0;297.0;288.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;350.0;2.0;104.0;50.0;SHM;Moyudan; Kab. Sleman
-Rumah Second;550.0;2.0;111.0;111.0;SHM;Pundong; Kab. Bantul
-Rumah Second;37.0;6.0;220.0;330.0;SHM;Depok; Kab. Sleman
-Rumah Second;180.0;3.0;114.0;125.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;14.0;3.0;100.0;80.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;21.0;10.0;96.0;250.0;SHM;Depok; Kab. Sleman
-Rumah Second;700.0;2.0;75.0;75.0;SHM;Depok; Kab. Sleman
-Rumah Second;395.0;2.0;86.0;36.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;725.0;4.0;102.0;139.0;SHM;Sleman; Kab. Sleman
-Rumah Second;16.0;3.0;93.0;70.0;SHM;Gamping; Kab. Sleman
-Rumah Second;470.0;2.0;107.0;50.0;SHM;Seyegan; Kab. Sleman
-Rumah Second;690.0;2.0;90.0;51.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;590.0;2.0;113.0;45.0;SHM;Berbah; Kab. Sleman
-Rumah Second;733.0;2.0;92.0;42.0;SHM;Gamping; Kab. Sleman
-Rumah Second;375.0;2.0;80.0;45.0;SHM;Pandak; Kab. Bantul
-Rumah Second;355.0;2.0;75.0;45.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;335.0;2.0;70.0;36.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;380.0;2.0;86.0;40.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;500.0;2.0;106.0;36.0;SHM;Seyegan; Kab. Sleman
-Rumah Second;650.0;2.0;1000.0;60.0;SHM;Lendah; Kab. Kulon Progo
-Rumah Second;12.0;6.0;163.0;220.0;SHM;Gamping; Kab. Sleman
-Rumah Second;835.0;3.0;124.0;73.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;12.0;4.0;120.0;121.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;65.0;4.0;557.0;450.0;SHM;Depok; Kab. Sleman
-Rumah Second;950.0;4.0;117.0;140.0;SHM;Depok; Kab. Sleman
-Rumah Second;550.0;4.0;90.0;114.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;1.0;3.0;85.0;85.0;SHM;Sewon; Kab. Bantul
-Rumah Second;450.0;2.0;101.0;70.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;18.0;3.0;125.0;130.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;35.0;5.0;310.0;250.0;SHM;Kotagede; Kota Yogyakarta
-Rumah Second;12.0;2.0;108.0;50.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;850.0;2.0;85.0;55.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;680.0;3.0;80.0;112.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;18.0;5.0;256.0;150.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;16.0;5.0;150.0;100.0;SHM;Depok; Kab. Sleman
-Rumah Second;620.0;6.0;75.0;100.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;28.0;10.0;250.0;200.0;SHM;Depok; Kab. Sleman
-Rumah Second;7.0;5.0;599.0;380.0;SHM;Mlati; Kab. Sleman
-Rumah Second;15.0;2.0;60.0;120.0;SHM;Kraton; Kota Yogyakarta
-Rumah Second;18.0;1.0;164.0;95.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;395.0;2.0;92.0;50.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;25.0;4.0;357.0;400.0;SHM;Piyungan; Kab. Bantul
-Rumah Second;18.0;3.0;232.0;200.0;SHM;Umbulharjo; Kota Yogyakarta
-Rumah Second;780.0;5.0;143.0;135.0;SHM;Sleman; Kab. Sleman
-Rumah Second;13.0;3.0;122.0;140.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;840.0;3.0;80.0;140.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;14.0;3.0;278.0;150.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;545.0;3.0;110.0;60.0;SHM;Godean; Kab. Sleman
-Rumah Second;258.0;2.0;70.0;30.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;65.0;6.0;450.0;400.0;SHM;Depok; Kab. Sleman
-Rumah Second;28.0;5.0;254.0;350.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;35.0;6.0;220.0;320.0;SHM;Depok; Kab. Sleman
-Rumah Second;18.0;3.0;135.0;160.0;SHM;Umbulharjo; Kota Yogyakarta
-Rumah Second;25.0;4.0;110.0;220.0;SHM;Depok; Kab. Sleman
-Rumah Second;550.0;3.0;124.0;58.0;SHM;Sleman; Kab. Sleman
-Rumah Second;4.0;3.0;640.0;350.0;SHM;Gamping; Kab. Sleman
-Rumah Second;18.0;6.0;253.0;240.0;SHM;Depok; Kab. Sleman
-Rumah Second;875.0;2.0;131.0;70.0;SHM;Mlati; Kab. Sleman
-Rumah Second;12.0;5.0;217.0;100.0;SHM;Umbulharjo; Kota Yogyakarta
-Rumah Baru;175.0;2.0;66.0;33.0;HGB;Pandak; Kab. Bantul
-Rumah Second;4965.0;2.0;112.0;36.0;SHM;Umbulharjo; Kota Yogyakarta
-Rumah Second;74.0;8.0;260.0;450.0;SHM;Gamping; Kab. Sleman
-Rumah Second;375.0;2.0;75.0;45.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;725.0;3.0;114.0;71.0;SHM;Jetis; Kota Yogyakarta
-Rumah Second;699.0;3.0;119.0;80.0;SHM;Godean; Kab. Sleman
-Rumah Second;999.0;3.0;103.0;105.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;29.0;4.0;174.0;189.0;SHM;Gamping; Kab. Sleman
-Rumah Second;15.0;5.0;158.0;172.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;620.0;3.0;81.0;50.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;15.0;3.0;111.0;80.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;2002.0;2.0;60.0;30.0;SHM;Moyudan; Kab. Sleman
-Rumah Second;16.0;3.0;111.0;90.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;735.0;3.0;105.0;70.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;16.0;4.0;146.0;164.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;12.0;4.0;90.0;105.0;SHM;Banguntapan; Kab. Bantul
-Rumah Second;375.0;2.0;108.0;45.0;SHM;Sleman; Kab. Sleman
-Rumah Second;450.0;2.0;95.0;36.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;815.0;3.0;112.0;75.0;SHM;Depok; Kab. Sleman
-Rumah Second;14.0;5.0;152.0;112.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;285.0;2.0;66.0;36.0;SHM;Jetis; Kab. Bantul
-Rumah Second;858.0;3.0;132.0;50.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;700.0;2.0;168.0;98.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;275.0;2.0;80.0;30.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;38.0;5.0;472.0;130.0;SHM;Pakem; Kab. Sleman
-Rumah Second;337.0;2.0;60.0;30.0;HGB;Seyegan; Kab. Sleman
-Rumah Second;16.0;3.0;103.0;120.0;SHM;Godean; Kab. Sleman
-Rumah Second;554.0;2.0;84.0;45.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;3746.0;2.0;60.0;40.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;600.0;2.0;53.0;100.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;9713.0;2.0;151.0;76.0;HGB;Gamping; Kab. Sleman
-Rumah Second;925.0;3.0;141.0;100.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;490.0;2.0;72.0;36.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;999.0;3.0;103.0;100.0;SHM;Gondokusuman; Kota Yogyakarta
-Rumah Second;435.0;2.0;45.0;98.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;101.0;4.0;281.0;275.0;SHM;Depok; Kab. Sleman
-Rumah Second;93.0;4.0;235.0;275.0;SHM;Depok; Kab. Sleman
-Rumah Second;93.0;4.0;234.0;275.0;SHM;Depok; Kab. Sleman
-Rumah Second;93.0;4.0;233.0;275.0;SHM;Depok; Kab. Sleman
-Rumah Baru;270.0;2.0;84.0;45.0;HGB;Playen; Kab. Gunung Kidul
-Rumah Baru;12.0;3.0;126.0;80.0;HGB;Kasihan; Kab. Bantul
-Rumah Second;485.0;2.0;80.0;36.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;197.0;2.0;64.0;26.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;280.0;2.0;61.0;35.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;765.0;2.0;108.0;50.0;SHM;Godean; Kab. Sleman
-Rumah Second;388.0;2.0;40.0;81.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;592.0;2.0;90.0;36.0;SHM;Depok; Kab. Sleman
-Rumah Second;670.0;2.0;130.0;50.0;SHM;Mlati; Kab. Sleman
-Rumah Second;285.0;2.0;93.0;36.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;725.0;4.0;140.0;100.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;629.0;3.0;118.0;52.0;SHM;Mlati; Kab. Sleman
-Rumah Second;350.0;2.0;100.0;36.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;425.0;2.0;77.0;77.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;375.0;2.0;70.0;40.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;625.0;2.0;100.0;43.0;SHM;Godean; Kab. Sleman
-Rumah Second;260.0;2.0;76.0;40.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;17.0;5.0;200.0;150.0;SHM;Depok; Kab. Sleman
-Rumah Second;375.0;2.0;72.0;60.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;18.0;3.0;125.0;150.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;765.0;3.0;105.0;70.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;2.0;3.0;114.0;125.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;730.0;2.0;108.0;50.0;SHM;Seyegan; Kab. Sleman
-Rumah Second;650.0;2.0;100.0;45.0;SHM;Mlati; Kab. Sleman
-Rumah Second;185.0;2.0;60.0;27.0;SHM;Jetis; Kab. Bantul
-Rumah Second;14.0;4.0;104.0;140.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;16.0;4.0;120.0;142.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;950.0;3.0;145.0;85.0;SHM;Depok; Kab. Sleman
-Rumah Second;890.0;3.0;102.0;70.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;385.0;2.0;36.0;80.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;28.0;2.0;153.0;300.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;575.0;2.0;73.0;73.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;700.0;3.0;99.0;75.0;SHM;Sleman; Kab. Sleman
-Rumah Second;480.0;3.0;60.0;62.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;299.0;2.0;60.0;30.0;SHM;Seyegan; Kab. Sleman
-Rumah Second;15.0;3.0;121.0;100.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;15.0;4.0;118.0;160.0;SHM;Depok; Kab. Sleman
-Rumah Second;275.0;2.0;70.0;36.0;SHM;Sedayu; Kab. Bantul
-Rumah Second;13.0;3.0;175.0;166.0;SHM;Godean; Kab. Sleman
-Rumah Second;495.0;2.0;120.0;55.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;398.0;2.0;80.0;36.0;SHM;Sleman; Kab. Sleman
-Rumah Second;2.0;4.0;119.0;126.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;925.0;2.0;103.0;100.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;655.0;2.0;118.0;45.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;625.0;2.0;88.0;45.0;HGB;Godean; Kab. Sleman
-Rumah Second;496.0;2.0;111.0;36.0;SHM;Godean; Kab. Sleman
-Rumah Second;250.0;2.0;60.0;40.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;13.0;3.0;134.0;110.0;SHM;Ngaglik; Kab. Sleman
-Rumah Second;480.0;2.0;72.0;36.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;745.0;2.0;119.0;45.0;SHM;Mlati; Kab. Sleman
-Rumah Second;560.0;3.0;115.0;60.0;SHM;Mlati; Kab. Sleman
-Rumah Second;260.0;2.0;60.0;36.0;SHM;Ngemplak; Kab. Sleman
-Rumah Second;545.0;2.0;100.0;45.0;SHM;Kalasan; Kab. Sleman
-Rumah Second;395.0;3.0;98.0;60.0;SHM;Kasihan; Kab. Bantul
-Rumah Second;495.0;2.0;112.0;36.0;SHM;Depok; Kab. Sleman
-Rumah Second;11.0;3.0;109.0;110.0;SHM;Prambanan; Kab. Sleman
-Rumah Second;13.0;2.0;134.0;70.0;SHM;Bantul; Kab. Bantul
+type,price,kamar_tidur,luas_tanah,luas_bangunan,sertifikasi,area,region
+Rumah Second,380.0,2,77,42,SHM,Kalasan,Kab. Sleman
+Rumah Second,1100.0,3,132,90,SHM,Kalasan,Kab. Sleman
+Rumah Second,960.0,3,85,80,SHM,Kasihan,Kab. Bantul
+Rumah Second,480.0,2,97,52,SHM,Prambanan,Kab. Sleman
+Rumah Second,3500.0,3,392,150,SHM,Panjatan,Kab. Kulon Progo
+Rumah Second,1100.0,3,865,225,SHM,Pengasih,Kab. Kulon Progo
+Rumah Second,1200.0,4,207,160,SHM,Kalasan,Kab. Sleman
+Rumah Second,579.0,2,84,46,SHM,Berbah,Kab. Sleman
+Rumah Second,424.0,2,73,40,SHM,Banguntapan,Kab. Bantul
+Rumah Second,510.0,3,105,60,SHM,Pleret,Kab. Bantul
+Rumah Second,535.0,2,80,36,SHM,Sleman,Kab. Sleman
+Rumah Second,1400.0,3,108,130,SHM,Ngaglik,Kab. Sleman
+Rumah Second,330.0,2,78,50,SHM,Piyungan,Kab. Bantul
+Rumah Second,1700.0,3,140,125,SHM,Depok,Kab. Sleman
+Rumah Second,330.0,2,151,62,SHM,Sedayu,Kab. Bantul
+Rumah Second,2200.0,5,188,300,SHM,Ngaglik,Kab. Sleman
+Rumah Second,850.0,3,120,80,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1600.0,3,147,110,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1400.0,3,150,160,HGB,Ngemplak,Kab. Sleman
+Rumah Second,850.0,3,80,70,SHM,Depok,Kab. Sleman
+Rumah Second,2200.0,5,182,177,SHM,Kalasan,Kab. Sleman
+Rumah Second,975.0,4,107,105,SHM,Ngemplak,Kab. Sleman
+Rumah Second,920.0,3,86,160,SHM,Banguntapan,Kab. Bantul
+Rumah Second,1800.0,4,121,136,SHM,Ngaglik,Kab. Sleman
+Rumah Second,585.0,3,112,50,SHM,Sleman,Kab. Sleman
+Rumah Second,1400.0,3,91,93,SHM,Ngaglik,Kab. Sleman
+Rumah Second,250.0,2,60,30,SHM,Pleret,Kab. Bantul
+Rumah Second,1300.0,3,120,218,SHM,Gamping,Kab. Sleman
+Rumah Second,815.0,3,72,90,SHM,Wates,Kab. Kulon Progo
+Rumah Second,525.0,2,106,53,SHM,Tempel,Kab. Sleman
+Rumah Second,2200.0,3,182,231,SHM,Ngaglik,Kab. Sleman
+Rumah Second,3200.0,5,159,180,SHM,Sleman,Kab. Sleman
+Rumah Second,413.0,2,81,40,SHM,Sedayu,Kab. Bantul
+Rumah Second,680.0,3,97,65,SHM,Depok,Kab. Sleman
+Rumah Second,633.0,2,105,59,SHM,Kalasan,Kab. Sleman
+Rumah Second,850.0,3,103,75,SHM,Godean,Kab. Sleman
+Rumah Second,574.0,2,131,40,SHM,Mlati,Kab. Sleman
+Rumah Second,592.0,2,90,36,SHM,Gondomanan,Kota Yogyakarta
+Rumah Second,592.0,2,104,50,SHM,Mlati,Kab. Sleman
+Rumah Second,680.0,2,97,65,SHM,Kalasan,Kab. Sleman
+Rumah Second,1600.0,3,111,90,SHM,Depok,Kab. Sleman
+Rumah Second,2200.0,2,182,177,SHM,Kalasan,Kab. Sleman
+Rumah Second,350.0,2,80,30,SHM,Kalasan,Kab. Sleman
+Rumah Second,1700.0,5,131,150,HGB,Tegalrejo,Kota Yogyakarta
+Rumah Second,495.0,2,84,45,SHM,Sedayu,Kab. Bantul
+Rumah Second,1100.0,2,115,50,SHM,Gamping,Kab. Sleman
+Rumah Second,1100.0,2,142,60,SHM,Gamping,Kab. Sleman
+Rumah Second,1500.0,3,168,130,SHM,Depok,Kab. Sleman
+Rumah Second,900.0,3,98,100,SHM,Banguntapan,Kab. Bantul
+Rumah Second,999.0,4,103,105,SHM,Ngemplak,Kab. Sleman
+Rumah Second,1600.0,4,146,134,SHM,Kalasan,Kab. Sleman
+Rumah Second,1300.0,2,208,90,SHM,Gamping,Kab. Sleman
+Rumah Second,1300.0,5,227,220,SHM,Gamping,Kab. Sleman
+Rumah Second,3200.0,4,159,180,HGB,Sleman,Kab. Sleman
+Rumah Second,999.0,3,101,75,HGB,Banguntapan,Kab. Bantul
+Rumah Second,2600.0,3,306,145,SHM,Berbah,Kab. Sleman
+Rumah Second,2800.0,7,500,350,SHM,Umbulharjo,Kota Yogyakarta
+Rumah Second,390.0,2,82,50,SHM,Berbah,Kab. Sleman
+Rumah Second,399.0,2,75,55,SHM,Banguntapan,Kab. Bantul
+Rumah Second,1400.0,5,141,170,SHM,Banguntapan,Kab. Bantul
+Rumah Second,1000.0,2,85,50,SHM,Depok,Kab. Sleman
+Rumah Second,3700.0,4,176,146,HGB,Mlati,Kab. Sleman
+Rumah Second,495.0,2,112,36,SHM,Sleman,Kab. Sleman
+Rumah Second,598.0,2,102,50,SHM,Depok,Kab. Sleman
+Rumah Second,1100.0,3,134,90,SHM,Ngemplak,Kab. Sleman
+Rumah Second,490.0,2,92,36,SHM,Sleman,Kab. Sleman
+Rumah Second,2800.0,3,192,111,HGB,Tegalrejo,Kota Yogyakarta
+Rumah Second,2200.0,5,150,336,HGB,Gamping,Kab. Sleman
+Rumah Second,775.0,3,106,78,SHM,Kalasan,Kab. Sleman
+Rumah Second,357.0,2,103,36,SHM,Prambanan,Kab. Sleman
+Rumah Second,757.0,2,120,50,SHM,Kalasan,Kab. Sleman
+Rumah Second,175.0,2,67,58,SHM,Mergangsan,Kota Yogyakarta
+Rumah Second,1500.0,3,86,120,SHM,Kalasan,Kab. Sleman
+Rumah Second,560.7,3,112,55,SHM,Kalasan,Kab. Sleman
+Rumah Second,1600.0,4,137,125,SHM,Kalasan,Kab. Sleman
+Rumah Second,3000.0,5,145,225,SHM,Ngemplak,Kab. Sleman
+Rumah Second,999.0,3,103,100,SHM,Depok,Kab. Sleman
+Rumah Second,635.0,3,113,56,SHM,Berbah,Kab. Sleman
+Rumah Second,1300.0,3,88,120,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1200.0,3,146,100,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1800.0,4,150,157,SHM,Ngaglik,Kab. Sleman
+Rumah Second,2200.0,5,150,226,HGB,Gamping,Kab. Sleman
+Rumah Second,1000.0,3,114,95,HGB,Ngaglik,Kab. Sleman
+Rumah Second,2200.0,6,288,243,SHM,Banguntapan,Kab. Bantul
+Rumah Second,1000.0,3,132,90,SHM,Kalasan,Kab. Sleman
+Rumah Second,2700.0,5,765,200,SHM,Ngemplak,Kab. Sleman
+Rumah Second,690.0,3,99,70,SHM,Depok,Kab. Sleman
+Rumah Second,525.0,3,111,140,SHM,Tempel,Kab. Sleman
+Rumah Second,485.0,2,108,42,SHM,Gamping,Kab. Sleman
+Rumah Second,550.0,2,84,70,SHM,Depok,Kab. Sleman
+Rumah Second,3300.0,7,1000,744,SHM,Gondokusuman,Kota Yogyakarta
+Rumah Second,799.0,3,126,90,SHM,Ngemplak,Kab. Sleman
+Rumah Second,1600.0,3,100,108,HGB,Godean,Kab. Sleman
+Rumah Second,499.0,2,120,36,SHM,Sleman,Kab. Sleman
+Rumah Second,1200.0,4,571,220,SHM,Seyegan,Kab. Sleman
+Rumah Second,1800.0,3,150,108,SHM,Ngemplak,Kab. Sleman
+Rumah Second,550.0,3,124,58,SHM,Godean,Kab. Sleman
+Rumah Second,4800.0,6,843,340,SHM,Ngaglik,Kab. Sleman
+Rumah Second,553.0,3,103,70,SHM,Godean,Kab. Sleman
+Rumah Second,4500.0,5,220,230,SHM,Mlati,Kab. Sleman
+Rumah Second,725.0,3,100,75,SHM,Banguntapan,Kab. Bantul
+Rumah Second,1700.0,3,100,108,SHM,Godean,Kab. Sleman
+Rumah Second,3800.0,3,204,142,HGB,Mlati,Kab. Sleman
+Rumah Second,775.0,3,116,85,SHM,Ngemplak,Kab. Sleman
+Rumah Second,200.2,2,60,30,HGB,Moyudan,Kab. Sleman
+Rumah Second,538.0,2,84,46,SHM,Berbah,Kab. Sleman
+Rumah Second,465.0,3,80,45,SHM,Berbah,Kab. Sleman
+Rumah Second,592.0,2,104,50,SHM,Sleman,Kab. Sleman
+Rumah Second,625.0,2,95,70,SHM,Ngemplak,Kab. Sleman
+Rumah Second,1000.0,2,86,65,HGB,Tegalrejo,Kota Yogyakarta
+Rumah Second,4900.0,4,262,300,SHM,Ngaglik,Kab. Sleman
+Rumah Second,375.0,2,72,72,SHM,Kalasan,Kab. Sleman
+Rumah Second,395.0,2,80,45,SHM,Godean,Kab. Sleman
+Rumah Second,5000.0,12,650,900,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1400.0,3,105,90,SHM,Ngaglik,Kab. Sleman
+Rumah Second,720.0,3,100,63,SHM,Kalasan,Kab. Sleman
+Rumah Second,299.0,2,60,30,HGB,Seyegan,Kab. Sleman
+Rumah Second,575.0,3,97,56,SHM,Berbah,Kab. Sleman
+Rumah Second,1700.0,3,188,355,SHM,Tegalrejo,Kota Yogyakarta
+Rumah Second,1400.0,3,109,115,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1400.0,3,110,90,SHM,Ngaglik,Kab. Sleman
+Rumah Second,785.0,3,110,75,SHM,Godean,Kab. Sleman
+Rumah Second,1300.0,3,121,100,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1700.0,4,169,150,SHM,Ngemplak,Kab. Sleman
+Rumah Second,1100.0,4,130,120,SHM,Ngemplak,Kab. Sleman
+Rumah Second,233.0,2,60,30,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1300.0,3,85,122,SHM,Kasihan,Kab. Bantul
+Rumah Second,2100.0,4,177,135,SHM,Ngaglik,Kab. Sleman
+Rumah Second,585.0,3,111,55,SHM,Kalasan,Kab. Sleman
+Rumah Second,650.0,2,79,60,SHM,Banguntapan,Kab. Bantul
+Rumah Second,2200.0,5,182,177,SHM,Sleman,Kab. Sleman
+Rumah Second,575.0,2,96,50,SHM,Ngaglik,Kab. Sleman
+Rumah Second,850.0,3,92,105,SHM,Banguntapan,Kab. Bantul
+Rumah Second,476.0,2,112,36,SHM,Mlati,Kab. Sleman
+Rumah Second,425.0,2,107,55,SHM,Kasihan,Kab. Bantul
+Rumah Second,1500.0,3,94,119,SHM,Depok,Kab. Sleman
+Rumah Second,198.0,2,72,36,SHM,Playen,Kab. Gunung Kidul
+Rumah Second,200.0,2,72,36,SHM,Playen,Kab. Gunung Kidul
+Rumah Second,535.0,2,97,45,SHM,Berbah,Kab. Sleman
+Rumah Second,785.0,3,112,75,SHM,Godean,Kab. Sleman
+Rumah Second,495.0,2,112,36,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1300.0,3,100,100,SHM,Ngemplak,Kab. Sleman
+Rumah Second,785.0,3,110,75,SHM,Mlati,Kab. Sleman
+Rumah Second,433.0,2,82,55,SHM,Sedayu,Kab. Bantul
+Rumah Second,915.0,3,65,160,SHM,Banguntapan,Kab. Bantul
+Rumah Second,1400.0,5,120,200,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1300.0,4,116,140,SHM,Ngemplak,Kab. Sleman
+Rumah Second,200.0,2,60,30,SHM,Moyudan,Kab. Sleman
+Rumah Second,799.0,3,119,95,SHM,Banguntapan,Kab. Bantul
+Rumah Second,1100.0,3,240,90,SHM,Ngemplak,Kab. Sleman
+Rumah Second,395.0,2,106,50,SHM,Kasihan,Kab. Bantul
+Rumah Second,985.0,3,96,52,SHM,Gamping,Kab. Sleman
+Rumah Second,715.0,2,100,65,SHM,Gamping,Kab. Sleman
+Rumah Second,1500.0,4,119,165,SHM,Depok,Kab. Sleman
+Rumah Second,1200.0,4,99,105,SHM,Banguntapan,Kab. Bantul
+Rumah Second,845.0,3,123,75,SHM,Ngemplak,Kab. Sleman
+Rumah Second,1000.0,2,103,103,SHM,Gamping,Kab. Sleman
+Rumah Second,550.0,2,125,80,SHM,Mlati,Kab. Sleman
+Rumah Second,160.0,1,20,18,SHM,Ngaglik,Kab. Sleman
+Rumah Second,799.0,4,126,90,SHM,Ngemplak,Kab. Sleman
+Rumah Second,775.0,3,105,70,SHM,Kalasan,Kab. Sleman
+Rumah Second,380.0,2,84,50,SHM,Pajangan,Kab. Bantul
+Rumah Second,5000.0,7,1000,300,HGB,Gamping,Kab. Sleman
+Rumah Second,550.0,2,88,45,SHM,Depok,Kab. Sleman
+Rumah Second,380.0,2,84,58,SHM,Pajangan,Kab. Bantul
+Rumah Second,585.0,2,112,50,SHM,Sleman,Kab. Sleman
+Rumah Second,18000.0,4,800,600,HGB,Ngaglik,Kab. Sleman
+Rumah Second,1200.0,3,130,100,SHM,Depok,Kab. Sleman
+Rumah Second,4500.0,3,700,700,SHM,Lendah,Kab. Kulon Progo
+Rumah Second,3000.0,24,250,300,SHM,Depok,Kab. Sleman
+Rumah Second,585.0,3,100,56,SHM,Depok,Kab. Sleman
+Rumah Second,5800.0,5,717,500,SHM,Kasihan,Kab. Bantul
+Rumah Second,385.0,2,90,50,SHM,Pajangan,Kab. Bantul
+Rumah Second,1400.0,3,77,100,SHM,Kalasan,Kab. Sleman
+Rumah Second,925.0,4,120,130,SHM,Ngaglik,Kab. Sleman
+Rumah Second,699.0,11,135,150,SHM,Depok,Kab. Sleman
+Rumah Second,245.0,2,75,36,SHM,Kalasan,Kab. Sleman
+Rumah Second,799.0,3,126,90,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1500.0,3,110,80,SHM,Ngemplak,Kab. Sleman
+Rumah Second,799.0,3,120,85,SHM,Ngemplak,Kab. Sleman
+Rumah Second,2200.0,5,150,336,SHM,Gamping,Kab. Sleman
+Rumah Second,760.0,3,109,100,SHM,Ngaglik,Kab. Sleman
+Rumah Second,430.0,2,81,36,SHM,Sedayu,Kab. Bantul
+Rumah Second,600.0,2,112,40,SHM,Kasihan,Kab. Bantul
+Rumah Second,1900.0,3,240,100,SHM,Pakem,Kab. Sleman
+Rumah Second,1400.0,3,201,201,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1400.0,3,77,100,SHM,Sleman,Kab. Sleman
+Rumah Second,367.0,2,60,36,SHM,Godean,Kab. Sleman
+Rumah Second,1400.0,18,450,300,SHM,Umbulharjo,Kota Yogyakarta
+Rumah Baru,200.0,2,64,39,HGB,Patuk,Kab. Gunung Kidul
+Rumah Second,2500.0,4,190,190,SHM,Ngaglik,Kab. Sleman
+Rumah Baru,130.0,2,60,30,HGB,Playen,Kab. Gunung Kidul
+Rumah Second,220.0,1,60,21,SHM,Prambanan,Kab. Sleman
+Rumah Second,425.0,2,100,70,SHM,Seyegan,Kab. Sleman
+Rumah Second,515.0,2,107,43,SHM,Kalasan,Kab. Sleman
+Rumah Second,1800.0,5,240,240,SHM,Godean,Kab. Sleman
+Rumah Second,550.0,2,100,45,SHM,Gamping,Kab. Sleman
+Rumah Second,695.0,3,91,64,SHM,Kotagede,Kota Yogyakarta
+Rumah Second,3800.0,6,1038,600,SHM,Ngaglik,Kab. Sleman
+Rumah Second,500.0,2,103,90,SHM,Kalasan,Kab. Sleman
+Rumah Second,1600.0,4,184,240,SHM,Depok,Kab. Sleman
+Rumah Second,425.0,2,100,36,SHM,Patuk,Kab. Gunung Kidul
+Rumah Second,655.0,3,158,90,SHM,Berbah,Kab. Sleman
+Rumah Second,6800.0,6,843,340,SHM,Ngaglik,Kab. Sleman
+Rumah Second,685.0,3,107,46,SHM,Depok,Kab. Sleman
+Rumah Second,1900.0,3,126,120,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1700.0,3,232,255,SHM,Mantrijeron,Kota Yogyakarta
+Rumah Second,385.0,2,64,40,SHM,Kasihan,Kab. Bantul
+Rumah Second,3900.0,9,330,400,SHM,Banguntapan,Kab. Bantul
+Rumah Second,650.0,8,111,111,SHM,Gamping,Kab. Sleman
+Rumah Second,950.0,2,65,106,SHM,Mlati,Kab. Sleman
+Rumah Second,550.0,3,111,222,SHM,Pundong,Kab. Bantul
+Rumah Second,900.0,4,190,170,SHM,Kalasan,Kab. Sleman
+Rumah Second,1200.0,5,170,260,SHM,Umbulharjo,Kota Yogyakarta
+Rumah Second,1100.0,2,109,109,SHM,Depok,Kab. Sleman
+Rumah Second,500.0,2,103,95,SHM,Kalasan,Kab. Sleman
+Rumah Second,900.0,3,130,80,SHM,Ngaglik,Kab. Sleman
+Rumah Second,630.0,4,150,130,SHM,Gamping,Kab. Sleman
+Rumah Second,2300.0,3,249,117,SHM,Godean,Kab. Sleman
+Rumah Second,490.0,2,84,45,SHM,Sedayu,Kab. Bantul
+Rumah Second,2900.0,4,134,154,SHM,Gamping,Kab. Sleman
+Rumah Second,582.0,2,85,46,SHM,Berbah,Kab. Sleman
+Rumah Second,1500.0,3,104,120,SHM,Ngaglik,Kab. Sleman
+Rumah Second,4800.0,4,252,250,HGB,Mlati,Kab. Sleman
+Rumah Second,2000.0,2,174,100,SHM,Mlati,Kab. Sleman
+Rumah Second,1500.0,4,131,175,SHM,Kalasan,Kab. Sleman
+Rumah Second,495.0,2,97,50,SHM,Banguntapan,Kab. Bantul
+Rumah Second,410.0,3,105,105,SHM,Kasihan,Kab. Bantul
+Rumah Second,1200.0,4,170,102,SHM,Kalasan,Kab. Sleman
+Rumah Second,399.0,2,82,45,SHM,Sedayu,Kab. Bantul
+Rumah Second,2200.0,3,133,95,SHM,Kasihan,Kab. Bantul
+Rumah Second,725.0,3,72,130,SHM,Sedayu,Kab. Bantul
+Rumah Second,535.0,2,80,36,SHM,Depok,Kab. Sleman
+Rumah Second,710.0,2,88,47,HGB,Godean,Kab. Sleman
+Rumah Second,1200.0,3,110,125,SHM,Prambanan,Kab. Sleman
+Rumah Second,825.0,3,99,66,SHM,Depok,Kab. Sleman
+Rumah Second,875.0,3,131,70,SHM,Mlati,Kab. Sleman
+Rumah Second,1800.0,3,150,104,SHM,Ngemplak,Kab. Sleman
+Rumah Second,2300.0,4,150,250,SHM,Godean,Kab. Sleman
+Rumah Second,1100.0,3,107,110,SHM,Prambanan,Kab. Sleman
+Rumah Second,815.0,3,110,75,SHM,Sleman,Kab. Sleman
+Rumah Second,815.0,3,112,75,SHM,Mlati,Kab. Sleman
+Rumah Second,1500.0,4,128,250,SHM,Kasihan,Kab. Bantul
+Rumah Second,1100.0,3,160,110,SHM,Depok,Kab. Sleman
+Rumah Second,430.0,2,36,81,SHM,Sedayu,Kab. Bantul
+Rumah Second,1300.0,3,80,120,SHM,Ngaglik,Kab. Sleman
+Rumah Second,655.0,2,107,36,SHM,Ngaglik,Kab. Sleman
+Rumah Second,465.0,2,92,36,SHM,Sleman,Kab. Sleman
+Rumah Second,800.0,3,131,150,SHM,Kalasan,Kab. Sleman
+Rumah Second,489.0,2,92,36,SHM,Mlati,Kab. Sleman
+Rumah Second,4600.0,5,202,250,SHM,Ngaglik,Kab. Sleman
+Rumah Second,2500.0,3,176,170,SHM,Ngemplak,Kab. Sleman
+Rumah Second,250.0,2,25,88,SHM,Depok,Kab. Sleman
+Rumah Second,785.0,3,112,75,SHM,Tegalrejo,Kota Yogyakarta
+Rumah Second,4500.0,6,319,405,SHM,Ngemplak,Kab. Sleman
+Rumah Second,785.0,3,112,75,SHM,Gamping,Kab. Sleman
+Rumah Second,1600.0,3,88,120,SHM,Ngaglik,Kab. Sleman
+Rumah Second,839.0,2,91,45,SHM,Gamping,Kab. Sleman
+Rumah Second,1400.0,3,104,120,SHM,Ngaglik,Kab. Sleman
+Rumah Second,585.0,3,126,75,SHM,Bantul,Kab. Bantul
+Rumah Second,785.0,3,108,60,SHM,Seyegan,Kab. Sleman
+Rumah Second,4500.0,6,319,405,SHM,Ngaglik,Kab. Sleman
+Rumah Second,650.0,3,121,85,SHM,Kalasan,Kab. Sleman
+Rumah Second,495.0,2,112,36,SHM,Jetis,Kota Yogyakarta
+Rumah Second,2300.0,5,120,150,SHM,Sewon,Kab. Bantul
+Rumah Second,1200.0,4,105,95,SHM,Banguntapan,Kab. Bantul
+Rumah Second,541.5,2,120,36,SHM,Mlati,Kab. Sleman
+Rumah Second,1600.0,4,110,90,SHM,Gamping,Kab. Sleman
+Rumah Second,585.0,2,83,50,HGB,Ngaglik,Kab. Sleman
+Rumah Second,765.0,2,108,50,SHM,Seyegan,Kab. Sleman
+Rumah Second,3300.0,3,166,135,HGB,Gedongtengen (Gedong Tengen),Kota Yogyakarta
+Rumah Second,4400.0,3,260,142,HGB,Gedongtengen (Gedong Tengen),Kota Yogyakarta
+Rumah Second,2100.0,3,111,107,HGB,Gondokusuman,Kota Yogyakarta
+Rumah Second,450.0,4,91,91,SHM,Mergangsan,Kota Yogyakarta
+Rumah Second,520.0,3,107,75,SHM,Bantul,Kab. Bantul
+Rumah Second,570.0,2,70,40,SHM,Ngemplak,Kab. Sleman
+Rumah Second,395.0,2,94,50,SHM,Kalasan,Kab. Sleman
+Rumah Second,650.0,2,100,45,SHM,Sleman,Kab. Sleman
+Rumah Second,1400.0,4,104,136,SHM,Ngaglik,Kab. Sleman
+Rumah Second,800.0,3,123,73,SHM,Jetis,Kota Yogyakarta
+Rumah Second,1400.0,3,138,83,SHM,Ngaglik,Kab. Sleman
+Rumah Second,623.0,3,91,60,SHM,Depok,Kab. Sleman
+Rumah Second,350.0,2,106,50,SHM,Moyudan,Kab. Sleman
+Rumah Second,199.0,2,64,26,SHM,Kalasan,Kab. Sleman
+Rumah Second,895.0,2,84,48,SHM,Ngaglik,Kab. Sleman
+Rumah Second,2500.0,6,210,240,SHM,Ngaglik,Kab. Sleman
+Rumah Second,395.0,2,80,45,SHM,Gamping,Kab. Sleman
+Rumah Second,199.0,2,64,26,SHM,Prambanan,Kab. Sleman
+Rumah Second,750.0,3,130,60,SHM,Mlati,Kab. Sleman
+Rumah Second,750.0,3,109,70,HGB,Mlati,Kab. Sleman
+Rumah Second,2300.0,4,123,145,SHM,Ngaglik,Kab. Sleman
+Rumah Second,798.9,3,126,90,SHM,Ngemplak,Kab. Sleman
+Rumah Second,175.0,2,60,36,HGB,Wonosari,Kab. Gunung Kidul
+Rumah Second,550.0,2,88,45,SHM,Kalasan,Kab. Sleman
+Rumah Second,1800.0,3,121,100,SHM,Ngaglik,Kab. Sleman
+Rumah Second,598.0,2,102,50,SHM,Mlati,Kab. Sleman
+Rumah Second,750.0,3,120,60,SHM,Sleman,Kab. Sleman
+Rumah Second,625.0,2,101,45,SHM,Banguntapan,Kab. Bantul
+Rumah Second,480.0,2,140,50,SHM,Berbah,Kab. Sleman
+Rumah Second,2500.0,8,256,350,SHM,Kretek,Kab. Bantul
+Rumah Second,3000.0,7,225,400,SHM,Ngaglik,Kab. Sleman
+Rumah Second,625.0,3,91,60,SHM,Kalasan,Kab. Sleman
+Rumah Second,1600.0,3,113,125,SHM,Kalasan,Kab. Sleman
+Rumah Second,550.0,3,101,80,SHM,Kalasan,Kab. Sleman
+Rumah Second,350.0,2,88,45,SHM,Sedayu,Kab. Bantul
+Rumah Second,535.0,2,80,50,SHM,Depok,Kab. Sleman
+Rumah Second,1600.0,5,154,320,SHM,Ngaglik,Kab. Sleman
+Rumah Second,750.0,2,119,100,SHM,Mantrijeron,Kota Yogyakarta
+Rumah Second,1900.0,5,142,190,SHM,Godean,Kab. Sleman
+Rumah Second,1200.0,3,148,90,SHM,Godean,Kab. Sleman
+Rumah Second,1500.0,4,131,120,SHM,Kalasan,Kab. Sleman
+Rumah Second,460.0,3,98,60,SHM,Kasihan,Kab. Bantul
+Rumah Second,1100.0,3,108,80,SHM,Kasihan,Kab. Bantul
+Rumah Second,1300.0,4,207,160,SHM,Kalasan,Kab. Sleman
+Rumah Second,650.0,3,104,70,SHM,Ngemplak,Kab. Sleman
+Rumah Second,550.0,2,89,51,SHM,Kalasan,Kab. Sleman
+Rumah Second,27.0,4,100,80,SHM,Ngaglik,Kab. Sleman
+Rumah Second,775.0,3,106,70,SHM,Kalasan,Kab. Sleman
+Rumah Second,800.0,3,123,73,SHM,Gamping,Kab. Sleman
+Rumah Second,398.0,2,107,36,SHM,Seyegan,Kab. Sleman
+Rumah Second,485.0,2,80,45,SHM,Sewon,Kab. Bantul
+Rumah Second,800.0,3,123,73,SHM,Godean,Kab. Sleman
+Rumah Second,470.0,2,80,40,SHM,Kasihan,Kab. Bantul
+Rumah Second,2600.0,2,354,234,SHM,Kalasan,Kab. Sleman
+Rumah Second,750.0,2,100,50,SHM,Sleman,Kab. Sleman
+Rumah Second,597.0,2,78,45,SHM,Kasihan,Kab. Bantul
+Rumah Second,220.0,1,60,21,SHM,Berbah,Kab. Sleman
+Rumah Second,453.0,2,80,40,SHM,Kasihan,Kab. Bantul
+Rumah Second,400.0,2,45,36,SHM,Prambanan,Kab. Sleman
+Rumah Second,563.0,2,78,45,SHM,Kasihan,Kab. Bantul
+Rumah Second,580.0,2,78,45,SHM,Kasihan,Kab. Bantul
+Rumah Second,775.0,2,110,54,SHM,Ngaglik,Kab. Sleman
+Rumah Second,490.0,2,77,45,SHM,Kasihan,Kab. Bantul
+Rumah Second,550.0,2,125,80,SHM,Seyegan,Kab. Sleman
+Rumah Second,625.0,2,124,70,SHM,Berbah,Kab. Sleman
+Rumah Second,850.0,3,300,200,SHM,Semanu,Kab. Gunung Kidul
+Rumah Second,495.0,2,112,36,SHM,Mlati,Kab. Sleman
+Rumah Second,475.0,2,77,45,SHM,Kasihan,Kab. Bantul
+Rumah Second,550.1,2,125,80,SHM,Mlati,Kab. Sleman
+Rumah Second,875.0,3,107,70,SHM,Ngaglik,Kab. Sleman
+Rumah Second,750.0,3,210,170,SHM,Kalasan,Kab. Sleman
+Rumah Second,660.0,3,78,104,SHM,Kasihan,Kab. Bantul
+Rumah Second,375.0,2,80,45,SHM,Mantrijeron,Kota Yogyakarta
+Rumah Second,625.0,3,100,70,SHM,Godean,Kab. Sleman
+Rumah Second,290.0,2,60,30,HGB,Bantul,Kab. Bantul
+Rumah Second,583.0,2,86,46,SHM,Berbah,Kab. Sleman
+Rumah Second,650.0,3,126,108,SHM,Kasihan,Kab. Bantul
+Rumah Second,525.0,2,129,75,SHM,Gamping,Kab. Sleman
+Rumah Second,7900.0,6,305,280,HGB,Umbulharjo,Kota Yogyakarta
+Rumah Second,2100.0,4,150,160,SHM,Kalasan,Kab. Sleman
+Rumah Second,1600.0,3,151,110,Tidak Tersedia,Depok,Kab. Sleman
+Rumah Second,535.0,3,90,60,SHM,Sleman,Kab. Sleman
+Rumah Second,275.0,2,60,40,SHM,Prambanan,Kab. Sleman
+Rumah Second,750.0,3,95,80,SHM,Kalasan,Kab. Sleman
+Rumah Second,680.0,3,97,65,SHM,Kalasan,Kab. Sleman
+Rumah Second,5400.0,5,482,700,SHM,Depok,Kab. Sleman
+Rumah Second,477.0,2,93,60,SHM,Jetis,Kab. Bantul
+Rumah Second,520.0,3,107,70,SHM,Bantul,Kab. Bantul
+Rumah Second,453.0,3,88,50,SHM,Sleman,Kab. Sleman
+Rumah Second,1800.0,4,630,400,SHM,Kalasan,Kab. Sleman
+Rumah Second,1800.0,2,683,300,SHM,Pakem,Kab. Sleman
+Rumah Second,6500.0,5,451,650,SHM,Kasihan,Kab. Bantul
+Rumah Second,6800.0,4,450,350,SHM,Gondokusuman,Kota Yogyakarta
+Rumah Second,350.0,2,60,36,SHM,Moyudan,Kab. Sleman
+Rumah Second,2500.0,3,446,161,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1600.0,3,120,218,SHM,Gamping,Kab. Sleman
+Rumah Second,450.0,2,100,55,SHM,Wirobrajan,Kota Yogyakarta
+Rumah Second,720.0,2,92,51,SHM,Ngaglik,Kab. Sleman
+Rumah Second,350.0,2,84,36,SHM,Prambanan,Kab. Sleman
+Rumah Second,3000.0,4,262,250,SHM,Kasihan,Kab. Bantul
+Rumah Second,535.0,3,90,55,SHM,Sleman,Kab. Sleman
+Rumah Second,299.0,2,60,30,HGB,Godean,Kab. Sleman
+Rumah Second,925.0,3,90,45,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1100.0,3,90,72,SHM,Ngaglik,Kab. Sleman
+Rumah Second,3000.0,2,280,150,SHM,Mantrijeron,Kota Yogyakarta
+Rumah Second,585.0,3,112,55,SHM,Kalasan,Kab. Sleman
+Rumah Second,70.0,2,65,30,SHM,Wates,Kab. Kulon Progo
+Rumah Second,810.0,3,124,90,SHM,Ngemplak,Kab. Sleman
+Rumah Second,5000.0,6,470,320,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1300.0,5,125,150,SHM,Kalasan,Kab. Sleman
+Rumah Second,4500.0,3,551,250,SHM,Depok,Kab. Sleman
+Rumah Second,475.0,2,66,40,SHM,Banguntapan,Kab. Bantul
+Rumah Second,390.0,2,78,71,SHM,Mantrijeron,Kota Yogyakarta
+Rumah Second,650.0,3,180,110,SHM,Sewon,Kab. Bantul
+Rumah Second,769.0,3,130,60,SHM,Mlati,Kab. Sleman
+Rumah Second,690.0,2,121,50,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1600.0,3,110,128,SHM,Ngaglik,Kab. Sleman
+Rumah Second,2000.0,4,104,120,SHM,Banguntapan,Kab. Bantul
+Rumah Second,520.0,2,81,50,SHM,Kalasan,Kab. Sleman
+Rumah Second,1900.0,6,125,140,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1100.0,4,120,130,SHM,Ngemplak,Kab. Sleman
+Rumah Second,675.0,3,90,59,SHM,Ngaglik,Kab. Sleman
+Rumah Second,258.0,2,70,30,SHM,Berbah,Kab. Sleman
+Rumah Second,1600.0,4,201,150,SHM,Sewon,Kab. Bantul
+Rumah Second,725.0,3,99,75,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1100.0,4,100,108,SHM,Ngemplak,Kab. Sleman
+Rumah Second,730.0,3,121,85,SHM,Kalasan,Kab. Sleman
+Rumah Second,210.0,2,60,30,SHM,Sedayu,Kab. Bantul
+Rumah Second,950.0,3,90,66,SHM,Gondokusuman,Kota Yogyakarta
+Rumah Second,455.0,2,75,55,SHM,Banguntapan,Kab. Bantul
+Rumah Second,950.0,3,118,138,SHM,Prambanan,Kab. Sleman
+Rumah Second,3800.0,5,472,220,SHM,Pakem,Kab. Sleman
+Rumah Second,735.0,3,108,82,SHM,Berbah,Kab. Sleman
+Rumah Second,530.0,2,90,50,SHM,Seyegan,Kab. Sleman
+Rumah Second,1400.0,4,116,140,SHM,Ngemplak,Kab. Sleman
+Rumah Second,560.7,3,103,55,SHM,Kalasan,Kab. Sleman
+Rumah Second,450.0,2,75,40,SHM,Banguntapan,Kab. Bantul
+Rumah Second,535.0,2,80,36,SHM,Ngemplak,Kab. Sleman
+Rumah Second,2300.0,4,130,155,SHM,Ngaglik,Kab. Sleman
+Rumah Second,585.0,3,103,55,SHM,Kalasan,Kab. Sleman
+Rumah Second,593.0,2,90,36,SHM,Depok,Kab. Sleman
+Rumah Second,555.0,3,105,65,SHM,Godean,Kab. Sleman
+Rumah Second,995.0,3,103,100,SHM,Ngemplak,Kab. Sleman
+Rumah Second,592.0,2,90,36,SHM,Kalasan,Kab. Sleman
+Rumah Second,1600.0,3,130,130,SHM,Depok,Kab. Sleman
+Rumah Second,995.0,3,103,100,SHM,Gondokusuman,Kota Yogyakarta
+Rumah Second,640.0,2,95,50,SHM,Mlati,Kab. Sleman
+Rumah Second,899.0,4,126,176,SHM,Prambanan,Kab. Sleman
+Rumah Second,1400.0,3,161,100,SHM,Ngaglik,Kab. Sleman
+Rumah Second,2700.0,4,765,200,SHM,Depok,Kab. Sleman
+Rumah Second,968.0,3,105,60,SHM,Godean,Kab. Sleman
+Rumah Second,1100.0,3,118,120,SHM,Depok,Kab. Sleman
+Rumah Second,680.0,2,91,50,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1300.0,3,1120,218,SHM,Gamping,Kab. Sleman
+Rumah Second,898.0,3,90,65,SHM,Ngemplak,Kab. Sleman
+Rumah Second,592.0,2,90,36,SHM,Kotagede,Kota Yogyakarta
+Rumah Second,1400.0,2,683,500,SHM,Pakem,Kab. Sleman
+Rumah Second,27000.0,5,768,700,SHM,Mantrijeron,Kota Yogyakarta
+Rumah Second,1700.0,3,134,200,SHM,Depok,Kab. Sleman
+Rumah Second,1600.0,3,100,108,SHM,Godean,Kab. Sleman
+Rumah Second,550.0,3,91,60,SHM,Kasihan,Kab. Bantul
+Rumah Second,4500.0,5,600,500,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1000.0,3,114,95,SHM,Ngaglik,Kab. Sleman
+Rumah Second,4000.0,7,180,240,SHM,Kraton,Kota Yogyakarta
+Rumah Second,1300.0,4,136,136,SHM,Sewon,Kab. Bantul
+Rumah Second,1100.0,4,251,80,SHM,Banguntapan,Kab. Bantul
+Rumah Second,2000.0,3,161,200,SHM,Sewon,Kab. Bantul
+Rumah Second,775.0,3,120,70,SHM,Kalasan,Kab. Sleman
+Rumah Second,1000.0,4,112,160,SHM,Kalasan,Kab. Sleman
+Rumah Second,850.0,3,149,65,SHM,Kalasan,Kab. Sleman
+Rumah Second,3300.0,4,711,255,SHM,Sleman,Kab. Sleman
+Rumah Second,593.0,2,102,50,SHM,Mlati,Kab. Sleman
+Rumah Second,495.5,2,112,36,SHM,Ngaglik,Kab. Sleman
+Rumah Second,690.0,3,100,60,SHM,Banguntapan,Kab. Bantul
+Rumah Second,2000.0,4,155,138,SHM,Ngaglik,Kab. Sleman
+Rumah Second,650.0,4,107,150,SHM,Sewon,Kab. Bantul
+Rumah Second,594.0,2,104,50,SHM,Depok,Kab. Sleman
+Rumah Second,833.0,2,108,76,SHM,Gamping,Kab. Sleman
+Rumah Second,498.0,2,112,36,SHM,Sleman,Kab. Sleman
+Rumah Second,1000.0,3,230,165,SHM,Ngemplak,Kab. Sleman
+Rumah Second,750.0,2,100,50,SHM,Depok,Kab. Sleman
+Rumah Second,390.0,2,78,40,SHM,Sedayu,Kab. Bantul
+Rumah Second,1100.0,2,98,70,SHM,Mlati,Kab. Sleman
+Rumah Second,1100.0,3,173,173,SHM,Imogiri,Kab. Bantul
+Rumah Second,3700.0,4,305,195,SHM,Kasihan,Kab. Bantul
+Rumah Second,2000.0,4,271,250,SHM,Depok,Kab. Sleman
+Rumah Second,975.0,2,207,90,SHM,Kasihan,Kab. Bantul
+Rumah Second,1400.0,6,160,262,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1300.0,3,113,120,SHM,Umbulharjo,Kota Yogyakarta
+Rumah Second,2200.0,14,193,103,SHM,Depok,Kab. Sleman
+Rumah Second,350.0,2,36,60,HGB,Moyudan,Kab. Sleman
+Rumah Second,1700.0,4,121,250,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1100.0,5,144,200,SHM,Banguntapan,Kab. Bantul
+Rumah Second,6000.0,13,355,500,SHM,Ngemplak,Kab. Sleman
+Rumah Second,500.0,2,120,45,SHM,Kalasan,Kab. Sleman
+Rumah Second,2200.0,3,245,200,SHM,Ngemplak,Kab. Sleman
+Rumah Second,985.0,3,96,82,SHM,Gamping,Kab. Sleman
+Rumah Second,350.0,2,36,60,HGB,Pleret,Kab. Bantul
+Rumah Second,399.0,2,81,45,SHM,Godean,Kab. Sleman
+Rumah Second,398.0,2,80,45,SHM,Sedayu,Kab. Bantul
+Rumah Second,495.0,1,80,36,SHM,Ngaglik,Kab. Sleman
+Rumah Second,2100.0,4,219,185,SHM,Sewon,Kab. Bantul
+Rumah Second,1400.0,3,121,100,SHM,Ngaglik,Kab. Sleman
+Rumah Second,500.0,3,147,65,SHM,Sewon,Kab. Bantul
+Rumah Second,498.0,2,112,36,SHM,Mlati,Kab. Sleman
+Rumah Second,2600.0,3,163,142,SHM,Banguntapan,Kab. Bantul
+Rumah Second,385.0,2,137,75,SHM,Kasihan,Kab. Bantul
+Rumah Second,485.0,2,83,45,SHM,Bantul,Kab. Bantul
+Rumah Second,750.0,4,100,95,SHM,Sewon,Kab. Bantul
+Rumah Second,1700.0,3,119,119,SHM,Ngemplak,Kab. Sleman
+Rumah Second,770.0,3,141,150,SHM,Kalasan,Kab. Sleman
+Rumah Second,985.0,3,145,85,SHM,Berbah,Kab. Sleman
+Rumah Second,545.0,3,100,45,SHM,Berbah,Kab. Sleman
+Rumah Second,825.0,3,99,66,SHM,Gondokusuman,Kota Yogyakarta
+Rumah Second,375.0,2,76,36,SHM,Sedayu,Kab. Bantul
+Rumah Second,3500.0,13,232,260,SHM,Ngaglik,Kab. Sleman
+Rumah Second,3200.0,4,190,200,SHM,Ngaglik,Kab. Sleman
+Rumah Second,4900.0,5,262,300,SHM,Ngaglik,Kab. Sleman
+Rumah Second,785.0,3,110,75,SHM,Jetis,Kota Yogyakarta
+Rumah Second,840.0,3,91,90,SHM,Depok,Kab. Sleman
+Rumah Second,395.0,2,80,45,SHM,Bantul,Kab. Bantul
+Rumah Second,3200.0,5,158,180,SHM,Sleman,Kab. Sleman
+Rumah Second,600.0,2,120,55,SHM,Kalasan,Kab. Sleman
+Rumah Second,550.0,3,124,58,SHM,Mlati,Kab. Sleman
+Rumah Second,3500.0,6,1038,600,SHM,Ngaglik,Kab. Sleman
+Rumah Second,2000.0,3,240,150,SHM,Kasihan,Kab. Bantul
+Rumah Second,2800.0,3,192,111,SHM,Tegalrejo,Kota Yogyakarta
+Rumah Second,3200.0,5,158,180,SHM,Mlati,Kab. Sleman
+Rumah Second,698.0,2,106,55,SHM,Kalasan,Kab. Sleman
+Rumah Second,485.0,2,90,45,SHM,Gamping,Kab. Sleman
+Rumah Second,265.0,2,60,36,SHM,Kasihan,Kab. Bantul
+Rumah Second,6800.0,6,843,450,SHM,Ngaglik,Kab. Sleman
+Rumah Second,350.0,2,105,50,SHM,Moyudan,Kab. Sleman
+Rumah Second,9900.0,4,682,150,SHM,Depok,Kab. Sleman
+Rumah Second,463.0,2,92,36,SHM,Mlati,Kab. Sleman
+Rumah Second,17000.0,20,1250,871,SHM,Kasihan,Kab. Bantul
+Rumah Second,968.0,3,105,60,HGB,Godean,Kab. Sleman
+Rumah Second,3900.0,6,296,288,SHM,Kalasan,Kab. Sleman
+Rumah Second,1500.0,3,110,80,SHM,Depok,Kab. Sleman
+Rumah Second,575.0,3,101,80,SHM,Kalasan,Kab. Sleman
+Rumah Second,2700.0,4,150,190,SHM,Depok,Kab. Sleman
+Rumah Second,850.0,3,120,60,SHM,Ngaglik,Kab. Sleman
+Rumah Second,815.0,3,112,75,SHM,Gondokusuman,Kota Yogyakarta
+Rumah Second,850.0,3,92,80,SHM,Depok,Kab. Sleman
+Rumah Second,1700.0,4,160,119,SHM,Depok,Kab. Sleman
+Rumah Second,859.0,3,126,69,HGB,Kasihan,Kab. Bantul
+Rumah Second,1200.0,4,90,170,SHM,Ngemplak,Kab. Sleman
+Rumah Second,485.0,2,80,36,SHM,Depok,Kab. Sleman
+Rumah Second,666.5,2,102,50,SHM,Sleman,Kab. Sleman
+Rumah Second,1500.0,3,110,90,SHM,Ngaglik,Kab. Sleman
+Rumah Second,875.0,3,121,138,SHM,Kalasan,Kab. Sleman
+Rumah Second,3500.0,5,334,135,SHM,Mlati,Kab. Sleman
+Rumah Second,748.0,2,103,65,SHM,Ngaglik,Kab. Sleman
+Rumah Second,2300.0,4,149,175,SHM,Ngaglik,Kab. Sleman
+Rumah Second,695.0,2,80,45,SHM,Depok,Kab. Sleman
+Rumah Second,1100.0,3,111,90,SHM,Depok,Kab. Sleman
+Rumah Second,620.0,2,85,45,SHM,Gamping,Kab. Sleman
+Rumah Second,800.0,11,79,148,SHM,Umbulharjo,Kota Yogyakarta
+Rumah Second,5700.0,19,976,786,SHM,Depok,Kab. Sleman
+Rumah Second,1900.0,5,144,120,SHM,Ngaglik,Kab. Sleman
+Rumah Second,4600.0,5,307,300,HGB,Gamping,Kab. Sleman
+Rumah Second,1300.0,3,88,125,SHM,Ngaglik,Kab. Sleman
+Rumah Second,455.0,2,81,36,SHM,Sedayu,Kab. Bantul
+Rumah Second,1300.0,3,116,130,SHM,Depok,Kab. Sleman
+Rumah Second,380.0,3,100,60,SHM,Kasihan,Kab. Bantul
+Rumah Second,6500.0,9,2360,1000,SHM,Ngaglik,Kab. Sleman
+Rumah Second,497.0,2,84,47,SHM,Banguntapan,Kab. Bantul
+Rumah Second,250.0,2,71,30,SHM,Kalasan,Kab. Sleman
+Rumah Second,785.0,3,123,73,SHM,Godean,Kab. Sleman
+Rumah Second,785.0,3,123,73,SHM,Gamping,Kab. Sleman
+Rumah Second,725.0,3,114,71,SHM,Depok,Kab. Sleman
+Rumah Second,725.5,3,114,70,SHM,Godean,Kab. Sleman
+Rumah Second,375.0,2,80,30,SHM,Prambanan,Kab. Sleman
+Rumah Second,375.0,2,80,30,SHM,Kalasan,Kab. Sleman
+Rumah Second,825.0,3,126,70,SHM,Ngaglik,Kab. Sleman
+Rumah Second,552.0,3,124,58,SHM,Seyegan,Kab. Sleman
+Rumah Second,9900.0,5,478,300,SHM,Sleman,Kab. Sleman
+Rumah Second,463.0,2,92,36,SHM,Sleman,Kab. Sleman
+Rumah Second,395.0,2,78,36,SHM,Kasihan,Kab. Bantul
+Rumah Second,629.0,3,102,53,SHM,Mlati,Kab. Sleman
+Rumah Second,1200.0,6,140,130,SHM,Bantul,Kab. Bantul
+Rumah Second,1600.0,3,130,130,SHM,Ngemplak,Kab. Sleman
+Rumah Second,398.0,2,84,36,SHM,Sleman,Kab. Sleman
+Rumah Second,460.0,2,85,50,SHM,Godean,Kab. Sleman
+Rumah Second,720.0,2,90,50,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1800.0,3,120,92,SHM,Gamping,Kab. Sleman
+Rumah Second,460.0,2,83,50,SHM,Godean,Kab. Sleman
+Rumah Second,415.2,2,83,45,SHM,Kalasan,Kab. Sleman
+Rumah Second,300.0,2,81,30,Tidak Tersedia,Kalasan,Kab. Sleman
+Rumah Second,799.0,3,124,80,SHM,Ngemplak,Kab. Sleman
+Rumah Second,1300.0,5,251,200,SHM,Banguntapan,Kab. Bantul
+Rumah Second,450.0,2,77,45,SHM,Umbulharjo,Kota Yogyakarta
+Rumah Second,875.0,3,137,90,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1800.0,3,135,110,SHM,Depok,Kab. Sleman
+Rumah Second,600.0,3,117,70,SHM,Gamping,Kab. Sleman
+Rumah Second,1400.0,3,108,135,SHM,Ngaglik,Kab. Sleman
+Rumah Second,14000.0,9,970,725,SHM,Depok,Kab. Sleman
+Rumah Second,775.0,3,124,80,SHM,Godean,Kab. Sleman
+Rumah Second,550.0,3,126,60,SHM,Seyegan,Kab. Sleman
+Rumah Second,795.0,3,128,70,SHM,Mlati,Kab. Sleman
+Rumah Second,375.0,2,60,36,SHM,Moyudan,Kab. Sleman
+Rumah Second,825.5,3,126,70,SHM,Ngaglik,Kab. Sleman
+Rumah Second,2300.0,4,169,200,SHM,Ngaglik,Kab. Sleman
+Rumah Second,4000.0,4,700,245,SHM,Godean,Kab. Sleman
+Rumah Second,825.0,3,126,75,SHM,Mlati,Kab. Sleman
+Rumah Second,258.0,2,70,30,SHM,Prambanan,Kab. Sleman
+Rumah Second,357.0,2,103,36,SHM,Kalasan,Kab. Sleman
+Rumah Second,1200.0,3,90,130,SHM,Depok,Kab. Sleman
+Rumah Second,420.0,2,90,36,SHM,Turi,Kab. Sleman
+Rumah Second,535.0,2,80,36,SHM,Kalasan,Kab. Sleman
+Rumah Second,517.0,2,81,50,SHM,Kasihan,Kab. Bantul
+Rumah Second,900.0,3,165,65,SHM,Kalasan,Kab. Sleman
+Rumah Second,1500.0,4,104,144,SHM,Ngaglik,Kab. Sleman
+Rumah Second,535.0,2,80,36,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1200.0,3,85,85,SHM,Sewon,Kab. Bantul
+Rumah Second,3200.0,4,153,180,SHM,Mlati,Kab. Sleman
+Rumah Second,399.0,2,83,45,SHM,Sedayu,Kab. Bantul
+Rumah Second,580.0,3,126,75,SHM,Sewon,Kab. Bantul
+Rumah Second,545.0,2,86,45,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1100.0,3,154,90,SHM,Ngemplak,Kab. Sleman
+Rumah Second,2500.0,3,163,130,SHM,Sewon,Kab. Bantul
+Rumah Second,675.0,3,90,50,SHM,Ngaglik,Kab. Sleman
+Rumah Second,3200.0,5,158,180,SHM,Gondokusuman,Kota Yogyakarta
+Rumah Second,750.0,2,80,40,SHM,Kasihan,Kab. Bantul
+Rumah Second,3300.0,6,120,213,SHM,Tegalrejo,Kota Yogyakarta
+Rumah Second,625.0,3,128,64,SHM,Gamping,Kab. Sleman
+Rumah Second,515.0,2,107,41,SHM,Kalasan,Kab. Sleman
+Rumah Second,545.0,2,85,455,SHM,Ngaglik,Kab. Sleman
+Rumah Second,549.0,2,90,50,SHM,Kalasan,Kab. Sleman
+Rumah Second,536.0,2,97,45,SHM,Depok,Kab. Sleman
+Rumah Second,875.0,2,120,90,SHM,Banguntapan,Kab. Bantul
+Rumah Second,1400.0,3,90,88,SHM,Ngaglik,Kab. Sleman
+Rumah Second,410.0,2,80,42,SHM,Bantul,Kab. Bantul
+Rumah Second,875.0,3,99,99,SHM,Ngaglik,Kab. Sleman
+Rumah Second,380.0,2,135,50,SHM,Godean,Kab. Sleman
+Rumah Second,1800.0,2,683,500,SHM,Pakem,Kab. Sleman
+Rumah Second,7500.0,15,534,50,SHM,Sewon,Kab. Bantul
+Rumah Second,985.0,3,104,72,SHM,Ngaglik,Kab. Sleman
+Rumah Second,3300.0,6,213,120,SHM,Tegalrejo,Kota Yogyakarta
+Rumah Second,900.0,3,135,80,SHM,Ngaglik,Kab. Sleman
+Rumah Second,450.0,2,81,40,SHM,Pajangan,Kab. Bantul
+Rumah Second,492.7,2,70,45,SHM,Gamping,Kab. Sleman
+Rumah Second,395.0,2,80,45,SHM,Sedayu,Kab. Bantul
+Rumah Second,247.5,2,72,36,SHM,Playen,Kab. Gunung Kidul
+Rumah Second,400.0,2,80,45,SHM,Sedayu,Kab. Bantul
+Rumah Second,815.0,3,110,75,SHM,Depok,Kab. Sleman
+Rumah Second,575.0,3,97,56,SHM,Depok,Kab. Sleman
+Rumah Second,375.0,2,60,36,HGB,Moyudan,Kab. Sleman
+Rumah Second,342.0,2,103,36,SHM,Prambanan,Kab. Sleman
+Rumah Second,3500.0,5,135,335,SHM,Mlati,Kab. Sleman
+Rumah Second,325.0,2,95,36,SHM,Kalasan,Kab. Sleman
+Rumah Second,499.0,2,72,50,SHM,Prambanan,Kab. Sleman
+Rumah Second,5000.0,5,295,400,SHM,Ngaglik,Kab. Sleman
+Rumah Second,476.0,2,112,30,SHM,Sleman,Kab. Sleman
+Rumah Second,2500.0,4,250,180,SHM,Ngaglik,Kab. Sleman
+Rumah Second,4900.0,5,193,300,SHM,Ngaglik,Kab. Sleman
+Rumah Second,4000.0,5,415,300,SHM,Kasihan,Kab. Bantul
+Rumah Second,4900.0,5,262,290,SHM,Ngaglik,Kab. Sleman
+Rumah Second,476.0,2,112,30,SHM,Mlati,Kab. Sleman
+Rumah Second,4500.0,6,319,405,SHM,Depok,Kab. Sleman
+Rumah Second,477.0,2,112,30,SHM,Sleman,Kab. Sleman
+Rumah Second,745.0,3,98,90,SHM,Ngaglik,Kab. Sleman
+Rumah Second,4500.0,21,728,595,SHM,Ngaglik,Kab. Sleman
+Rumah Second,480.0,3,60,52,SHM,Prambanan,Kab. Sleman
+Rumah Second,493.2,2,72,36,SHM,Kalasan,Kab. Sleman
+Rumah Second,2200.0,3,150,336,SHM,Gamping,Kab. Sleman
+Rumah Second,475.0,3,102,60,SHM,Mlati,Kab. Sleman
+Rumah Second,810.0,3,110,75,SHM,Mlati,Kab. Sleman
+Rumah Second,815.0,3,110,75,SHM,Godean,Kab. Sleman
+Rumah Second,2000.0,4,150,190,SHM,Depok,Kab. Sleman
+Rumah Second,775.0,3,120,75,SHM,Kalasan,Kab. Sleman
+Rumah Second,525.0,3,111,140,SHM,Sleman,Kab. Sleman
+Rumah Second,772.0,3,129,60,SHM,Ngemplak,Kab. Sleman
+Rumah Second,665.0,3,68,85,SHM,Prambanan,Kab. Sleman
+Rumah Second,425.0,2,70,36,SHM,Kasihan,Kab. Bantul
+Rumah Second,440.0,2,75,45,SHM,Prambanan,Kab. Sleman
+Rumah Second,900.0,3,107,121,SHM,Banguntapan,Kab. Bantul
+Rumah Second,669.0,3,153,60,SHM,Jetis,Kab. Bantul
+Rumah Second,495.0,2,87,45,SHM,Sewon,Kab. Bantul
+Rumah Second,725.0,3,96,65,SHM,Kasihan,Kab. Bantul
+Rumah Second,160.0,1,20,18,Tidak Tersedia,Ngaglik,Kab. Sleman
+Rumah Second,2300.0,5,169,205,SHM,Ngaglik,Kab. Sleman
+Rumah Second,335.0,3,78,78,SHM,Sewon,Kab. Bantul
+Rumah Second,999.0,3,103,100,SHM,Ngemplak,Kab. Sleman
+Rumah Second,1200.0,3,347,152,SHM,Ngaglik,Kab. Sleman
+Rumah Second,335.0,2,80,30,SHM,Kalasan,Kab. Sleman
+Rumah Second,150.0,3,140,89,SHM,Lendah,Kab. Kulon Progo
+Rumah Second,2800.0,4,190,200,SHM,Ngaglik,Kab. Sleman
+Rumah Second,197.0,2,28,65,SHM,Depok,Kab. Sleman
+Rumah Second,885.0,3,102,75,SHM,Ngemplak,Kab. Sleman
+Rumah Second,850.0,3,80,80,SHM,Depok,Kab. Sleman
+Rumah Second,900.0,3,165,64,SHM,Kalasan,Kab. Sleman
+Rumah Second,920.0,2,107,121,SHM,Banguntapan,Kab. Bantul
+Rumah Second,4500.0,6,320,350,SHM,Umbulharjo,Kota Yogyakarta
+Rumah Second,233.0,2,60,30,SHM,Kalasan,Kab. Sleman
+Rumah Second,2500.0,5,123,200,SHM,Depok,Kab. Sleman
+Rumah Second,405.0,2,95,45,SHM,Sedayu,Kab. Bantul
+Rumah Second,6500.0,6,478,300,HGB,Depok,Kab. Sleman
+Rumah Second,575.0,3,104,80,SHM,Kalasan,Kab. Sleman
+Rumah Second,438.4,2,77,40,SHM,Gamping,Kab. Sleman
+Rumah Second,625.0,4,128,250,SHM,Kasihan,Kab. Bantul
+Rumah Second,625.0,3,90,45,SHM,Moyudan,Kab. Sleman
+Rumah Second,898.0,3,65,90,SHM,Ngemplak,Kab. Sleman
+Rumah Second,500.0,2,102,45,SHM,Kalasan,Kab. Sleman
+Rumah Second,695.0,2,89,89,SHM,Umbulharjo,Kota Yogyakarta
+Rumah Second,785.0,3,116,75,SHM,Godean,Kab. Sleman
+Rumah Second,2800.0,3,185,160,SHM,Ngaglik,Kab. Sleman
+Rumah Second,950.0,3,115,95,SHM,Ngemplak,Kab. Sleman
+Rumah Second,1800.0,18,138,138,SHM,Umbulharjo,Kota Yogyakarta
+Rumah Second,368.0,2,96,38,SHM,Gamping,Kab. Sleman
+Rumah Second,500.0,2,108,42,HGB,Gamping,Kab. Sleman
+Rumah Second,3500.0,5,304,258,SHM,Mlati,Kab. Sleman
+Rumah Second,810.0,3,124,85,SHM,Ngemplak,Kab. Sleman
+Rumah Second,650.0,2,100,45,SHM,Depok,Kab. Sleman
+Rumah Second,760.0,2,91,50,SHM,Ngaglik,Kab. Sleman
+Rumah Second,593.0,2,103,50,SHM,Sleman,Kab. Sleman
+Rumah Second,800.0,3,112,75,SHM,Godean,Kab. Sleman
+Rumah Second,279.0,2,70,36,SHM,Berbah,Kab. Sleman
+Rumah Second,279.0,2,70,36,SHM,Depok,Kab. Sleman
+Rumah Second,1600.0,3,108,100,SHM,Godean,Kab. Sleman
+Rumah Second,585.0,3,112,50,SHM,Gondokusuman,Kota Yogyakarta
+Rumah Second,595.0,3,112,50,SHM,Mlati,Kab. Sleman
+Rumah Second,240.0,2,60,40,SHM,Prambanan,Kab. Sleman
+Rumah Second,530.0,2,60,60,SHM,Pakem,Kab. Sleman
+Rumah Second,950.0,3,145,85,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1200.0,3,110,75,SHM,Banguntapan,Kab. Bantul
+Rumah Second,925.0,3,137,100,SHM,Ngaglik,Kab. Sleman
+Rumah Second,875.0,3,121,138,SHM,Kasihan,Kab. Bantul
+Rumah Second,431.0,2,87,36,SHM,Mlati,Kab. Sleman
+Rumah Second,475.0,3,86,45,SHM,Berbah,Kab. Sleman
+Rumah Second,1200.0,3,181,120,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1600.0,4,146,135,SHM,Kalasan,Kab. Sleman
+Rumah Second,680.0,3,97,65,SHM,Ngaglik,Kab. Sleman
+Rumah Second,425.0,2,100,50,SHM,Seyegan,Kab. Sleman
+Rumah Second,395.0,2,81,36,SHM,Sleman,Kab. Sleman
+Rumah Second,1800.0,3,155,212,SHM,Ngaglik,Kab. Sleman
+Rumah Second,720.0,2,92,51,SHM,Sleman,Kab. Sleman
+Rumah Second,579.0,2,105,60,SHM,Sleman,Kab. Sleman
+Rumah Second,450.0,2,82,50,SHM,Sleman,Kab. Sleman
+Rumah Second,1400.0,4,428,140,SHM,Ngaglik,Kab. Sleman
+Rumah Second,265.0,2,76,40,SHM,Sleman,Kab. Sleman
+Rumah Second,210.0,1,60,21,SHM,Piyungan,Kab. Bantul
+Rumah Second,385.0,2,64,40,SHM,Bantul,Kab. Bantul
+Rumah Second,378.0,2,75,50,SHM,Bantul,Kab. Bantul
+Rumah Second,499.9,2,96,55,SHM,Kalasan,Kab. Sleman
+Rumah Second,335.0,2,75,45,SHM,Bantul,Kab. Bantul
+Rumah Second,635.0,3,123,70,SHM,Kalasan,Kab. Sleman
+Rumah Second,280.0,2,60,30,SHM,Bantul,Kab. Bantul
+Rumah Second,1100.0,4,144,200,SHM,Umbulharjo,Kota Yogyakarta
+Rumah Second,3500.0,12,223,260,SHM,Sleman,Kab. Sleman
+Rumah Second,1700.0,3,123,119,SHM,Ngemplak,Kab. Sleman
+Rumah Second,295.0,2,66,36,SHM,Jetis,Kab. Bantul
+Rumah Second,1900.0,3,128,188,SHM,Depok,Kab. Sleman
+Rumah Second,337.0,2,60,30,SHM,Seyegan,Kab. Sleman
+Rumah Second,600.0,2,114,40,HGB,Kasihan,Kab. Bantul
+Rumah Second,875.0,3,145,85,SHM,Ngaglik,Kab. Sleman
+Rumah Second,170.0,2,60,30,HGB,Sedayu,Kab. Bantul
+Rumah Second,750.0,2,95,80,SHM,Kalasan,Kab. Sleman
+Rumah Second,998.0,3,103,100,SHM,Ngaglik,Kab. Sleman
+Rumah Second,995.0,3,103,100,SHM,Depok,Kab. Sleman
+Rumah Second,845.0,3,116,90,SHM,Ngemplak,Kab. Sleman
+Rumah Second,542.5,2,95,50,SHM,Godean,Kab. Sleman
+Rumah Second,2800.0,28,335,335,SHM,Wirobrajan,Kota Yogyakarta
+Rumah Second,583.0,2,85,46,SHM,Berbah,Kab. Sleman
+Rumah Second,650.0,3,211,100,SHM,Godean,Kab. Sleman
+Rumah Second,490.0,2,92,36,SHM,Mlati,Kab. Sleman
+Rumah Second,584.0,2,86,46,SHM,Mlati,Kab. Sleman
+Rumah Second,299.0,2,72,36,SHM,Sedayu,Kab. Bantul
+Rumah Second,1700.0,3,232,255,HGB,Mantrijeron,Kota Yogyakarta
+Rumah Second,1800.0,4,120,200,SHM,Ngaglik,Kab. Sleman
+Rumah Second,700.0,3,125,75,SHM,Gamping,Kab. Sleman
+Rumah Second,3400.0,3,402,170,SHM,Wirobrajan,Kota Yogyakarta
+Rumah Second,551.0,3,124,58,SHM,Sleman,Kab. Sleman
+Rumah Second,815.0,3,110,75,SHM,Mlati,Kab. Sleman
+Rumah Second,561.0,2,98,36,SHM,Sedayu,Kab. Bantul
+Rumah Second,360.0,2,105,36,SHM,Kalasan,Kab. Sleman
+Rumah Second,1100.0,4,104,150,SHM,Kalasan,Kab. Sleman
+Rumah Second,1800.0,4,164,190,HGB,Mlati,Kab. Sleman
+Rumah Second,550.0,3,126,58,SHM,Mlati,Kab. Sleman
+Rumah Second,510.0,3,107,65,SHM,Jetis,Kab. Bantul
+Rumah Second,635.0,2,103,57,SHM,Kalasan,Kab. Sleman
+Rumah Second,500.0,3,107,70,SHM,Jetis,Kab. Bantul
+Rumah Second,4600.0,3,180,145,SHM,Depok,Kab. Sleman
+Rumah Second,4400.0,3,170,145,SHM,Depok,Kab. Sleman
+Rumah Second,4099.999999999999,3,160,125,SHM,Depok,Kab. Sleman
+Rumah Second,3800.0,3,142,125,SHM,Depok,Kab. Sleman
+Rumah Second,3300.0,3,166,135,HGB,Mlati,Kab. Sleman
+Rumah Second,2100.0,3,110,107,HGB,Mlati,Kab. Sleman
+Rumah Second,2300.0,3,129,126,SHM,Depok,Kab. Sleman
+Rumah Second,4400.0,3,260,142,HGB,Mlati,Kab. Sleman
+Rumah Second,1800.0,3,120,93,SHM,Gamping,Kab. Sleman
+Rumah Second,1100.0,3,235,90,SHM,Ngemplak,Kab. Sleman
+Rumah Second,275.0,2,72,50,HGB,Sedayu,Kab. Bantul
+Rumah Second,1200.0,3,185,100,SHM,Ngaglik,Kab. Sleman
+Rumah Second,2100.0,3,163,142,SHM,Banguntapan,Kab. Bantul
+Rumah Second,2900.0,4,110,146,SHM,Mlati,Kab. Sleman
+Rumah Second,299.0,2,106,36,SHM,Seyegan,Kab. Sleman
+Rumah Second,690.0,2,80,43,HGB,Godean,Kab. Sleman
+Rumah Second,800.0,2,191,191,SHM,Pakem,Kab. Sleman
+Rumah Second,10500.0,8,1289,607,SHM,Sleman,Kab. Sleman
+Rumah Second,1700.0,5,131,150,HGB,Gamping,Kab. Sleman
+Rumah Second,1400.0,3,865,200,SHM,Pengasih,Kab. Kulon Progo
+Rumah Second,520.0,3,107,65,SHM,Jetis,Kab. Bantul
+Rumah Second,700.0,2,89,60,SHM,Gamping,Kab. Sleman
+Rumah Second,1700.0,6,198,250,SHM,Godean,Kab. Sleman
+Rumah Second,315.0,2,72,45,SHM,Bantul,Kab. Bantul
+Rumah Second,590.0,3,97,70,SHM,Sleman,Kab. Sleman
+Rumah Second,454.0,2,73,40,SHM,Banguntapan,Kab. Bantul
+Rumah Second,576.0,3,105,50,SHM,Tegalrejo,Kota Yogyakarta
+Rumah Second,210.0,2,60,30,SHM,Pajangan,Kab. Bantul
+Rumah Second,570.0,3,111,55,SHM,Kalasan,Kab. Sleman
+Rumah Second,500.5,2,100,45,SHM,Kalasan,Kab. Sleman
+Rumah Second,185.0,2,267,120,SHM,Karangmojo,Kab. Gunung Kidul
+Rumah Second,4400.0,6,318,405,SHM,Depok,Kab. Sleman
+Rumah Second,550.0,2,124,60,SHM,Kalasan,Kab. Sleman
+Rumah Second,890.0,3,102,70,HGB,Ngaglik,Kab. Sleman
+Rumah Second,270.0,2,80,40,SHM,Prambanan,Kab. Sleman
+Rumah Second,665.0,3,97,60,SHM,Kalasan,Kab. Sleman
+Rumah Second,499.0,2,107,43,SHM,Kalasan,Kab. Sleman
+Rumah Second,575.0,3,97,56,SHM,Kalasan,Kab. Sleman
+Rumah Second,4500.0,6,319,405,SHM,Kraton,Kota Yogyakarta
+Rumah Second,550.0,3,124,56,SHM,Godean,Kab. Sleman
+Rumah Second,550.0,3,124,58,SHM,Seyegan,Kab. Sleman
+Rumah Second,825.0,3,99,66,SHM,Gondomanan,Kota Yogyakarta
+Rumah Second,650.0,3,90,65,SHM,Ngemplak,Kab. Sleman
+Rumah Second,1700.0,3,117,119,SHM,Ngemplak,Kab. Sleman
+Rumah Second,550.0,3,126,58,SHM,Gamping,Kab. Sleman
+Rumah Second,826.0,3,126,70,SHM,Mlati,Kab. Sleman
+Rumah Second,497.0,2,50,81,SHM,Kasihan,Kab. Bantul
+Rumah Second,3200.0,4,158,180,HGB,Sleman,Kab. Sleman
+Rumah Second,850.0,4,114,100,SHM,Ngaglik,Kab. Sleman
+Rumah Second,2700.0,5,765,200,SHM,Depok,Kab. Sleman
+Rumah Second,1200.0,4,135,88,HGB,Gamping,Kab. Sleman
+Rumah Second,240.0,2,63,36,SHM,Prambanan,Kab. Sleman
+Rumah Second,2300.0,3,129,126,HGB,Depok,Kab. Sleman
+Rumah Second,535.0,1,90,60,SHM,Sleman,Kab. Sleman
+Rumah Second,1500.0,7,228,300,SHM,Sewon,Kab. Bantul
+Rumah Second,355.0,1,70,36,SHM,Kasihan,Kab. Bantul
+Rumah Second,350.0,2,139,50,SHM,Sewon,Kab. Bantul
+Rumah Second,300.0,2,72,36,SHM,Playen,Kab. Gunung Kidul
+Rumah Second,950.0,3,145,85,SHM,Kalasan,Kab. Sleman
+Rumah Second,917.0,2,100,45,SHM,Sewon,Kab. Bantul
+Rumah Second,799.0,3,126,90,SHM,Depok,Kab. Sleman
+Rumah Second,775.0,3,130,80,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1800.0,3,102,138,SHM,Mlati,Kab. Sleman
+Rumah Second,650.0,2,95,95,SHM,Gamping,Kab. Sleman
+Rumah Second,185.0,2,60,27,SHM,Bantul,Kab. Bantul
+Rumah Second,580.0,3,100,85,SHM,Mlati,Kab. Sleman
+Rumah Second,1800.0,4,122,130,SHM,Ngaglik,Kab. Sleman
+Rumah Second,552.0,3,107,48,SHM,Sedayu,Kab. Bantul
+Rumah Second,490.0,2,137,45,SHM,Seyegan,Kab. Sleman
+Rumah Second,1400.0,3,141,100,SHM,Ngaglik,Kab. Sleman
+Rumah Second,475.0,2,88,75,SHM,Kasihan,Kab. Bantul
+Rumah Second,541.5,2,120,36,SHM,Sleman,Kab. Sleman
+Rumah Second,999.9,3,154,120,SHM,Gamping,Kab. Sleman
+Rumah Second,1500.0,3,189,200,SHM,Sewon,Kab. Bantul
+Rumah Second,2000.0,3,163,120,SHM,Mlati,Kab. Sleman
+Rumah Second,3900.0,6,297,288,SHM,Kalasan,Kab. Sleman
+Rumah Second,350.0,2,104,50,SHM,Moyudan,Kab. Sleman
+Rumah Second,550.0,2,111,111,SHM,Pundong,Kab. Bantul
+Rumah Second,3700.0,6,220,330,SHM,Depok,Kab. Sleman
+Rumah Second,250.0,2,72,30,Tidak Tersedia,Ngaglik,Kab. Sleman
+Rumah Second,180.0,3,114,125,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1400.0,3,100,80,SHM,Ngaglik,Kab. Sleman
+Rumah Second,2100.0,10,96,250,SHM,Depok,Kab. Sleman
+Rumah Second,700.0,2,75,75,SHM,Depok,Kab. Sleman
+Rumah Second,395.0,2,86,36,SHM,Kasihan,Kab. Bantul
+Rumah Second,725.0,4,102,139,SHM,Sleman,Kab. Sleman
+Rumah Second,1600.0,3,93,70,SHM,Gamping,Kab. Sleman
+Rumah Second,470.0,2,107,50,SHM,Seyegan,Kab. Sleman
+Rumah Second,4700.0,4,110,146,Tidak Tersedia,Mlati,Kab. Sleman
+Rumah Second,1300.0,4,132,132,Tidak Tersedia,Mantrijeron,Kota Yogyakarta
+Rumah Second,690.0,2,90,51,SHM,Ngaglik,Kab. Sleman
+Rumah Second,590.0,2,113,45,SHM,Berbah,Kab. Sleman
+Rumah Second,733.0,2,92,42,SHM,Gamping,Kab. Sleman
+Rumah Second,375.0,2,80,45,SHM,Pandak,Kab. Bantul
+Rumah Second,355.0,2,75,45,SHM,Kasihan,Kab. Bantul
+Rumah Second,335.0,2,70,36,SHM,Kasihan,Kab. Bantul
+Rumah Second,380.0,2,86,40,SHM,Kasihan,Kab. Bantul
+Rumah Second,500.0,2,106,36,SHM,Seyegan,Kab. Sleman
+Rumah Second,650.0,2,1000,60,SHM,Lendah,Kab. Kulon Progo
+Rumah Second,1200.0,6,163,220,SHM,Gamping,Kab. Sleman
+Rumah Second,835.0,3,124,73,SHM,Kalasan,Kab. Sleman
+Rumah Second,1200.0,4,120,121,SHM,Ngemplak,Kab. Sleman
+Rumah Second,6500.0,4,557,450,SHM,Depok,Kab. Sleman
+Rumah Second,950.0,4,117,140,SHM,Depok,Kab. Sleman
+Rumah Second,550.0,4,90,114,SHM,Kasihan,Kab. Bantul
+Rumah Second,1000.0,3,85,85,SHM,Sewon,Kab. Bantul
+Rumah Second,450.0,2,101,70,SHM,Kasihan,Kab. Bantul
+Rumah Second,1800.0,3,125,130,SHM,Ngaglik,Kab. Sleman
+Rumah Second,3500.0,5,310,250,SHM,Kotagede,Kota Yogyakarta
+Rumah Second,1200.0,2,108,50,SHM,Ngaglik,Kab. Sleman
+Rumah Second,850.0,2,85,55,SHM,Ngaglik,Kab. Sleman
+Rumah Second,680.0,3,80,112,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1800.0,5,256,150,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1600.0,5,150,100,SHM,Depok,Kab. Sleman
+Rumah Second,620.0,6,75,100,SHM,Ngaglik,Kab. Sleman
+Rumah Second,2800.0,10,250,200,SHM,Depok,Kab. Sleman
+Rumah Second,7000.0,5,599,380,SHM,Mlati,Kab. Sleman
+Rumah Second,1500.0,2,60,120,SHM,Kraton,Kota Yogyakarta
+Rumah Second,1800.0,1,164,95,SHM,Banguntapan,Kab. Bantul
+Rumah Second,395.0,2,92,50,SHM,Sedayu,Kab. Bantul
+Rumah Second,2500.0,4,357,400,SHM,Piyungan,Kab. Bantul
+Rumah Second,1800.0,3,232,200,SHM,Umbulharjo,Kota Yogyakarta
+Rumah Second,780.0,5,143,135,SHM,Sleman,Kab. Sleman
+Rumah Second,1300.0,3,122,140,SHM,Banguntapan,Kab. Bantul
+Rumah Second,840.0,3,80,140,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1400.0,3,278,150,SHM,Ngaglik,Kab. Sleman
+Rumah Second,545.0,3,110,60,SHM,Godean,Kab. Sleman
+Rumah Second,258.0,2,70,30,SHM,Kalasan,Kab. Sleman
+Rumah Second,6500.0,6,450,400,SHM,Depok,Kab. Sleman
+Rumah Second,2800.0,5,254,350,SHM,Ngaglik,Kab. Sleman
+Rumah Second,3500.0,6,220,320,SHM,Depok,Kab. Sleman
+Rumah Second,1800.0,3,135,160,SHM,Umbulharjo,Kota Yogyakarta
+Rumah Second,2500.0,4,110,220,SHM,Depok,Kab. Sleman
+Rumah Second,550.0,3,124,58,SHM,Sleman,Kab. Sleman
+Rumah Second,4000.0,3,640,350,SHM,Gamping,Kab. Sleman
+Rumah Second,1800.0,6,253,240,SHM,Depok,Kab. Sleman
+Rumah Second,875.0,2,131,70,SHM,Mlati,Kab. Sleman
+Rumah Second,1200.0,5,217,100,SHM,Umbulharjo,Kota Yogyakarta
+Rumah Second,496.5,2,112,36,SHM,Umbulharjo,Kota Yogyakarta
+Rumah Second,7400.0,8,260,450,SHM,Gamping,Kab. Sleman
+Rumah Second,375.0,2,75,45,SHM,Prambanan,Kab. Sleman
+Rumah Second,725.0,3,114,71,SHM,Jetis,Kota Yogyakarta
+Rumah Second,699.0,3,119,80,SHM,Godean,Kab. Sleman
+Rumah Second,999.0,3,103,105,SHM,Ngemplak,Kab. Sleman
+Rumah Second,2900.0,4,174,189,SHM,Gamping,Kab. Sleman
+Rumah Second,1500.0,5,158,172,SHM,Banguntapan,Kab. Bantul
+Rumah Second,620.0,3,81,50,SHM,Prambanan,Kab. Sleman
+Rumah Second,1500.0,3,111,80,SHM,Ngemplak,Kab. Sleman
+Rumah Second,200.2,2,60,30,SHM,Moyudan,Kab. Sleman
+Rumah Second,1600.0,3,111,90,SHM,Ngemplak,Kab. Sleman
+Rumah Second,735.0,3,105,70,SHM,Ngemplak,Kab. Sleman
+Rumah Second,1600.0,4,146,164,SHM,Kalasan,Kab. Sleman
+Rumah Second,1200.0,4,90,105,SHM,Banguntapan,Kab. Bantul
+Rumah Second,375.0,2,108,45,SHM,Sleman,Kab. Sleman
+Rumah Second,450.0,2,95,36,SHM,Kasihan,Kab. Bantul
+Rumah Second,815.0,3,112,75,SHM,Depok,Kab. Sleman
+Rumah Second,1400.0,5,152,112,SHM,Ngaglik,Kab. Sleman
+Rumah Second,285.0,2,66,36,SHM,Jetis,Kab. Bantul
+Rumah Second,858.0,3,132,50,SHM,Ngaglik,Kab. Sleman
+Rumah Second,700.0,2,168,98,SHM,Prambanan,Kab. Sleman
+Rumah Second,275.0,2,80,30,SHM,Kalasan,Kab. Sleman
+Rumah Second,3800.0,5,472,130,SHM,Pakem,Kab. Sleman
+Rumah Second,337.0,2,60,30,HGB,Seyegan,Kab. Sleman
+Rumah Second,1600.0,3,103,120,SHM,Godean,Kab. Sleman
+Rumah Second,554.0,2,84,45,SHM,Kalasan,Kab. Sleman
+Rumah Second,374.6,2,60,40,SHM,Sedayu,Kab. Bantul
+Rumah Second,600.0,2,53,100,SHM,Kalasan,Kab. Sleman
+Rumah Second,971.3,2,151,76,HGB,Gamping,Kab. Sleman
+Rumah Second,925.0,3,141,100,SHM,Kalasan,Kab. Sleman
+Rumah Second,490.0,2,72,36,SHM,Kalasan,Kab. Sleman
+Rumah Second,999.0,3,103,100,SHM,Gondokusuman,Kota Yogyakarta
+Rumah Second,435.0,2,45,98,SHM,Prambanan,Kab. Sleman
+Rumah Second,10100.0,4,281,275,SHM,Depok,Kab. Sleman
+Rumah Second,9300.0,4,235,275,SHM,Depok,Kab. Sleman
+Rumah Second,9300.0,4,234,275,SHM,Depok,Kab. Sleman
+Rumah Second,9300.0,4,233,275,SHM,Depok,Kab. Sleman
+Rumah Baru,270.0,2,84,45,HGB,Playen,Kab. Gunung Kidul
+Rumah Second,485.0,2,80,36,SHM,Ngaglik,Kab. Sleman
+Rumah Second,197.0,2,64,26,SHM,Prambanan,Kab. Sleman
+Rumah Second,280.0,2,61,35,SHM,Prambanan,Kab. Sleman
+Rumah Second,765.0,2,108,50,SHM,Godean,Kab. Sleman
+Rumah Second,388.0,2,40,81,SHM,Sedayu,Kab. Bantul
+Rumah Second,592.0,2,90,36,SHM,Depok,Kab. Sleman
+Rumah Second,670.0,2,130,50,SHM,Mlati,Kab. Sleman
+Rumah Second,285.0,2,93,36,SHM,Sedayu,Kab. Bantul
+Rumah Second,725.0,4,140,100,SHM,Kalasan,Kab. Sleman
+Rumah Second,629.0,3,118,52,SHM,Mlati,Kab. Sleman
+Rumah Second,350.0,2,100,36,SHM,Kalasan,Kab. Sleman
+Rumah Second,425.0,2,77,77,SHM,Kasihan,Kab. Bantul
+Rumah Second,375.0,2,70,40,SHM,Kalasan,Kab. Sleman
+Rumah Second,625.0,2,100,43,SHM,Godean,Kab. Sleman
+Rumah Second,260.0,2,76,40,SHM,Prambanan,Kab. Sleman
+Rumah Second,1700.0,5,200,150,SHM,Depok,Kab. Sleman
+Rumah Second,375.0,2,72,60,SHM,Kalasan,Kab. Sleman
+Rumah Second,1800.0,3,125,150,SHM,Ngaglik,Kab. Sleman
+Rumah Second,765.0,3,105,70,SHM,Ngemplak,Kab. Sleman
+Rumah Second,2000.0,3,114,125,SHM,Ngaglik,Kab. Sleman
+Rumah Second,730.0,2,108,50,SHM,Seyegan,Kab. Sleman
+Rumah Second,650.0,2,100,45,SHM,Mlati,Kab. Sleman
+Rumah Second,185.0,2,60,27,SHM,Jetis,Kab. Bantul
+Rumah Second,1400.0,4,104,140,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1600.0,4,120,142,SHM,Kalasan,Kab. Sleman
+Rumah Second,950.0,3,145,85,SHM,Depok,Kab. Sleman
+Rumah Second,890.0,3,102,70,SHM,Ngaglik,Kab. Sleman
+Rumah Second,385.0,2,36,80,SHM,Sedayu,Kab. Bantul
+Rumah Second,2800.0,2,153,300,SHM,Ngemplak,Kab. Sleman
+Rumah Second,575.0,2,73,73,SHM,Ngaglik,Kab. Sleman
+Rumah Second,700.0,3,99,75,SHM,Sleman,Kab. Sleman
+Rumah Second,480.0,3,60,62,SHM,Prambanan,Kab. Sleman
+Rumah Second,299.0,2,60,30,SHM,Seyegan,Kab. Sleman
+Rumah Second,1500.0,3,121,100,SHM,Ngaglik,Kab. Sleman
+Rumah Second,1500.0,4,118,160,SHM,Depok,Kab. Sleman
+Rumah Second,275.0,2,70,36,SHM,Sedayu,Kab. Bantul
+Rumah Second,1300.0,3,175,166,SHM,Godean,Kab. Sleman
+Rumah Second,495.0,2,120,55,SHM,Kalasan,Kab. Sleman
+Rumah Second,398.0,2,80,36,SHM,Sleman,Kab. Sleman
+Rumah Second,2000.0,4,119,126,SHM,Ngemplak,Kab. Sleman
+Rumah Second,925.0,2,103,100,SHM,Ngaglik,Kab. Sleman
+Rumah Second,655.0,2,118,45,SHM,Kasihan,Kab. Bantul
+Rumah Second,625.0,2,88,45,HGB,Godean,Kab. Sleman
+Rumah Second,496.0,2,111,36,SHM,Godean,Kab. Sleman
+Rumah Second,250.0,2,60,40,SHM,Prambanan,Kab. Sleman
+Rumah Second,1300.0,3,134,110,SHM,Ngaglik,Kab. Sleman
+Rumah Second,480.0,2,72,36,SHM,Kalasan,Kab. Sleman
+Rumah Second,745.0,2,119,45,SHM,Mlati,Kab. Sleman
+Rumah Second,560.0,3,115,60,SHM,Mlati,Kab. Sleman
+Rumah Second,260.0,2,60,36,SHM,Ngemplak,Kab. Sleman
+Rumah Second,545.0,2,100,45,SHM,Kalasan,Kab. Sleman
+Rumah Second,395.0,3,98,60,SHM,Kasihan,Kab. Bantul
+Rumah Second,495.0,2,112,36,SHM,Depok,Kab. Sleman
+Rumah Second,1100.0,3,109,110,SHM,Prambanan,Kab. Sleman
+Rumah Second,1300.0,2,134,70,SHM,Bantul,Kab. Bantul

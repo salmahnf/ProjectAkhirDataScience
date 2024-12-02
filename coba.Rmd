@@ -1,0 +1,100 @@
+---
+title: "coba"
+author: "Diandra Yusuf Arrafi_123220031"
+date: "2024-12-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+# Load library
+library(randomForest)
+library(caret)
+
+# Load dataset
+file_path <- "data_rumah_cleaned.csv"
+data <- read.csv(file_path)
+
+# Pastikan tipe data sesuai
+data$area <- as.factor(data$area)
+data$region <- as.factor(data$region)
+
+# Tetapkan bobot untuk region
+region_weights <- c(
+  "kota yogyakarta" = 5, 
+  "kab. sleman" = 4, 
+  "kab. bantul" = 3, 
+  "kab. gunung kidul" = 2, 
+  "kab. kulon progo" = 1
+)
+
+# Bersihkan dan pastikan konsistensi format teks pada kolom region
+data$region <- tolower(trimws(data$region))
+data$region <- as.numeric(sapply(data$region, function(x) region_weights[x]))
+
+# Identifikasi batas outlier
+upper_limit <- quantile(data$price, 0.95)  # Persentil ke-95
+upper_limit
+
+# Hapus outlier
+data <- data[data$price <= upper_limit, ]
+
+# Split data menjadi fitur (X) dan target (y)
+X <- data[, c("luas_tanah", "luas_bangunan", "kamar_tidur", "region")]
+y <- data$price
+
+# Split dataset menjadi training (80%) dan testing (20%)
+set.seed(42)
+train_index <- createDataPartition(y, p = 0.8, list = FALSE)
+X_train <- X[train_index, ]
+y_train <- y[train_index]
+X_test <- X[-train_index, ]
+y_test <- y[-train_index]
+
+# Gabungkan data training menjadi satu dataframe
+train_data <- data.frame(X_train, price = y_train)
+test_data <- data.frame(X_test)
+
+# Melatih model Random Forest
+set.seed(42)
+rf_model_clean <- randomForest(
+  price ~ ., 
+  data = train_data, 
+  ntree = 1000,      # Jumlah pohon
+  mtry = 2,          # Jumlah fitur yang digunakan di setiap split
+  nodesize = 5,      # Ukuran minimum node
+  importance = TRUE  # Analisis pentingnya fitur
+)
+
+# Ringkasan model
+print(rf_model_clean)
+
+# Prediksi pada data uji
+rf_pred_clean <- predict(rf_model_clean, newdata = test_data)
+
+# Evaluasi performa
+mae <- mean(abs(rf_pred_clean - y_test))  # Mean Absolute Error
+mse <- mean((rf_pred_clean - y_test)^2)  # Mean Squared Error
+rmse <- sqrt(mse)                        # Root Mean Squared Error
+r2 <- 1 - sum((rf_pred_clean - y_test)^2) / sum((y_test - mean(y_test))^2)  # R² Score
+
+# Menampilkan hasil evaluasi
+cat("MAE (Tanpa Outlier):", mae, "\n")
+cat("MSE (Tanpa Outlier):", mse, "\n")
+cat("RMSE (Tanpa Outlier):", rmse, "\n")
+cat("R² (Tanpa Outlier):", r2, "\n")
+
+# Visualisasi pentingnya fitur
+varImpPlot(rf_model_clean, main = "Pentingnya Fitur (Random Forest - Tanpa Outlier)")
+
+# Menampilkan pentingnya fitur secara numerik
+importance <- importance(rf_model_clean)
+print(importance)
+
+```
+
