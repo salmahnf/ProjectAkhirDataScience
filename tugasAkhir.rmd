@@ -1,0 +1,206 @@
+---
+title: "tugasAkhir"
+author: "SalmaHanifa_123220019"
+date: "2024-12-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---
+title: "Modeling Harga Properti di Yogyakarta"
+author: "Salma Hanifa"
+output: html_document
+---
+
+## 1. Memuat Data
+
+Mari kita mulai dengan memuat dataset yang telah dibersihkan sebelumnya.
+```{r}
+# Import Library
+library(dslabs)
+library(tidyverse)
+library(tidymodels)
+library(caret)
+library(dplyr)
+
+# Memuat dataset yang telah dibersihkan
+data <- read.csv("data_rumah_cleaned.csv", sep = ";")
+
+# Melihat 6 baris pertama dari dataset
+head(data)
+
+```
+
+2. Membersihkan dan Menambahkan Fitur Baru
+Menambah beberapa fitur baru yang mungkin membantu model prediksi.
+```{r}
+# Menambah fitur harga per meter persegi (price per square meter)
+data$price_per_m2 <- data$price / (data$luas_tanah + 1)  # Menambahkan 1 untuk menghindari pembagian dengan 0
+
+# Menambah rasio luas bangunan terhadap luas tanah
+data$building_to_land_ratio <- data$luas_bangunan / data$luas_tanah
+
+# Melihat hasil perubahan data
+head(data)
+```
+3. Memisahkan Data untuk Training dan Testing
+Kita akan membagi data menjadi training dan testing set.
+```{r}
+# Membagi data menjadi fitur (X) dan target (y)
+X <- data %>% select(-price)  # Semua kolom kecuali 'price'
+y <- data$price  # Target adalah kolom 'price'
+
+# Membagi data menjadi training dan testing set
+set.seed(42)
+train_index <- sample(1:nrow(X), size = 0.8 * nrow(X))
+X_train <- X[train_index, ]
+y_train <- y[train_index]
+X_test <- X[-train_index, ]
+y_test <- y[-train_index]
+```
+
+4. Membuat dan Melatih Model
+model Random Forest
+```{r}
+# Memuat library untuk Random Forest
+library(randomForest)
+
+# Membuat model Random Forest
+rf_model <- randomForest(x = X_train, y = y_train, ntree = 100, random_state = 42)
+
+# Melihat hasil model
+rf_model
+
+# Memprediksi harga dengan model Random Forest
+rf_pred <- predict(rf_model, X_test)
+
+# Menghitung evaluasi model
+rf_mae <- mean(abs(rf_pred - y_test))  # Mean Absolute Error
+rf_mse <- mean((rf_pred - y_test)^2)  # Mean Squared Error
+rf_r2 <- 1 - sum((rf_pred - y_test)^2) / sum((y_test - mean(y_test))^2)  # R² Score
+
+# Menampilkan hasil evaluasi
+cat("Random Forest MAE:", rf_mae, "\n")
+cat("Random Forest MSE:", rf_mse, "\n")
+cat("Random Forest R²:", rf_r2, "\n")
+
+# Menghitung RMSE (Root Mean Squared Error)
+rf_rmse <- sqrt(rf_mse)
+
+# Menampilkan RMSE
+cat("Random Forest RMSE:", rf_rmse, "\n")
+
+# Menyusun data metrik evaluasi ke dalam data frame
+evaluation_metrics <- data.frame(
+  Metric = c("MAE", "MSE", "RMSE", "R²"),
+  Value = c(rf_mae, rf_mse, rf_rmse, rf_r2)
+)
+
+# Menampilkan data frame untuk memeriksa nilai-nilai metrik
+print(evaluation_metrics)
+
+# Memuat ggplot2 untuk visualisasi
+library(ggplot2)
+
+# Membuat bar plot untuk menampilkan metrik evaluasi
+ggplot(evaluation_metrics, aes(x = Metric, y = Value, color = Metric)) +
+  geom_point(size = 4) +  # Membuat titik scatter
+  labs(title = "Model Performance Evaluation",
+       x = "Evaluation Metric",
+       y = "Value") +
+  theme_minimal() +
+  scale_color_brewer(palette = "Set3")  # Menambahkan warna untuk titik
+
+```
+Validasi Lebih Lanjut dan Hyperparameter Tuning untuk Meningkatkan Akurasi Model
+Langkah 1: Cross-Validation untuk Memastikan Model Tidak Overfit
+```{r}
+# Memuat library caret untuk cross-validation
+library(caret)
+
+# Membagi data menjadi training dan testing set
+set.seed(42)
+train_index <- createDataPartition(data$price, p = 0.8, list = FALSE)
+train_data <- data[train_index, ]
+test_data <- data[-train_index, ]
+
+# Menentukan model Random Forest untuk cross-validation
+rf_model <- train(price ~ ., data = train_data,
+                  method = "rf",
+                  trControl = trainControl(method = "cv", number = 10), # 10-fold cross-validation
+                  tuneGrid = expand.grid(mtry = c(2, 3, 4)))  # Hyperparameter tuning for mtry
+
+# Menampilkan hasil cross-validation
+print(rf_model)
+
+# Menghitung prediksi dan evaluasi model
+rf_pred <- predict(rf_model, test_data)
+rf_mae <- mean(abs(rf_pred - test_data$price))  # Mean Absolute Error
+rf_mse <- mean((rf_pred - test_data$price)^2)  # Mean Squared Error
+rf_r2 <- 1 - sum((rf_pred - test_data$price)^2) / sum((test_data$price - mean(test_data$price))^2)  # R² Score
+
+# Menampilkan hasil evaluasi setelah cross-validation
+cat("Cross-Validated MAE:", rf_mae, "\n")
+cat("Cross-Validated MSE:", rf_mse, "\n")
+cat("Cross-Validated R²:", rf_r2, "\n")
+
+```
+
+Langkah 2: Hyperparameter Tuning untuk Random Forest
+Pada Random Forest, beberapa hyperparameter yang sering di-tune meliputi:
+
+mtry: Jumlah fitur yang akan dipilih untuk percabangan pohon keputusan pada setiap split.
+ntree: Jumlah pohon keputusan dalam hutan (default: 500).
+max_depth: Kedalaman maksimum dari setiap pohon keputusan.
+min_samples_split: Jumlah minimal sampel yang diperlukan untuk membagi node.
+min_samples_leaf: Jumlah minimum sampel yang diperlukan untuk membentuk daun pohon.
+Kita akan menggunakan Grid Search untuk mencoba beberapa kombinasi hyperparameter dan mencari yang terbaik.
+
+2.1 Tuning Hyperparameter dengan Grid Search
+Berikut adalah langkah-langkah untuk melakukan Grid Search dengan Random Forest menggunakan train() dari caret:
+
+```{r}
+# Memuat library caret untuk hyperparameter tuning
+library(caret)
+
+# Menentukan grid untuk hyperparameter tuning hanya untuk mtry
+tune_grid <- expand.grid(mtry = c(2, 3, 4, 5))  # Jumlah fitur yang digunakan pada setiap split pohon
+
+# Menentukan model Random Forest dengan Grid Search hanya untuk mtry
+rf_grid_search <- train(price ~ ., data = train_data,
+                        method = "rf",
+                        trControl = trainControl(method = "cv", number = 10),  # 10-fold cross-validation
+                        tuneGrid = tune_grid,  # Hanya mengatur mtry
+                        importance = TRUE)  # Menyertakan pentingnya fitur
+
+# Menampilkan hasil grid search
+print(rf_grid_search)
+
+# Menggunakan model terbaik berdasarkan mtry dari grid search
+rf_best_model <- rf_grid_search$finalModel
+
+# Menetapkan ntree secara manual setelah grid search
+ntree_value <- 200  # Menetapkan jumlah pohon (misalnya 200 pohon)
+rf_best_model <- randomForest(price ~ ., data = train_data, 
+                              ntree = ntree_value, 
+                              mtry = rf_grid_search$bestTune$mtry)  # Menggunakan mtry terbaik dari grid search
+
+# Memprediksi harga dengan model terbaik
+rf_best_pred <- predict(rf_best_model, test_data)
+
+# Menghitung evaluasi model
+rf_best_mae <- mean(abs(rf_best_pred - test_data$price))  # Mean Absolute Error
+rf_best_mse <- mean((rf_best_pred - test_data$price)^2)  # Mean Squared Error
+rf_best_r2 <- 1 - sum((rf_best_pred - test_data$price)^2) / sum((test_data$price - mean(test_data$price))^2)  # R² Score
+
+# Menampilkan hasil evaluasi setelah hyperparameter tuning
+cat("Tuned Random Forest MAE:", rf_best_mae, "\n")
+cat("Tuned Random Forest MSE:", rf_best_mse, "\n")
+cat("Tuned Random Forest R²:", rf_best_r2, "\n")
+
+
+```
+

@@ -1,0 +1,114 @@
+---
+title: "testgbm"
+author: "SalmaHanifa_123220019"
+date: "2024-12-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+# Memuat library yang diperlukan
+library(caret)   # Untuk model pelatihan dan evaluasi
+library(tidyverse) # Untuk manipulasi data
+library(gbm)     # Untuk model Gradient Boosting Machine
+library(dplyr)   # Untuk manipulasi data lebih lanjut
+
+```
+
+```{r}
+# Memuat dataset yang telah dibersihkan
+data <- read.csv("data_rumah_cleaned.csv", sep = ";")
+
+# Melihat 6 baris pertama dari dataset untuk pemeriksaan
+head(data)
+
+```
+
+```{r}
+# Menghitung deviasi standar untuk setiap kolom (mengabaikan NA)
+variations <- sapply(data, function(x) sd(x, na.rm = TRUE))
+
+# Menampilkan kolom yang memiliki deviasi standar 0
+zero_variation_columns <- names(variations[variations == 0])
+
+# Menampilkan kolom dengan variasi nol (nilai konstan)
+print("Kolom dengan variasi nol (nilai konstan):")
+print(zero_variation_columns)
+
+# Menghapus kolom yang memiliki variasi nol
+data_cleaned <- data[, !(names(data) %in% zero_variation_columns)]
+
+# Menampilkan dataset setelah penghapusan kolom tanpa variasi
+head(data_cleaned)
+
+
+```
+
+```{r}
+# Mengonversi kolom kategorikal menjadi faktor
+data_cleaned$type <- factor(data_cleaned$type)  # Convert 'type' to factor
+data_cleaned$sertifikasi <- factor(data_cleaned$sertifikasi)  # Convert 'sertifikasi' to factor
+data_cleaned$region <- factor(data_cleaned$region)  # Convert 'region' to factor
+
+# Menangani missing values pada kolom 'region' jika ada
+if (sum(is.na(data_cleaned$region)) > 0) {
+  data_cleaned$region[is.na(data_cleaned$region)] <- "Unknown"  # Mengisi NA dengan 'Unknown'
+}
+
+# Memeriksa kolom-kolom setelah preprocessing
+head(data_cleaned)
+
+```
+```{r}
+# Menambah fitur harga per meter persegi (price per square meter)
+data_cleaned$price_per_m2 <- data_cleaned$price / (data_cleaned$luas_tanah + 1)  # Menambahkan 1 untuk menghindari pembagian dengan 0
+
+# Menambah rasio luas bangunan terhadap luas tanah
+data_cleaned$building_to_land_ratio <- data_cleaned$luas_bangunan / data_cleaned$luas_tanah
+
+# Melihat hasil perubahan data setelah menambah fitur
+head(data_cleaned)
+
+```
+```{r}
+# Membagi data menjadi fitur (X) dan target (y)
+X <- data_cleaned %>% select(-price)  # Semua kolom kecuali 'price'
+y <- data_cleaned$price  # Target adalah kolom 'price'
+
+# Membagi data menjadi training (80%) dan testing (20%) set
+set.seed(42)
+train_index <- sample(1:nrow(X), size = 0.8 * nrow(X))
+X_train <- X[train_index, ]
+y_train <- y[train_index]
+X_test <- X[-train_index, ]
+y_test <- y[-train_index]
+
+```
+
+```{r}
+library(caret)
+# Menentukan grid untuk hyperparameter tuning
+tune_grid_gbm <- expand.grid(
+  n.trees = c(100, 150, 200),         # Jumlah pohon yang digunakan
+  interaction.depth = c(3, 5, 7),     # Kedalaman pohon
+  shrinkage = c(0.01, 0.05, 0.1),     # Tingkat pembelajaran (learning rate)
+  n.minobsinnode = c(10, 20)          # Jumlah minimum sampel pada setiap node
+)
+
+# Melakukan Grid Search dengan Cross-Validation menggunakan GBM
+gbm_model <- train(price ~ ., data = data_cleaned[train_index, ],
+                   method = "gbm",  # Model GBM
+                   trControl = trainControl(method = "cv", number = 10),  # 10-fold cross-validation
+                   tuneGrid = tune_grid_gbm,  # Grid untuk hyperparameter
+                   verbose = FALSE)  # Menonaktifkan output tambahan
+
+# Menampilkan hasil grid search
+print(gbm_model)
+
+
+```
+
