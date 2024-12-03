@@ -46,15 +46,36 @@ data$building_to_land_ratio <- data$luas_bangunan / data$luas_tanah
 head(data)
 
 ```
+
+```{r}
+# Identifikasi dan hapus outlier berdasarkan IQR
+Q1 <- quantile(data$price, 0.25)
+Q3 <- quantile(data$price, 0.75)
+IQR <- Q3 - Q1
+
+# Hitung batas bawah dan batas atas untuk outlier
+lower_bound <- Q1 - 1.5 * IQR
+upper_bound <- Q3 + 1.5 * IQR
+
+# Hapus outlier (data yang berada di luar batas bawah dan atas)
+data_clean <- data %>% filter(price >= lower_bound & price <= upper_bound)
+
+# Visualisasi boxplot setelah menghapus outlier
+ggplot(data_clean, aes(x = "", y = price)) + 
+  geom_boxplot(outlier.colour = "red", outlier.shape = 8) +
+  labs(title = "Boxplot Harga Rumah Setelah Menghapus Outlier", y = "Harga Rumah")
+```
+
+
 3. Memisahkan Data untuk Training dan Testing
 Kita akan membagi data menjadi training dan testing set.
 ```{r}
 # Membagi data menjadi fitur (X) dan target (y)
-X <- data %>% select(-price)  # Semua kolom kecuali 'price'
-y <- data$price  # Target adalah kolom 'price'
+X <- data_clean %>% select(-price)  # Semua kolom kecuali 'price'
+y <- data_clean$price  # Target adalah kolom 'price'
 
 # Membagi data menjadi training dan testing set
-set.seed(42)
+set.seed(123)
 train_index <- sample(1:nrow(X), size = 0.8 * nrow(X))
 X_train <- X[train_index, ]
 y_train <- y[train_index]
@@ -70,7 +91,7 @@ model Random Forest
 rf_model <- randomForest(x = X_train, y = y_train, ntree = 100, random_state = 42)
 
 # Melihat hasil model
-rf_model
+print(rf_model)
 
 # Memprediksi harga dengan model Random Forest
 rf_pred <- predict(rf_model, X_test)
@@ -108,7 +129,6 @@ ggplot(evaluation_metrics, aes(x = Metric, y = Value, color = Metric)) +
        y = "Value") +
   theme_minimal() +
   scale_color_brewer(palette = "Set3")  # Menambahkan warna untuk titik
-
 ```
 
 ```{r}
