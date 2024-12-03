@@ -204,3 +204,22 @@ cat("Tuned Random Forest R²:", rf_best_r2, "\n")
 
 ```
 
+```{r}
+# Menggunakan model terbaik yang ditemukan
+rf_best_model <- rf_model$finalModel
+
+# Memprediksi harga dengan model Random Forest terbaik
+rf_best_pred <- predict(rf_best_model, X_test)
+
+# Menghitung evaluasi model
+rf_best_mae <- mean(abs(rf_best_pred - y_test))  # Mean Absolute Error
+rf_best_mse <- mean((rf_best_pred - y_test)^2)  # Mean Squared Error
+rf_best_r2 <- 1 - sum((rf_best_pred - y_test)^2) / sum((y_test - mean(y_test))^2)  # R² Score
+
+# Menampilkan hasil evaluasi setelah hyperparameter tuning
+cat("Tuned Random Forest MAE:", rf_best_mae, "\n")
+cat("Tuned Random Forest MSE:", rf_best_mse, "\n")
+cat("Tuned Random Forest R²:", rf_best_r2, "\n")
+
+```
+
