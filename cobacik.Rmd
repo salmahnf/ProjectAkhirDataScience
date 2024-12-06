@@ -1,0 +1,243 @@
+---
+title: "cobacik"
+author: "Diandra Yusuf Arrafi_123220031"
+date: "2024-12-06"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r}
+
+library(ggplot2)
+library(dplyr)
+library(lubridate)
+library(forcats)
+
+# 2. Load data
+data <- read.csv("rumah_cleaned.csv")
+
+# 3. Konversi kolom 'kota' dan 'sertifikasi' menjadi faktor
+data$kota <- as.factor(data$kota)
+data$sertifikasi <- as.factor(data$sertifikasi)
+data$date <- as.Date(data$date)
+
+# 4. Visualisasi: Jumlah Data per Kota
+ggplot(data, aes(x = kota)) + 
+  geom_bar(fill = "skyblue") + 
+  labs(title = "Jumlah Data per Kota") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# 5. Visualisasi: Rata-rata Harga per Kota
+avg_price_per_kota <- data %>%
+  group_by(kota) %>%
+  summarise(avg_price = mean(price))
+
+ggplot(avg_price_per_kota, aes(x = kota, y = avg_price)) + 
+  geom_bar(stat = "identity", fill = "tomato") + 
+  labs(title = "Rata-rata Harga per Kota") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# 6. Visualisasi: Rata-rata Harga per Kamar Tidur
+avg_price_per_kamar <- data %>%
+  group_by(kamar_tidur) %>%
+  summarise(avg_price = mean(price))
+
+ggplot(avg_price_per_kamar, aes(x = factor(kamar_tidur), y = avg_price)) + 
+  geom_bar(stat = "identity", fill = "lightgreen") + 
+  labs(title = "Rata-rata Harga per Kamar Tidur") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# 7. Visualisasi: Rata-rata Luas Tanah per Kota
+avg_tanah_per_kota <- data %>%
+  group_by(kota) %>%
+  summarise(avg_luas_tanah = mean(luas_tanah))
+
+ggplot(avg_tanah_per_kota, aes(x = kota, y = avg_luas_tanah)) + 
+  geom_bar(stat = "identity", fill = "cornflowerblue") + 
+  labs(title = "Rata-rata Luas Tanah per Kota") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# 8. Visualisasi: Jumlah Data per Tanggal
+data$date_str <- as.Date(data$date)
+ggplot(data, aes(x = date_str)) + 
+  geom_bar(fill = "orange") + 
+  labs(title = "Jumlah Data per Tanggal") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# 9. Visualisasi: Rata-rata Luas Tanah per Kota
+ggplot(avg_tanah_per_kota, aes(x = kota, y = avg_luas_tanah)) + 
+  geom_bar(stat = "identity", fill = "lightblue") + 
+  labs(title = "Rata-rata Luas Tanah per Kota") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# 10. Visualisasi: Rata-rata Luas Bangunan per Kota
+avg_bangunan_per_kota <- data %>%
+  group_by(kota) %>%
+  summarise(avg_luas_bangunan = mean(luas_bangunan))
+
+ggplot(avg_bangunan_per_kota, aes(x = kota, y = avg_luas_bangunan)) + 
+  geom_bar(stat = "identity", fill = "salmon") + 
+  labs(title = "Rata-rata Luas Bangunan per Kota") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# 11. Visualisasi: Korelasi antara Luas Tanah, Luas Bangunan, Kamar Tidur, dan Harga
+cor_data <- data %>%
+  select(luas_tanah, luas_bangunan, kamar_tidur, price) %>%
+  cor()
+
+library(ggcorrplot)
+ggcorrplot(cor_data, 
+           method = "circle", 
+           lab = TRUE, 
+           lab_size = 3, 
+           title = "Korelasi antara Luas Tanah, Luas Bangunan, Kamar Tidur, dan Harga")
+
+```
+```{r}
+# Menggunakan IQR untuk menghapus outlier dari kolom 'price'
+# Fungsi untuk mendeteksi outlier menggunakan IQR
+detect_outliers_IQR <- function(df, column_name) {
+  Q1 <- quantile(df[[column_name]], 0.25)
+  Q3 <- quantile(df[[column_name]], 0.75)
+  IQR_value <- Q3 - Q1
+  lower_bound <- Q1 - 1.5 * IQR_value
+  upper_bound <- Q3 + 1.5 * IQR_value
+  
+  # Menyaring data outlier
+  outliers <- df %>%
+    filter(df[[column_name]] < lower_bound | df[[column_name]] > upper_bound)
+  
+  return(outliers)
+}
+
+# Deteksi outlier untuk kolom 'price', 'luas_tanah', dan 'luas_bangunan'
+price_outliers <- detect_outliers_IQR(data, "price")
+luas_tanah_outliers <- detect_outliers_IQR(data, "luas_tanah")
+luas_bangunan_outliers <- detect_outliers_IQR(data, "luas_bangunan")
+
+# Menampilkan jumlah outlier
+cat("Jumlah outlier pada price:", nrow(price_outliers), "\n")
+cat("Jumlah outlier pada luas_tanah:", nrow(luas_tanah_outliers), "\n")
+cat("Jumlah outlier pada luas_bangunan:", nrow(luas_bangunan_outliers), "\n")
+
+
+```
+```{r}
+# Fungsi untuk mendeteksi dan menghapus outlier menggunakan IQR
+remove_outliers_IQR <- function(df, column_name) {
+  # Menghitung Q1, Q3, dan IQR
+  Q1 <- quantile(df[[column_name]], 0.25)
+  Q3 <- quantile(df[[column_name]], 0.75)
+  IQR_value <- Q3 - Q1
+  lower_bound <- Q1 - 1.5 * IQR_value
+  upper_bound <- Q3 + 1.5 * IQR_value
+  
+  # Menghapus data yang berada di luar rentang batas bawah dan atas
+  df_no_outliers <- df %>%
+    filter(df[[column_name]] >= lower_bound & df[[column_name]] <= upper_bound)
+  
+  return(df_no_outliers)
+}
+
+# Menghapus outlier untuk kolom 'price', 'luas_tanah', dan 'luas_bangunan'
+data_no_outliers_price <- remove_outliers_IQR(data, "price")
+data_no_outliers_luas_tanah <- remove_outliers_IQR(data_no_outliers_price, "luas_tanah")
+data_no_outliers_luas_bangunan <- remove_outliers_IQR(data_no_outliers_luas_tanah, "luas_bangunan")
+
+
+```
+
+```{r}
+# Menentukan nilai batas harga yang terlalu kecil
+batas_harga_min <- 500  # Anda bisa menyesuaikan batas ini sesuai kebutuhan
+
+# Menentukan nilai batas harga yang terlalu BEsar
+batas_harga_max <- 10000  # Anda bisa menyesuaikan batas ini sesuai kebutuhan
+
+# Menghapus data dengan harga yang lebih kecil dari batas harga yang ditentukan
+data_no_outliers_luas_bangunan <- data_no_outliers_luas_bangunan %>% filter(price >= batas_harga_min)
+
+# Menghapus data dengan harga yang lebih kecil dari batas harga yang ditentukan
+data_no_outliers_luas_bangunan <- data_no_outliers_luas_bangunan %>% filter(price < batas_harga_max)
+```
+
+
+```{r}
+# Membuat density plot untuk melihat distribusi harga rumah
+# Menampilkan statistik deskriptif dari harga rumah
+summary(data_no_outliers_luas_bangunan$price)
+
+```
+
+
+
+```{r}
+# Memuat library yang diperlukan
+library(randomForest)  # Untuk Random Forest
+library(caret)         # Untuk pre-processing dan pembagian data
+library(ggplot2)
+
+# Pisahkan data menjadi fitur (X) dan target (y)
+data_no_outliers_luas_bangunan$price <- as.numeric(data_no_outliers_luas_bangunan$price)
+X <- data_no_outliers_luas_bangunan[, c("kamar_tidur", "luas_tanah", "luas_bangunan")]
+y <- data_no_outliers_luas_bangunan$price
+
+# Membagi data menjadi training dan testing (80% training, 20% testing)
+set.seed(123)  # Untuk reproduksibilitas
+trainIndex <- createDataPartition(y, p = 0.8, list = FALSE)
+train_data <- data_no_outliers_luas_bangunan[trainIndex,]
+test_data <- data_no_outliers_luas_bangunan[-trainIndex,]
+
+# Menyiapkan data untuk Random Forest (features dan target untuk training dan testing)
+train_features <- train_data[, c("kamar_tidur", "luas_tanah", "luas_bangunan")]
+test_features <- test_data[, c("kamar_tidur", "luas_tanah", "luas_bangunan")]
+train_target <- train_data$price
+test_target <- test_data$price
+
+# Melakukan normalisasi pada fitur (opsional untuk Random Forest)
+pre_process <- preProcess(train_features, method = "scale")
+train_features_scaled <- predict(pre_process, train_features)
+test_features_scaled <- predict(pre_process, test_features)
+
+# Bangun model Random Forest
+rf_model <- randomForest(price ~ kamar_tidur + luas_tanah + luas_bangunan, 
+                         data = train_data, 
+                         ntree = 100,  # Jumlah pohon keputusan (bisa dicoba dengan nilai yang berbeda)
+                         mtry = 2,     # Jumlah variabel yang dipilih di setiap split pohon (mtry)
+                         importance = TRUE)  # Mengaktifkan evaluasi pentingnya fitur
+
+# Prediksi harga rumah dengan model Random Forest
+rf_pred <- predict(rf_model, test_data)
+
+# Menghitung R-squared untuk evaluasi model
+rss <- sum((rf_pred - test_target)^2)  # Residual Sum of Squares
+tss <- sum((test_target - mean(test_target))^2)  # Total Sum of Squares
+r_squared <- 1 - (rss / tss)
+
+# Output R-squared
+cat("R-squared for Random Forest model: ", r_squared, "\n")
+
+# Menampilkan beberapa prediksi dengan harga rumah yang sebenarnya
+results <- data.frame(Actual = test_target, Predicted = rf_pred)
+head(results)
+
+# Visualisasi hubungan antara harga rumah aktual dan harga rumah yang diprediksi
+library(ggplot2)
+
+# Data frame untuk visualisasi
+results_tuned <- data.frame(Actual = test_target, Predicted = rf_pred_tuned)
+
+# Plot prediksi vs aktual
+ggplot(results_tuned, aes(x = Actual, y = Predicted)) +
+  geom_point(color = "blue") +  # Titik untuk data aktual vs prediksi
+  geom_abline(slope = 1, intercept = 0, color = "red") +  # Garis y = x (ideal prediksi)
+  labs(title = "Prediksi vs Actual Harga Rumah",
+       x = "Harga Rumah Aktual",
+       y = "Harga Rumah Prediksi") +
+  theme_minimal()
+
+
+```
+

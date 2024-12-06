@@ -352,6 +352,15 @@ save(rf_model, file = "rf_model.RData")
 
 
 5. Evaluasi Model dengan Data Uji
+
+```{r}
+# Prediksi harga menggunakan data uji
+prediksi <- predict(rf_model, newdata = test_data)
+
+# Menampilkan beberapa hasil prediksi
+head(prediksi)
+```
+
 ```{r}
 # Prediksi menggunakan model pada data uji
 predictions <- predict(rf_model, newdata = test_data)
