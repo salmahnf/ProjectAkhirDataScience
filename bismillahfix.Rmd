@@ -1,0 +1,519 @@
+---
+title: "bismillahfix"
+author: "SalmaHanifa_123220019"
+date: "2024-12-06"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(tidyverse)  # Untuk manipulasi data dan visualisasi
+library(lubridate)  # Untuk manipulasi tanggal jika diperlukan
+library(corrplot)   # Untuk visualisasi korelasi
+```
+
+
+```{r}
+# Membaca dataset
+rumah_data <- read.csv("C:/Users/Salma Hanifa/OneDrive/Dokumen/belajar python/datascience/projectAkhir/rumah.csv")
+
+
+# Menampilkan informasi dasar mengenai dataset
+glimpse(rumah_data)
+
+```
+
+1b. Menampilkan Jumlah Baris dan Kolom
+
+```{r}
+# Menampilkan jumlah baris dan kolom dalam dataset
+dim(rumah_data)
+```
+c. Memeriksa Nama Kolom, Tipe Data, dan Missing Values
+Menampilkan informasi tentang nama kolom, tipe data, dan jumlah nilai kosong di setiap kolom.
+```{r}
+colnames(rumah_data)  # Nama kolom
+sapply(rumah_data, class)  # Tipe data setiap kolom
+sapply(rumah_data, function(x) sum(is.na(x)))  # Menghitung missing values
+```
+d. Menghapus Missing Values
+```{r}
+# Menghapus baris dengan missing value di kolom yang penting
+rumah_data <- rumah_data %>%
+  filter(!is.na(price) & !is.na(luas_tanah) & !is.na(luas_bangunan))
+
+# Menghapus baris dengan missing values di seluruh dataset
+rumah_data <- rumah_data[complete.cases(rumah_data), ]
+
+# Menampilkan beberapa baris data setelah pembersihan nilai kosong
+head(rumah_data)
+```
+
+e. Menghapus Duplikat
+```{r}
+# Menghapus baris yang duplikat
+rumah_data <- rumah_data %>%
+  distinct()
+
+# Menampilkan jumlah baris setelah penghapusan duplikat
+dim(rumah_data)
+```
+
+e. Menghapus Data yang Mengandung Karakter '-' pada kolom price
+```{r}
+# Menghapus data yang memiliki karakter '-' di kolom 'price'
+rumah_data <- rumah_data %>%
+  filter(!str_detect(price, "-"))
+
+# Menampilkan beberapa baris data setelah penghapusan
+head(rumah_data)
+```
+
+
+f. Menangani Kolom 'price' dan Mengonversinya ke Satuan Rupiah
+Fungsi ini akan mengonversi harga menjadi satuan rupiah yang benar (misalnya dari 'Jt' ke juta atau 'M' ke milyar).
+```{r}
+# Menghapus data yang memiliki karakter '-' di kolom 'price'
+rumah_data <- rumah_data %>%
+  filter(!str_detect(price, "-"))
+
+# Menampilkan beberapa baris data setelah penghapusan
+head(rumah_data)
+
+```
+
+```{r}
+# Fungsi untuk mengonversi kolom 'price'
+convert_price <- function(price) {
+  price <- gsub("Rp| ", "", price)  # Menghapus prefix 'Rp' dan spasi
+  price <- gsub(",", ".", price)    # Tangani koma sebagai desimal (jika ada)
+  
+  # Jika harga mengandung 'Jt', kalikan dengan 1 juta
+  if (grepl("Jt", price)) {
+    price <- as.numeric(gsub("Jt", "", price)) * 1000000
+  }
+  # Jika harga mengandung 'M', kalikan dengan 1 milyar
+  else if (grepl("M", price)) {
+    price <- as.numeric(gsub("M", "", price)) * 1000000000
+  }
+  else {
+    price <- as.numeric(price)  # Harga dalam format biasa
+  }
+  return(price)
+}
+
+# Terapkan fungsi konversi pada kolom 'price'
+rumah_data$price <- sapply(rumah_data$price, convert_price)
+
+# Menampilkan beberapa baris data setelah konversi harga
+head(rumah_data)
+```
+
+
+g. Menangani Kolom 'date'
+```{r}
+# Fungsi untuk memproses kolom 'date'
+process_date <- function(date_str) {
+  if (grepl("hari", date_str)) {
+    # Ekstrak jumlah hari
+    jumlah_hari <- as.integer(strsplit(date_str, " ")[[1]][2])
+    tanggal_diperbarui <- Sys.Date() - jumlah_hari
+  } else {
+    # Gunakan tanggal saat ini jika tidak mengandung "hari"
+    tanggal_diperbarui <- Sys.Date()
+  }
+  return(format(tanggal_diperbarui, "%Y-%m-%d"))
+}
+
+# Terapkan fungsi proses pada kolom 'date'
+rumah_data$date <- sapply(rumah_data$date, process_date)
+
+# Menampilkan beberapa baris data setelah pemrosesan tanggal
+head(rumah_data)
+```
+
+
+h. Membersihkan Kolom 'luas_tanah', 'luas_bangunan', dan 'kamar_tidur'
+```{r}
+# Fungsi untuk membersihkan kolom 'luas_tanah', 'luas_bangunan', dan 'kamar_tidur'
+clean_size <- function(value) {
+  value <- gsub("LT|LB|m²|KT", "", value)  # Menghapus karakter yang tidak diperlukan
+  return(as.numeric(gsub("\\D", "", value)))  # Mengambil hanya angka
+}
+
+# Terapkan fungsi clean_size pada kolom yang relevan
+rumah_data$luas_tanah <- sapply(rumah_data$luas_tanah, clean_size)
+rumah_data$luas_bangunan <- sapply(rumah_data$luas_bangunan, clean_size)
+rumah_data$kamar_tidur <- sapply(rumah_data$kamar_tidur, clean_size)
+
+# Menampilkan beberapa baris data setelah pembersihan kolom
+head(rumah_data)
+```
+
+
+i. Mengubah Kolom 'price' Menjadi Satuan Juta
+```{r}
+# Membagi harga dengan 1000000 untuk mengonversi ke juta
+rumah_data$price <- rumah_data$price / 1000000
+
+# Menampilkan beberapa baris data setelah konversi
+head(rumah_data)
+```
+
+
+j. Menghapus Kolom yang Tidak Diperlukan
+Pada langkah ini, kita akan menghapus kolom 'loc' seperti pada kode Python Anda.
+```{r}
+# Menghapus kolom yang tidak diperlukan
+rumah_data <- rumah_data %>%
+  select(-loc)
+
+# Menampilkan beberapa baris data setelah penghapusan kolom
+head(rumah_data)
+```
+
+
+h. Memeriksa Kembali Missing Values dan Duplikat
+Sebagai pengecekan tambahan, kita akan memeriksa apakah masih ada missing values atau duplikat.
+```{r}
+# Memeriksa missing values
+sapply(rumah_data, function(x) sum(is.na(x)))
+
+# Memeriksa duplikat
+sum(duplicated(rumah_data))
+```
+```{r}
+# Pastikan tipe data kolom sudah sesuai
+rumah_data$price <- as.numeric(rumah_data$price)
+rumah_data$luas_tanah <- as.numeric(rumah_data$luas_tanah)
+rumah_data$luas_bangunan <- as.numeric(rumah_data$luas_bangunan)
+rumah_data$kamar_tidur <- as.numeric(rumah_data$kamar_tidur)
+
+```
+
+
+
+```{r}
+# Boxplot untuk mengecek outliers pada harga
+boxplot(rumah_data$price, main="Boxplot Harga Rumah")
+
+```
+
+```{r}
+# Normalisasi atau standarisasi jika diperlukan
+rumah_data$luas_tanah <- scale(rumah_data$luas_tanah)
+rumah_data$luas_bangunan <- scale(rumah_data$luas_bangunan)
+
+```
+
+
+//
+1. Penanganan Outlier dengan Metode IQR (Interquartile Range)
+Outlier seringkali memiliki dampak negatif pada analisis data, jadi kita dapat mendeteksi dan menangani outlier dengan menggunakan metode IQR
+```{r}
+# Menangani nilai NA dengan menggantinya dengan median (atau mean) sebelum memproses outlier
+handle_na <- function(data) {
+  data[is.na(data)] <- median(data, na.rm = TRUE)  # Gantikan NA dengan median
+  return(data)
+}
+
+# Terapkan penggantian NA pada kolom yang ada
+rumah_data$price <- handle_na(rumah_data$price)
+rumah_data$luas_tanah <- handle_na(rumah_data$luas_tanah)
+rumah_data$luas_bangunan <- handle_na(rumah_data$luas_bangunan)
+
+# Terapkan fungsi untuk menangani outlier pada kolom yang sudah bersih
+handle_outliers <- function(data) {
+  Q1 <- quantile(data, 0.25)
+  Q3 <- quantile(data, 0.75)
+  IQR_value <- IQR(data)
+  lower_bound <- Q1 - 1.5 * IQR_value
+  upper_bound <- Q3 + 1.5 * IQR_value
+  data[data < lower_bound] <- lower_bound
+  data[data > upper_bound] <- upper_bound
+  return(data)
+}
+
+# Terapkan fungsi outlier setelah menangani NA
+rumah_data$price <- handle_outliers(rumah_data$price)
+rumah_data$luas_tanah <- handle_outliers(rumah_data$luas_tanah)
+rumah_data$luas_bangunan <- handle_outliers(rumah_data$luas_bangunan)
+
+# Menampilkan boxplot untuk memeriksa hasil setelah penanganan outlier
+boxplot(rumah_data$price, main="Boxplot Harga Rumah - Setelah Penanganan Outlier")
+boxplot(rumah_data$luas_tanah, main="Boxplot Luas Tanah - Setelah Penanganan Outlier")
+boxplot(rumah_data$luas_bangunan, main="Boxplot Luas Bangunan - Setelah Penanganan Outlier")
+
+```
+
+2. Memeriksa dan Menangani Distribusi Data (Skewness)
+```{r}
+# Memeriksa skewness pada kolom price, luas tanah, dan luas bangunan
+library(e1071)
+skew_price <- skewness(rumah_data$price)
+skew_luas_tanah <- skewness(rumah_data$luas_tanah)
+skew_luas_bangunan <- skewness(rumah_data$luas_bangunan)
+
+# Jika skewness lebih besar dari 1 atau kurang dari -1, lakukan log transformation
+if (skew_price > 1 | skew_price < -1) {
+  rumah_data$price <- log(rumah_data$price + 1)  # Menambahkan 1 untuk menghindari log(0)
+}
+
+if (skew_luas_tanah > 1 | skew_luas_tanah < -1) {
+  rumah_data$luas_tanah <- log(rumah_data$luas_tanah + 1)
+}
+
+if (skew_luas_bangunan > 1 | skew_luas_bangunan < -1) {
+  rumah_data$luas_bangunan <- log(rumah_data$luas_bangunan + 1)
+}
+
+# Memeriksa kembali distribusi data dengan histogram
+hist(rumah_data$price, main="Distribusi Harga Rumah (Setelah Log Transform)", xlab="Harga Rumah (Log)")
+hist(rumah_data$luas_tanah, main="Distribusi Luas Tanah (Setelah Log Transform)", xlab="Luas Tanah (Log)")
+hist(rumah_data$luas_bangunan, main="Distribusi Luas Bangunan (Setelah Log Transform)", xlab="Luas Bangunan (Log)")
+```
+
+
+3. Memeriksa Korelasi Antara Variabel
+```{r}
+# Menghitung korelasi antar variabel
+correlation_matrix <- cor(rumah_data[, c("price", "luas_tanah", "luas_bangunan", "kamar_tidur")])
+
+# Visualisasi korelasi
+corrplot(correlation_matrix, method="circle", type="upper", tl.col="black", tl.srt=45)
+
+```
+
+4. Pemisahan Data untuk Model (Train-Test Split)
+Jika Anda berencana untuk membangun model prediksi, langkah berikut adalah membagi data menjadi data pelatihan dan data uji:
+```{r}
+# Memisahkan data menjadi data training dan testing (80% train, 20% test)
+set.seed(123)  # Untuk reproducibility
+train_indices <- sample(1:nrow(rumah_data), 0.8 * nrow(rumah_data))
+train_data <- rumah_data[train_indices, ]
+test_data <- rumah_data[-train_indices, ]
+
+# Menampilkan ukuran data train dan test
+dim(train_data)
+dim(test_data)
+```
+
+5. Menyimpan Dataset yang Sudah Dibersihkan
+```{r}
+# Menyimpan dataset yang sudah dibersihkan
+write.csv(rumah_data, "rumah_data_cleaned.csv", row.names = FALSE)
+
+# Menyimpan dataset training dan testing
+write.csv(train_data, "rumah_train.csv", row.names = FALSE)
+write.csv(test_data, "rumah_test.csv", row.names = FALSE)
+```
+
+
+## Modelling
+```{r}
+library(randomForest)            # Untuk modeling Random Forest
+```
+
+
+3. Memisahkan Data Latih dan Uji
+```{r}
+# Menggunakan dataset yang telah dibersihkan dan diproses sebelumnya
+set.seed(123)  # Untuk hasil yang konsisten
+
+# Memisahkan data menjadi data training dan testing
+train_indices <- sample(1:nrow(rumah_data), 0.8 * nrow(rumah_data))
+train_data <- rumah_data[train_indices, ]
+test_data <- rumah_data[-train_indices, ]
+```
+
+
+4. Membangun Model Random Forest
+Membangun model Random Forest dengan memprediksi price menggunakan fitur luas_tanah, luas_bangunan, dan kamar_tidur.
+```{r}
+# Membangun model Random Forest
+rf_model <- randomForest(price ~ luas_tanah + luas_bangunan + kamar_tidur, 
+                         data = train_data, 
+                         ntree = 500,  # Jumlah pohon dalam random forest
+                         mtry = 2,     # Jumlah variabel yang dipertimbangkan pada setiap pemisahan
+                         importance = TRUE)  # Menampilkan pentingnya setiap fitur
+
+# Menampilkan ringkasan model
+print(rf_model)
+
+# Menyimpan model yang sudah dibangun untuk penggunaan di masa depan
+save(rf_model, file = "rf_model.RData")
+
+
+```
+
+
+5. Evaluasi Model dengan Data Uji
+```{r}
+# Prediksi menggunakan model pada data uji
+predictions <- predict(rf_model, newdata = test_data)
+
+# Menghitung MSE
+mse <- mean((predictions - test_data$price)^2)
+print(paste("Mean Squared Error (MSE):", mse))
+
+# Plot perbandingan antara harga sebenarnya dan prediksi
+plot(test_data$price, predictions, 
+     main = "Harga Sebenarnya vs Prediksi", 
+     xlab = "Harga Sebenarnya", 
+     ylab = "Harga Prediksi", 
+     col = "blue", 
+     pch = 19)
+abline(0, 1, col = "red")  # Garis referensi y = x (ideal)
+
+```
+
+
+6. Menghitung MSE (Mean Squared Error) dan RMSE (Root Mean Squared Error)
+Untuk mengukur performa model, kita dapat menghitung MSE dan RMSE agar tahu seberapa baik model memprediksi harga.
+
+```{r}
+# Menghitung MAE (Mean Absolute Error)
+mae <- mean(abs(prediksi - test_data$price))
+cat("MAE: ", mae, "\n")
+
+# Menghitung MSE (Mean Squared Error)
+mse <- mean((prediksi - test_data$price)^2)
+cat("MSE: ", mse, "\n")
+
+# Menghitung RMSE (Root Mean Squared Error)
+rmse <- sqrt(mse)
+cat("RMSE: ", rmse, "\n")
+
+# Menghitung R² (R-squared)
+ss_total <- sum((test_data$price - mean(test_data$price))^2)
+ss_residual <- sum((test_data$price - prediksi)^2)
+r_squared <- 1 - (ss_residual / ss_total)
+cat("R²: ", r_squared, "\n")
+
+```
+
+
+7. Evaluasi Feature Importance
+Untuk memahami variabel mana yang paling mempengaruhi harga rumah, kita bisa melihat importance atau kepentingan fitur dalam model.
+```{r}
+# Visualisasi pentingnya fitur
+importance_rf <- importance(rf_model)
+barplot(importance_rf[, 1], main = "Pentingnya Fitur dalam Model Random Forest", 
+        col = "lightblue", las = 2, horiz = TRUE)
+
+```
+
+
+8. Visualisasi Hasil Prediksi
+Kita juga bisa membuat visualisasi untuk membandingkan nilai prediksi dengan harga sebenarnya.
+```{r}
+# Membuat plot untuk membandingkan harga sebenarnya dan prediksi
+plot(test_data$price, prediksi, main = "Harga Sebenarnya vs Prediksi",
+     xlab = "Harga Sebenarnya", ylab = "Harga Prediksi", 
+     col = "blue", pch = 16)
+abline(0, 1, col = "red")  # Garis 45 derajat sebagai referensi
+```
+
+
+```{r}
+# Misalkan kita memiliki data baru
+new_data <- data.frame(luas_tanah = 120, luas_bangunan = 100, kamar_tidur = 3)
+
+# Prediksi harga rumah baru
+new_price <- predict(rf_model, newdata = new_data)
+print(paste("Prediksi harga rumah baru:", new_price))
+
+```
+////
+## 1. Fine-Tuning Model dengan Grid Search
+Grid search adalah metode untuk menemukan kombinasi parameter terbaik untuk model. Pada langkah ini, kita akan menggunakan `caret` package untuk melakukan pencarian grid parameter terbaik untuk model Random Forest.
+
+```{r}
+# Memuat library yang diperlukan
+library(caret)
+library(randomForest)
+
+# Menyiapkan parameter grid untuk pencarian grid
+tuneGrid <- expand.grid(.mtry = c(1, 2, 3, 4, 5))  # Menguji jumlah fitur yang digunakan pada pembagian setiap pohon
+
+# Melatih model Random Forest dengan Grid Search
+rfGridSearch <- train(
+  price ~ ., 
+  data = train_data, 
+  method = "rf",
+  trControl = trainControl(method = "cv", number = 5),
+  tuneGrid = tuneGrid
+)
+
+# Menampilkan hasil Grid Search
+print(rfGridSearch)
+```
+
+
+
+2. Klasifikasi Harga Rumah
+Daripada memprediksi harga rumah secara kontinu, kita dapat mengubah harga menjadi kategori seperti murah, menengah, dan mahal, dan menggunakan model klasifikasi seperti Decision Tree.
+```{r}
+# Menambahkan kolom kategori harga rumah
+train_data$kategori <- ifelse(train_data$price < 300000, "Murah", 
+                              ifelse(train_data$price < 600000, "Menengah", "Mahal"))
+
+# Menyiapkan model klasifikasi Decision Tree
+library(rpart)
+modelDT <- rpart(kategori ~ ., data = train_data[, -which(names(train_data) == "price")])
+
+# Melihat hasil klasifikasi
+printcp(modelDT)
+
+# Prediksi kategori untuk data uji
+prediksiDT <- predict(modelDT, test_data, type = "class")
+
+# Menghitung akurasi model
+confMat <- confusionMatrix(prediksiDT, test_data$kategori)
+print(confMat)
+```
+
+
+3. Cross-Validation untuk Menghindari Overfitting
+Cross-validation digunakan untuk mengevaluasi performa model secara lebih robust, memastikan bahwa model tidak overfitting pada data pelatihan.
+```{r}
+# Melakukan Cross-Validation pada model Random Forest
+set.seed(123)
+cvControl <- trainControl(method = "cv", number = 10)
+
+# Latih model Random Forest dengan Cross-Validation
+rfCV <- train(
+  harga ~ ., 
+  data = train_data,
+  method = "rf",
+  trControl = cvControl
+)
+
+# Menampilkan hasil Cross-Validation
+print(rfCV)
+```
+
+
+
+4. Eksplorasi Fitur Baru
+Untuk meningkatkan akurasi model, kita bisa mencoba fitur baru yang dapat berpengaruh terhadap harga rumah, seperti lokasi atau fasilitas. Pada langkah ini, kita akan mencoba menambahkan fitur-fitur baru.
+```{r}
+# Menambahkan fitur lokasi (misalnya: kategori daerah) atau fasilitas (misalnya: jumlah kamar, kolam renang, dll)
+train_data$lokasi <- as.factor(ifelse(train_data$alamat == "Jakarta", "Urban", "Suburban"))
+test_data$lokasi <- as.factor(ifelse(test_data$alamat == "Jakarta", "Urban", "Suburban"))
+
+# Menambahkan fitur baru dan membangun ulang model Random Forest
+rfModelWithNewFeatures <- randomForest(harga ~ ., data = train_data)
+
+# Menilai model dengan fitur baru
+prediksiNewFeatures <- predict(rfModelWithNewFeatures, test_data)
+mseNewFeatures <- mean((prediksiNewFeatures - test_data$harga)^2)
+print(paste("MSE with new features: ", mseNewFeatures))
+```
+
+
+```{r}

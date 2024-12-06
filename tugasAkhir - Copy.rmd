@@ -132,37 +132,92 @@ ggplot(evaluation_metrics, aes(x = Metric, y = Value, color = Metric)) +
 ```
 
 ```{r}
-# Memuat library yang diperlukan
-library(caret)
-library(randomForest)
-
-# Menentukan grid untuk hyperparameter tuning
-tune_grid <- expand.grid(mtry = c(2, 3, 4, 5, 6))  # Coba berbagai nilai mtry
-
-# Cross-validation untuk Random Forest dengan 10-fold
-rf_grid_search <- train(price ~ ., data = train_data,
-                        method = "rf",
-                        trControl = trainControl(method = "cv", number = 10),
-                        tuneGrid = tune_grid)
-
-# Menampilkan hasil grid search
-print(rf_grid_search)
-
-# Menggunakan model terbaik berdasarkan mtry dari grid search
-best_rf_model <- rf_grid_search$finalModel
-
-# Memprediksi harga dengan model terbaik
-rf_best_pred <- predict(best_rf_model, test_data)
-
-# Menghitung evaluasi model
-rf_best_mae <- mean(abs(rf_best_pred - test_data$price))  # Mean Absolute Error
-rf_best_mse <- mean((rf_best_pred - test_data$price)^2)  # Mean Squared Error
-rf_best_r2 <- 1 - sum((rf_best_pred - test_data$price)^2) / sum((test_data$price - mean(test_data$price))^2)  # R² Score
-
-# Menampilkan hasil evaluasi
-cat("Tuned Random Forest MAE:", rf_best_mae, "\n")
-cat("Tuned Random Forest MSE:", rf_best_mse, "\n")
-cat("Tuned Random Forest R²:", rf_best_r2, "\n")
+ggplot(data, aes(x = price)) + 
+  geom_histogram(binwidth = 50000000, fill = "skyblue", color = "black", alpha = 0.7)
 
 ```
+
+```{r}
+
+```
+
+
+```{r}
+# Import Library
+library(tidyverse)
+library(corrplot)
+library(randomForest)
+library(ggplot2)
+
+# Memuat dataset yang telah dibersihkan
+data <- read.csv("rumah_cleaned.csv")
+
+# 1. Distribusi Harga Rumah
+ggplot(data, aes(x = price)) +
+  geom_histogram(binwidth = 50000000, fill = "skyblue", color = "black", alpha = 0.7) +
+  geom_density(aes(y = ..count..), fill = "green", alpha = 0.3) +
+  labs(title = "Distribusi Harga Rumah", x = "Harga (IDR)", y = "Frekuensi") +
+  theme_minimal()
+
+# 2. Korelasi Antar Fitur Numerik
+cor_matrix <- cor(data %>% select_if(is.numeric))
+corrplot(cor_matrix, method = "circle", type = "upper", tl.cex = 0.8, tl.col = "black", title = "Korelasi Antar Fitur", mar = c(0, 0, 2, 0))
+
+# 3. Boxplot Harga Rumah
+ggplot(data, aes(x = "", y = price)) + 
+  geom_boxplot(outlier.colour = "red", outlier.shape = 8) +
+  labs(title = "Boxplot Harga Rumah", y = "Harga Rumah (IDR)") +
+  theme_minimal()
+
+# 4. Hubungan Harga Rumah dengan Luas Tanah
+ggplot(data, aes(x = luas_tanah, y = price)) +
+  geom_point(alpha = 0.5, color = "darkblue") +
+  geom_smooth(method = "lm", color = "red", se = FALSE) +
+  labs(title = "Harga Rumah terhadap Luas Tanah", x = "Luas Tanah (m²)", y = "Harga Rumah (IDR)") +
+  theme_minimal()
+
+# 5. Hubungan Harga Rumah dengan Luas Bangunan
+ggplot(data, aes(x = luas_bangunan, y = price)) +
+  geom_point(alpha = 0.5, color = "darkgreen") +
+  geom_smooth(method = "lm", color = "red", se = FALSE) +
+  labs(title = "Harga Rumah terhadap Luas Bangunan", x = "Luas Bangunan (m²)", y = "Harga Rumah (IDR)") +
+  theme_minimal()
+
+# 6. Harga per Meter Persegi terhadap Harga Rumah
+data$price_per_m2 <- data$price / (data$luas_tanah + 1)  # Menambahkan 1 untuk menghindari pembagian dengan 0
+ggplot(data, aes(x = price_per_m2, y = price)) +
+  geom_point(alpha = 0.5, color = "purple") +
+  geom_smooth(method = "lm", color = "red", se = FALSE) +
+  labs(title = "Harga per Meter Persegi terhadap Harga Rumah", x = "Harga per Meter Persegi (IDR)", y = "Harga Rumah (IDR)") +
+  theme_minimal()
+
+# 7. Perbandingan Prediksi dan Nilai Aktual
+comparison_df <- data.frame(Actual = y_test, Predicted = rf_pred)
+ggplot(comparison_df, aes(x = Actual, y = Predicted)) +
+  geom_point(alpha = 0.5, color = "blue") +
+  geom_abline(intercept = 0, slope = 1, color = "red", linetype = "dashed") +
+  labs(title = "Perbandingan antara Harga Aktual dan Prediksi", x = "Harga Aktual (IDR)", y = "Harga Prediksi (IDR)") +
+  theme_minimal()
+
+# 8. Distribusi Luas Tanah
+ggplot(data, aes(x = luas_tanah)) +
+  geom_histogram(binwidth = 50, fill = "orange", color = "black", alpha = 0.7) +
+  labs(title = "Distribusi Luas Tanah", x = "Luas Tanah (m²)", y = "Frekuensi") +
+  theme_minimal()
+
+# 9. Hubungan Rasio Bangunan dan Tanah dengan Harga Rumah
+ggplot(data, aes(x = building_to_land_ratio, y = price)) +
+  geom_point(alpha = 0.5, color = "blue") +
+  geom_smooth(method = "lm", color = "red", se = FALSE) +
+  labs(title = "Harga Rumah terhadap Rasio Bangunan ke Tanah", x = "Rasio Bangunan ke Tanah", y = "Harga Rumah (IDR)") +
+  theme_minimal()
+
+# 10. Residual Plot
+residuals <- rf_pred - y_test
+ggplot(data.frame(Residuals = residuals), aes(x = Residuals)) +
+  geom_histogram(binwidth = 1000000, fill = "purple", color = "black", alpha = 0.7) +
+  labs(title = "Distribusi Error Prediksi", x = "Residuals (Error)", y = "Frekuensi") +
+  theme_minimal()
+
+````
 
