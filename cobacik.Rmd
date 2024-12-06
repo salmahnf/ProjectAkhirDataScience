@@ -175,69 +175,70 @@ summary(data_no_outliers_luas_bangunan$price)
 
 ```{r}
 # Memuat library yang diperlukan
-library(randomForest)  # Untuk Random Forest
-library(caret)         # Untuk pre-processing dan pembagian data
+library(randomForest)
+library(caret)
 library(ggplot2)
 
+# Transformasi log pada harga untuk menangani distribusi skewed
+data_no_outliers_luas_bangunan$price <- log(data_no_outliers_luas_bangunan$price + 1)
+
 # Pisahkan data menjadi fitur (X) dan target (y)
-data_no_outliers_luas_bangunan$price <- as.numeric(data_no_outliers_luas_bangunan$price)
-X <- data_no_outliers_luas_bangunan[, c("kamar_tidur", "luas_tanah", "luas_bangunan")]
+X <- data_no_outliers_luas_bangunan[, c("kamar_tidur", "luas_tanah", "luas_bangunan", "kota")]
 y <- data_no_outliers_luas_bangunan$price
 
 # Membagi data menjadi training dan testing (80% training, 20% testing)
-set.seed(123)  # Untuk reproduksibilitas
+set.seed(123)
 trainIndex <- createDataPartition(y, p = 0.8, list = FALSE)
 train_data <- data_no_outliers_luas_bangunan[trainIndex,]
 test_data <- data_no_outliers_luas_bangunan[-trainIndex,]
 
 # Menyiapkan data untuk Random Forest (features dan target untuk training dan testing)
-train_features <- train_data[, c("kamar_tidur", "luas_tanah", "luas_bangunan")]
-test_features <- test_data[, c("kamar_tidur", "luas_tanah", "luas_bangunan")]
+train_features <- train_data[, c("kamar_tidur", "luas_tanah", "luas_bangunan", "kota")]
+test_features <- test_data[, c("kamar_tidur", "luas_tanah", "luas_bangunan", "kota")]
 train_target <- train_data$price
 test_target <- test_data$price
 
-# Melakukan normalisasi pada fitur (opsional untuk Random Forest)
+# Melakukan normalisasi pada fitur
 pre_process <- preProcess(train_features, method = "scale")
 train_features_scaled <- predict(pre_process, train_features)
 test_features_scaled <- predict(pre_process, test_features)
 
-# Bangun model Random Forest
-rf_model <- randomForest(price ~ kamar_tidur + luas_tanah + luas_bangunan, 
-                         data = train_data, 
-                         ntree = 100,  # Jumlah pohon keputusan (bisa dicoba dengan nilai yang berbeda)
-                         mtry = 2,     # Jumlah variabel yang dipilih di setiap split pohon (mtry)
-                         importance = TRUE)  # Mengaktifkan evaluasi pentingnya fitur
+# Tuning model Random Forest
+tune_grid <- expand.grid(.mtry = c(1, 2, 3, 4, 5))  # Tuning mtry
+rf_tuned <- train(price ~ kamar_tidur + luas_tanah + luas_bangunan + kota, 
+                  data = train_data, 
+                  method = "rf",
+                  tuneGrid = tune_grid,
+                  trControl = trainControl(method = "cv", number = 5))  # Cross-validation
 
-# Prediksi harga rumah dengan model Random Forest
-rf_pred <- predict(rf_model, test_data)
+# Prediksi harga rumah dengan model Random Forest yang dituning
+rf_pred <- predict(rf_tuned, newdata = test_data)
 
 # Menghitung R-squared untuk evaluasi model
-rss <- sum((rf_pred - test_target)^2)  # Residual Sum of Squares
-tss <- sum((test_target - mean(test_target))^2)  # Total Sum of Squares
+rss <- sum((rf_pred - test_target)^2)
+tss <- sum((test_target - mean(test_target))^2)
 r_squared <- 1 - (rss / tss)
 
 # Output R-squared
 cat("R-squared for Random Forest model: ", r_squared, "\n")
 
-# Menampilkan beberapa prediksi dengan harga rumah yang sebenarnya
-results <- data.frame(Actual = test_target, Predicted = rf_pred)
+# Mengembalikan prediksi yang telah ter-transformasi ke harga asli (inversi log)
+rf_pred_original_scale <- exp(rf_pred) - 1
+
+# Mengembalikan target asli ke harga (jika target juga di-transformasi)
+test_target_original_scale <- exp(test_target) - 1
+
+# Menampilkan beberapa prediksi dengan harga rumah yang sebenarnya (skala asli)
+results <- data.frame(Actual = test_target_original_scale, Predicted = rf_pred_original_scale)
 head(results)
 
 # Visualisasi hubungan antara harga rumah aktual dan harga rumah yang diprediksi
-library(ggplot2)
-
-# Data frame untuk visualisasi
-results_tuned <- data.frame(Actual = test_target, Predicted = rf_pred_tuned)
-
-# Plot prediksi vs aktual
-ggplot(results_tuned, aes(x = Actual, y = Predicted)) +
+ggplot(results, aes(x = Actual, y = Predicted)) +
   geom_point(color = "blue") +  # Titik untuk data aktual vs prediksi
   geom_abline(slope = 1, intercept = 0, color = "red") +  # Garis y = x (ideal prediksi)
-  labs(title = "Prediksi vs Actual Harga Rumah",
+  labs(title = "Prediksi vs Actual Harga Rumah (Model Dituning)",
        x = "Harga Rumah Aktual",
        y = "Harga Rumah Prediksi") +
   theme_minimal()
-
-
 ```
 
